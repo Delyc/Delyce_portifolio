@@ -1,0 +1,121 @@
+#signup {
+  
+    position: absolute;
+    
+    /* background gradient */
+    background: linear-gradient(to right, #243B55, #141E30);
+    height: 73vh;
+    width: 20vw;
+    border-radius: 10px;
+    /* box shadow */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    left: 50%;
+    top:90%;
+    margin-bottom: 0% !important;
+    transform: translate(-50%, -50%);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .fa-google, .lin, .fa-instagram, .fa-twitter{
+    color: white;
+    padding: 0.2rem;
+    font-size: 25px;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+    
+  }
+.fa{
+    margin-left: 1rem;
+}
+
+  .userauth{
+      width: 16vw;
+      outline: 1px solid rgba(148, 187, 233, 1) ;
+      margin-top: 2rem;
+      height: 6vh;
+  }
+  .or{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+  
+  #login > h1{
+    position: absolute;
+    top: -2%;
+    left: 40%;
+    color: white;
+  }
+
+
+  .form-group > label{
+      color: white ;
+  }
+  .form-control{
+    height: 30px;
+    border: 0;
+    outline: 2px solid rgba(148, 187, 233, 1);
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    
+
+  }
+
+  .fhire{
+    margin-top: 0rem;
+  }
+
+  .body{
+    background: linear-gradient(to right, #243b5525, #141e300a);
+    height: 95vh;
+    margin-top: 0rem;
+
+  }
+  .login{
+    background: linear-gradient(to right, #243B55, #141E30);
+    margin-top: 0rem;
+    width: 100%;
+    height: 30vh;
+
+  }
+  .login >h1{
+    color: rgba(148, 187, 233, 1);
+    text-align: center;
+    font-size: 70px;
+padding-top: 3rem;
+  }
+  .left{
+      margin-left: -4.5rem;
+      margin-top: 1rem;
+  }
+  .btn-primary{
+      margin-top: 0;
+      width: 6vw;
+      margin-left: -1rem;
+  }
+
+  .donthaveanaccount{
+      color: white;
+      margin-top: 1rem;
+      margin-left: -1rem;
+  }
+  .signinhere{
+      color: rgba(148, 187, 233, 1);
+      font-weight: bolder;
+      font-size: 20px;
+  }
