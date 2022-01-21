@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/* GENERAL */
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    list-style-type: none;
+}
+
+header {
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+
+nav .brand {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding-left: 2rem;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: 'Lexend';
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+nav ul li a.active {
+    background-color: #444;
+}
+
+nav .nav-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li.active > a {
+    color: rgba(148, 187, 233, 1);
+    
+  
+
+
+}
+
+.hirenav{
+    background: linear-gradient(to right, #243B55, #141E30);
+    height: 8vh;
+    border-radius: 50px;
+
+}
+.hirenav >a{
+    color: white;
+}
+.nav-item:hover{
+    background: linear-gradient(to right, #243B55, #141E30);
+    height: 10vh;
+}
+.nav-item:hover >a{
+    color: white;
+    text-decoration: underline;
+}
+nav ul li a {
+    padding-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+
+    color: #566;
+}
+
+.close {
+    display: none;
+}
+
+.menu-toggle {
+    /* display: block; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul li a {
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul li a {
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav .brand {
+        display: block;
+        padding: 1rem 1rem;
+        align-items: center;
+    }
+
+    nav .nav-menu {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 10vh;
+        right: 0px;
+        width: fit-content;
+        background: #141E30;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 20px 0px 0px 20px;
+        height: fit-content;
+
+    }
+
+    nav .nav-menu ul li a {
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+
+    .close {
+        display: flex;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: rgb(78, 20, 20);
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    nav .nav-menu a {
+        color: white;
+        padding: .2rem;
+    }
+
+    nav .nav-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: linear-gradient(to right, #243B55, #141E30);
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    margin-top: 3rem;
+    height: 50vh;
+    
+}
+.hiringphone{
+    display: none;
+}
+.usefullinks >h1, .connect >h1, .sub >h1, .contact >h1{
+    color: rgba(148, 187, 233, 1);
+    font-weight: bolder;
+    font-size: 25px;
+   
+}
+.sub{
+    margin-right: 5rem;
+    
+
+}
+.connect{
+    margin-top: 1rem;
+}
+.usefullinks > p, .sub > p{
+    color: white;
+    margin-top: 1rem;
+}
+
+.fa-linkedin, .fa-envelope, .fa-phone{
+    color: white;
+    padding: 0.5rem;
+
+    font-size: 25px;
+   
+    
+}
+.fa-github{
+    margin-left: 0;
+    color: white;
+    font-size: 25px;
+}
+
+.sub > p{
+    color: white;
+}
+.email{
+    border: 0;
+    height: 5vh;
+    width: 20vw;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+    text-align: center;
+   
+}
+.emaillabel{
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.emaillabel >label{
+    color: white;
+    text-decoration: none;
+    
+  
+}
+.btn{
+    margin-top: 1rem;
+    height: 6vh;
+    width: 8vw;
+    border-radius: 20px;
+    background-color: rgba(148, 187, 233, 1);
+    border: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+
+    
+}
+
+.linksconnect{
+    width: 100%;
+    margin-left: 7rem;
+    
+
+}
+.footercontact{
+   margin-top: 1rem;
+   margin-left: 4rem;
+   width: 25vw;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.fname, .femail{
+    height: 5vh;
+    width: 25vw;
+    float: left;
+
+}
+.contact >h1{
+    margin-left: 4rem;
+}
+
+.contact >p{
+    color: white;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.send{
+    margin-left: 4rem;
+}
+
+.hiring{
+   background-color: rgba(148, 188, 233, 0);
+   height: 3rem;
+   width: 10vw;
+   border: 0;
+   margin-top: 9rem;
+   outline: 5px solid rgba(148, 187, 233, 1);
+}
+.btnhireme{
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+   font-size: 23px;
+}
+
+
+
+@keyframes animate{
+  0% {
+      width: 0;
+  }
+  100%{
+      width: 100%;
+  }
+}
+
+.pythonparent:hover .pythonchild{
+   width: 100%;
+
+
+}
+.pythonparent{
+   width: 20vw;
+}
+.python{
+   color: white;
+
+}
+.pythonchild{
+   height: 1px;
+   width: 0;
+   background-color: white;
+   transition: all 1s linear;
+
+}
+
+.photo{
+  
+   width: 10vw;
+   margin-top: -0.5rem;
+   height: 0.3vh;
+   border: 0;
+   background-color: rgba(148, 187, 233, 1);
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.footercontact{
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+textarea{
+    margin-left: 0rem;
+    outline: 2px solid rgba(148, 187, 233, 1);
+   
+}
+input[type="email"],
+  input[type="text"] {
+
+  outline: 2px solid rgba(148, 187, 233, 1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+  

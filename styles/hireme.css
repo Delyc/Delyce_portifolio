@@ -1,0 +1,123 @@
+.fhire{
+  
+  margin-top: 10rem;
+}
+.intro{
+    background: linear-gradient(to right, #243B55, #141E30);
+    height: 73vh ;
+    display: flex;
+    flex-direction: row;
+
+  
+    
+}
+.name{
+    margin-left: 10rem;
+    width: 15%;
+    padding: 2rem;
+ 
+}
+.name > h1{
+    color: rgba(148, 187, 233, 1);
+
+
+}
+.occ{
+    color: white;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+
+}
+.descr{
+    color: rgba(255, 255, 255, 0.719);
+    font-weight: lighter;
+    margin-top: 2rem;
+ 
+    line-height: 200%;
+}
+.intro >img{
+    height: 73vh;
+    width: 20%;
+    align-items: center;
+    margin-left: 10rem;
+ 
+ 
+    
+}
+
+
+#HireMe {
+
+  
+    position: absolute;
+    /* background gradient */
+    
+    height: 63vh;
+    width: 23vw;
+    border-radius: 10px;
+    /* box shadow */
+    
+    padding: 1rem;
+    left: 80%;
+    top:50%;
+    
+    transform: translate(-50%, -50%);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #HireMe > h1{
+    position: absolute;
+    top: -2%;
+    left: 40%;
+    color: rgba(148, 187, 233, 1);
+    
+  }
+  input[type="email"],
+  input[type="text"] {
+  height: 30px;
+  border: 0;
+  outline: 0;
+  outline: 2px solid rgba(148, 187, 233, 1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: white;
+  
+ 
+  
+  }
+  .form-control{
+      background-color: rgba(0, 0, 0, 0);
+      
+}
+  textarea{
+      margin-left: 0rem;
+      outline: 2px solid rgba(148, 187, 233, 1);
+     
+  }
+  .job{
+      display: flex;
+      flex-direction: column;
+  }
+  .form-group > label{
+    color: rgba(148, 187, 233, 1);
+    font-weight: bolder;
+
+}
+
+.occname{
+    height: 0.3rem;
+    background-color: rgba(148, 187, 233, 1);
+    border: 0;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    width: 5vw;
+}
