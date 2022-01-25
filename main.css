@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+:root{
+    --primaryfont: 'Dongle', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +18,8 @@ a {
 ul li {
     list-style: none;
     list-style-type: none;
+    font-family: var(--primaryfont) !important;
+    font-size: 1.5rem;
 }
 
 header {
@@ -201,6 +209,10 @@ nav ul li a {
     padding: 5rem;
     margin-top: 3rem;
     height: 60vh;
+    font-family: var(--primaryfont);
+    font-size: 1.5rem;
+    
+    
     
 }
 .hiringphone{
@@ -209,7 +221,7 @@ nav ul li a {
 .usefullinks >h1, .connect >h1, .sub >h1, .contact >h1{
     color: rgba(148, 187, 233, 1);
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 2.3rem !important;
    
 }
 .sub{
@@ -223,6 +235,7 @@ nav ul li a {
 .usefullinks > p, .sub > p{
     color: white;
     margin-top: 1rem;
+    line-height: 17px;
 }
 
 .fa-linkedin, .fa-envelope, .fa-phone{
