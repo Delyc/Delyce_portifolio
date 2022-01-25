@@ -35,6 +35,7 @@ function selection() {
 }
 selection(); 
   const readMore = (blogId) => {
+    // console.log(blogId);
     localStorage.setItem('id',blogId);
     location.href =  './readmore.html';
   }
