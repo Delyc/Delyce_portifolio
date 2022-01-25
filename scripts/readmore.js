@@ -1,23 +1,23 @@
 let id = localStorage.getItem("id");
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCn9-O8lgSYUJ9_xabwuaEOvsWcEdbXEKo",
-  authDomain: "delyce-atlp.firebaseapp.com",
-  projectId: "delyce-atlp",
-  storageBucket: "delyce-atlp.appspot.com",
-  messagingSenderId: "575898273914",
-  appId: "1:575898273914:web:a73cb99a4c2111427c93c3",
+  apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
+  authDomain: "delyceportifolio.firebaseapp.com",
+  projectId: "delyceportifolio",
+  storageBucket: "delyceportifolio.appspot.com",
+  messagingSenderId: "532561569646",
+  appId: "1:532561569646:web:f16d1994049c3a4841c37f"
 };
-
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const db = app.database();
 if (id == null) {
-  location.href = "./articles.html";
+  location.href = "./addpost.html";
 }
 
 function getBlogInfo(idInfo) {
   let idBlog = idInfo != null ? idInfo : id;
+  
   var blogRef = db
     .ref("posts")
     .orderByChild("id")
@@ -28,12 +28,15 @@ function getBlogInfo(idInfo) {
   const hook = document.getElementById("hook");
   const img = document.getElementById("image");
   const btn = document.getElementById("buttons");
+ 
   blogRef.on("value", (snap) => {
     var data = snap.val();
-    for (var i in data) {
-      blogTitle.innerHTML = data[i].blogTitle;
-      blogDetail.innerHTML = data[i].blogDetail;
-      hook.innerHTML = data[i].hook;
+    console.log(data);
+      for (var i in data) {
+      
+      blogTitle.innerHTML = data[i].Title;
+      blogDetail.innerHTML = data[i].Content;
+      hook.innerHTML = data[i].Hook;
       img.src = data[i].image;
 
       var databutton = `<div class="buttons">
@@ -49,41 +52,13 @@ function getBlogInfo(idInfo) {
     }
   });
 }
-getBlogInfo();
-{
-  /* <button onclick="readMore('${dbdata[i].id}')" class="buttondelete"type="submit">Read more</button> */
-}
-
-//blog creation
-document.getElementById("postcomment").addEventListener("click", (e) => {
-  e.preventDefault();
-
-  const db = app.database();
-  const comment = document.getElementById("comment").value;
-  const name = document.getElementById("commentname").value;
-  const email = document.getElementById("commentemail").value;
-  console.log(comment);
-  const uid = db.ref("commenting").push().key;
-  db.ref("commenting")
-    .push()
-    .set({
-      //remove     //update       //display, selecting, remove, todo : restriction
-      id: uid,
-      comment: comment,
-      name: name,
-      email: email,
-    })
-    .then(() => {
-      alert("Comment added");
-    });
-  getBlogInfo();
-});
+getBlogInfo(id);
 
 // div buttons
 
 
 function deletion(id){
-    var query =db.ref('blogs').orderByChild('id').limitToFirst(1).equalTo(id);
+    var query =db.ref('posts').orderByChild('id').limitToFirst(1).equalTo(id);
     query.once("value", function(snapshot) {
         console.log(snapshot.val());
         snapshot.forEach(function(child) {
