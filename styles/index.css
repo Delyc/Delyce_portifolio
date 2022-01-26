@@ -37,6 +37,7 @@
 
 .afterheader {
     display: flex;
+    height: 78vh;
     flex-direction: row;
     background: linear-gradient(to right, #243B55, #141E30);
 }
