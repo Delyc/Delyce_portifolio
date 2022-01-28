@@ -1,218 +1,100 @@
-.sub {
-    background-color: white;
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
   
-    border-radius: 0;
-  
-    margin-top: 10px !important;
-    width: 30%;
-    height: 70% !important;
-    background-color: rgba(238, 174, 202, 1);
-    border: solid 2px white;
-    border-radius: 10px;
-    color: #fff;
+ 
   }
-  body {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(
-      circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
-    );
-  }
-  #header {
-    color: rgba(148, 187, 233, 1);
-    font-weight: 1000px;
-    font-size: 25px;
-    margin-left: 30%;
-  
-    padding-top: 1rem;
-  }
-  .readingallarticle {
-    display: block;
-  
-    max-width: 60%;
-    height: 25%;
-    margin-left: 10%;
-    background-color: white;
-    margin-left: 2%;
-    margin-top: 5%;
-  
-    border-radius: 12px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
-  }
-  .imagehook {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  #header{
-    margin-left: 10rem;
-    margin-right: 10rem;
-    
-    word-break: break-all;
-  }
-  
-  .hook {
-    word-break: break-all;
-    padding-left: 2%;
-    padding-right: 2%;
-    
-  }
-  .detail {
-    padding-left: 2%;
-    padding-right: 2%;
-  
-    word-break: break-all;
-  }
-  #image{
-    
-    max-width: 100%;
-   
-  }
-  #commenting {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    padding: 0.1rem;
-    justify-content: space-between;
-    
-  }
-  #commenting > input {
-    background-color: black;
-    border-radius: 10px;
-    height: 1.3rem;
+}
+.blogging >p{
     color: white;
-  }
-  #commenting > textarea {
-    background-color: black;
-    border-radius: 15px;
-    color: white;
-  }
-  #commenting > label {
-    font-weight: bolder;
-  }
-  #commenting > button {
-    
-    background-color: rgba(148, 187, 233, 1);
-    color: white;
-    border: solid 2px white;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 18px;
-    margin-top: 10%;
-    border-radius: 30px;
-    margin-bottom: 4%;
-    margin-left: 1%;
+    text-align: center;
+    margin-top: -2.5rem;
+
+}
+
+.blogging>h1 {
+  font-family: var(--primaryfont);
+  font-size: 7rem !important;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+ 
+  margin-bottom: 100px;
+
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.blogging{
+  background: linear-gradient(to right, #243B55, #141E30);
+  margin-top: 0rem;
+  width: 100%;
+  height: 30vh;
+
+}
+.blogging >h1{
+  color: rgba(148, 187, 233, 1);
+  text-align: center;
+ 
+  padding-top: 1rem;
+}
+
+.title{
+  color: #243B55;
+  font-size: 20px;
+  font-family: var(--primaryfont);
+}
+.readingallarticle{
+  width: 50%;
+ 
+  margin-top: 5rem;
+  margin-left: 20rem;
+ 
+}
+#image{
+  height: 60vh;
+  width: 100%;
+
+}
+
+.buttons{
+  margin-top: 1rem;
   
-    width: 50%;
-  }
-  
-  .commenting {
-    padding: 1rem;
-    justify-content: space-between;
-    background-color: rgba(238, 174, 202, 1);
-    width: 55%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    height: 500px;
-    margin-left: 25%;
-    
-    margin-top: 2rem;
-  }
-  .commenting > h3{
-      font-weight: bolder;
-      font-size: 30px;
-      margin-top: 1%;
-      
-  }
-  
-  .buttondelete{
-   
-    background-color: rgba(0, 0, 0, 0);
-    color: blue;
-    border: solid 2px black;
-  }
-  .fa-minus-circle{
-    margin-bottom: -1rem;
-    
-    margin-left: -1rem;
-    font-size: 30px;
-  }
-  
-  .buttonupdate{
-    background-color: rgba(0, 0, 0, 0.034);
-    color: blue;
-  }
-  
-  
-  .linksandcomment{
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-  }
-  .linkspost{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.2rem;
-    
-    
-    
-  }
-  
-  .linkspost button{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12rem;
-    background-color: white;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-   
-  }
-  
-  .fa-blog, .fa-book-medical{
-    font-size: 30px;
-    
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-  }
-  
-  .addarticlebutton{
-    
-    background-color: rgba(238, 174, 202, 1);
-    width: 20%;
-    height: 110%;
-    margin-left: -5rem;
-    
-   
-    
-    
-  }
-  .readarticle{
-    
-    margin-bottom: -2rem;
-  }
-  .readarticlebutton{
-    
-    background-color: rgba(238, 174, 202, 1);
-    width: 20%;
-    height: 110%;
-    margin-left: -5rem;
-   
-    
-    
-  }
-  .addarticletext{
-    color: black;
-    margin-left: 0.5rem;
-  }
-  
-  .articleandcomment{
-    
-    display: flex;
-    flex-direction: row;
-  }
+  border: 0;
+  background-color:#141E30;
+ 
+
+}
+.fa-heart, .fa-comment-dots, .fa-share-square{
+  color: white;
+
+  font-size: 20px;
+  border: 0;
+  margin-top: -1rem;
+  margin-left: 0.5rem;
+}
+.fa-comment-dots, .fa-share-square{
+
+}
