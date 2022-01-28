@@ -43,8 +43,9 @@ function getBlogInfo(idInfo) {
       
 
 
-   <button onclick="update('${data[i].id}')" class="buttonupdate"type="submit">update</button>
-   <button onclick="deletion('${data[i].id}')" class="buttondelete"type="submit"><i class="fas fa-minus-circle"></i>delete</button>
+   <button onclick="comment('${data[i].id}')" class="buttons"type="submit"><i class="far fa-heart"></i></button>
+   <button onclick="comment('${data[i].id}')" class="buttons"type="submit"><i class="far fa-comment-dots"></i></button>
+   <button onclick="share('${data[i].id}')" class="buttons"type="submit"><i class="fas fa-share-square"></i></button>
    
    
  </div>`;
