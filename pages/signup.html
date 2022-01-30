@@ -1,155 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../styles/signup.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../styles/signup.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <div class="brand">
-                <a href="">DELYCE</a>
+  <header>
+    <nav>
+      <div class="brand">
+        <a href="">DELYCE</a>
 
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <div class="close"><i class="fas fa-close"></i></div>
-                <li class="nav-item active"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="../pages/project.html">Projects</a></li>
-                <li class="nav-item"><a href="index.html">Services</a></li>
-                <li class="nav-item"><a href="index.html">Blog</a></li>
-                <li class="nav-item"><a href="index.html">Login</a></li>
-                <li class="nav-item"><a href="index.html">Sign up</a></li>
-                <li class="nav-item hirenav"><a href="index.html">Hire me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    
-
-      
-        <div class="login">
-            <h1 >Signup</h1>
-            </div>
-            <div class="body">
-       
-            <div id="loggingin">
-               
-                <form name="login" id="signup" onsubmit="return ValidateLogin()">
-                    <div class="userauth">
-                    
-                    <div class="fa"><i class="fab fa-google"></i><i class="fab fa-linkedin lin"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div>
-                </div>
-                <p class="or">or</p>
-               
-                    <div class="left">
-                        <div class="form-group">
-                            <label for="last name">first name</label>
-                            <input type="text" class="form-control" id="fname" placeholder="first name" name="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="last name">last name</label>
-                            <input type="text" class="form-control" id="lname" placeholder="last name" name="username">
-                        </div>
-                    <div class="form-group">
-                        <label for="Email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
-                    </div>
-                </div>
-                    <div class="donthaveanaccount">
-                    <button type="submit" class="btn btn-primary">Signup</button>
-                    <p class="donthaveanaccount">already have an account? <a href="../pages/signup.html"><span class="signinhere">Login </span></a></p>
-                </div>
-               
-                </form>
-                </div>
-            </div>
-          
-        
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-menu">
+        <div class="close"><i class="fas fa-close"></i></div>
+        <li class="nav-item active"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="../pages/project.html">Projects</a></li>
+        <li class="nav-item"><a href="index.html">Services</a></li>
+        <li class="nav-item"><a href="index.html">Blog</a></li>
+        <li class="nav-item"><a href="index.html">Login</a></li>
+        <li class="nav-item"><a href="index.html">Sign up</a></li>
+        <li class="nav-item hirenav"><a href="index.html">Hire me</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
 
 
 
+  <div class="login">
+    <h1>Signup</h1>
+  </div>
+  <div class="body">
 
+    <div id="loggingin">
 
+      <form name="login" id="signup" onsubmit="return ValidateLogin()">
+        <div class="userauth">
 
-    
-    <div class="footer fhire">
-        <div class="linksconnect">
-        <div class="usefullinks">  
-          <h1>Useful links</h1>
-          <p>Hire me</p>
-          <p>Projects</p>
-          <p>service</p>
+          <div class="fa"><i class="fab fa-google"></i><i class="fab fa-linkedin lin"></i><i
+              class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div>
         </div>
-        <div class="connect">
-          <h1>Let's connect</h1>
-          <div class="icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fas fa-phone"></i>
+        <p class="or">or</p>
+
+        <div class="left">
+          <div class="form-group">
+            <label for="last name">first name</label>
+            <input type="text" class="form-control" id="fname" placeholder="first name" name="firstName">
+          </div>
+          <div class="form-group">
+            <label for="last name">last name</label>
+            <input type="text" class="form-control" id="lname" placeholder="last name" name="secondName">
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
           </div>
         </div>
-      </div>
-        <div class="sub">
-          <h1>Let the post come to you</h1>
-          <p>Be the first to receive posts and to know our promotions and new services</p>
-          <form action="">
-            <div class="emaillabel">
-            <label for="email">Email:</label>
-          </div>
-              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email" name="email" />
-              <input class="btn" name="submit" type="submit" value="Subscribe" />
-  
-          </form>
-          <button class="hiring">
-            <a href="assets/Summative.pdf" download class="btnhireme">Hire me</a>
-          </button>
+        <div class="donthaveanaccount">
+          <button type="submit" class="btn btn-primary">Signup</button>
+          <p class="donthaveanaccount">already have an account? <a href="../pages/signup.html"><span
+                class="signinhere">Login </span></a></p>
         </div>
-        <div class="contact">
-          <h1>Contact Me</h1>
-          <p>Have any question, I am glad to answer</p>
-          
-          <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
-           
-              <input type="text" class="footercontact fname" placeholder="Full name" onchange="validateEmail(this.value)" id="name" name="name" />
-      
-           
-              <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)" id="email" name="email" />
-           
-              <textarea id="message" class="footercontact" name="Message" rows="10" cols="50" placeholder="Your message here"></textarea>
-      
-              <input class="btn send" name="submit" type="submit" value="Send " />
-              </form>
-              <button class="hiringphone">
-                <a href="assets/Summative.pdf" download class="btnhire">Hire me</a>
-              </button>
-      
-            </div>
-            
-          
-        </div>
-      
-      
-      
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="footer fhire">
+    <div class="linksconnect">
+      <div class="usefullinks">
+        <h1>Useful links</h1>
+        <p>Hire me</p>
+        <p>Projects</p>
+        <p>service</p>
       </div>
-    
+      <div class="connect">
+        <h1>Let's connect</h1>
+        <div class="icons">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fas fa-envelope"></i>
+          <i class="fas fa-phone"></i>
+        </div>
+      </div>
+    </div>
+    <div class="sub">
+      <h1>Let the post come to you</h1>
+      <p>Be the first to receive posts and to know our promotions and new services</p>
+      <form action="">
+        <div class="emaillabel">
+          <label for="email">Email:</label>
+        </div>
+        <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email"
+          name="email" />
+        <input class="btn" name="submit" type="submit" value="Subscribe" />
+
+      </form>
+      <button class="hiring">
+        <a href="assets/Summative.pdf" download class="btnhireme">Hire me</a>
+      </button>
+    </div>
+    <div class="contact">
+      <h1>Contact Me</h1>
+      <p>Have any question, I am glad to answer</p>
+
+      <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
+
+        <input type="text" class="footercontact fname" placeholder="first Name" 
+          id="name" name="firstName" />
+        <input type="text" class="footercontact fname" placeholder="Last Name" 
+          id="name" name="lastName" />
+
+
+        <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)"
+          id="email" name="email" />
+
+        <textarea id="message" class="footercontact" name="Message" rows="10" cols="50"
+          placeholder="Your message here"></textarea>
+
+        <input class="btn send" name="submit" type="submit" value="Send " />
+      </form>
+      <button class="hiringphone">
+        <a href="assets/Summative.pdf" download class="btnhire">Hire me</a>
+      </button>
+
+    </div>
+
+
+  </div>
+
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script defer src="../scripts/signup.js" type="module"></script>
 </body>
+
 </html>
