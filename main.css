@@ -323,10 +323,16 @@ nav ul li a {
 .hiring{
    background-color: rgba(148, 188, 233, 0);
    height: 3rem;
-   width: 10vw;
+   width: 8vw;
    border: 0;
    margin-top: 9rem;
    outline: 5px solid rgba(148, 187, 233, 1);
+  
+}
+.hiring > a{
+    color: white;
+    font-family: var(--primaryfont);
+    font-size: 35px;
 }
 .btnhireme{
    text-decoration: none;

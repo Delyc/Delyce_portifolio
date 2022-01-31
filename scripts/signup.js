@@ -1,34 +1,52 @@
-export const baseURL = "https://portifolio-website.herokuapp.com/api";
-const saveUser = (data) => {
-  fetch(`https://portifolio-website.herokuapp.com/api/users/`, {
+
+const saveUser = () => {
+  const firstName = document.getElementById('fname').value;
+  const secondname = document.getElementById('lname').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  console.log( {
+        "firstName": firstName,
+        "secondName": secondname,
+        "email": email,
+        "password": password
+      });
+  fetch(`https://portifolio-website.herokuapp.com/api/users`, {
     method: "POST",
 
     // Adding body or contents to send
     body: JSON.stringify(
-        data
-     
+      {
+        "firstName": firstName,
+        "secondName": secondname,
+        "email": email,
+        "password": password
+      }
     ),
 
     // Adding headers to the request
     headers: {
-      "Content-type": "application/json; charset=UTF-8",
+      "Content-type": "application/json",
     },
   })
+  .then((res) => {
+     return res.json();
+    return Promise.reject(res);
+    
+  })
     .then((response) => {
+      
       console.log(response);
+      alert(response.message);
     })
     .catch((err) => {
       console.log(err);
     });
 };
-let form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let formData = new FormData(e.target);
-  var object = {};
-formData.forEach(function(value, key){
-    object[key] = value;
-});
 
-  saveUser(object);
+
+
+let form = document.getElementById("signup");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();  
+  saveUser();
 });

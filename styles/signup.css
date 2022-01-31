@@ -35,10 +35,10 @@
 }
 
   .userauth{
-      width: 16vw;
+      width: 18vw;
       outline: 1px solid rgba(148, 187, 233, 1) ;
       margin-top: 2rem;
-      height: 6vh;
+    
   }
   .or{
     color: white;
