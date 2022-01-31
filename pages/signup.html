@@ -48,7 +48,7 @@
 
     <div id="loggingin">
 
-      <form name="login" id="signup" onsubmit="return ValidateLogin()">
+      <form name="login" id="signup" >
         <div class="userauth">
 
           <div class="fa"><i class="fab fa-google"></i><i class="fab fa-linkedin lin"></i><i
@@ -58,11 +58,11 @@
 
         <div class="left">
           <div class="form-group">
-            <label for="last name">first name</label>
+            <label for="last name">First name</label>
             <input type="text" class="form-control" id="fname" placeholder="first name" name="firstName">
           </div>
           <div class="form-group">
-            <label for="last name">last name</label>
+            <label for="last name">Second name</label>
             <input type="text" class="form-control" id="lname" placeholder="last name" name="secondName">
           </div>
           <div class="form-group">
@@ -76,23 +76,13 @@
         </div>
         <div class="donthaveanaccount">
           <button type="submit" class="btn btn-primary">Signup</button>
-          <p class="donthaveanaccount">already have an account? <a href="../pages/signup.html"><span
+          <p class="donthaveanaccount">already have an account? <a href="../pages/login.html"><span
                 class="signinhere">Login </span></a></p>
         </div>
 
       </form>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
 
   <div class="footer fhire">
     <div class="linksconnect">
@@ -119,7 +109,7 @@
         <div class="emaillabel">
           <label for="email">Email:</label>
         </div>
-        <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email"
+        <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="cemail"
           name="email" />
         <input class="btn" name="submit" type="submit" value="Subscribe" />
 
@@ -135,13 +125,13 @@
       <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
 
         <input type="text" class="footercontact fname" placeholder="first Name" 
-          id="name" name="firstName" />
+          id="cfname" name="firstName" />
         <input type="text" class="footercontact fname" placeholder="Last Name" 
-          id="name" name="lastName" />
+          id="clname" name="lastName" />
 
 
         <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)"
-          id="email" name="email" />
+          id="femail" name="email" />
 
         <textarea id="message" class="footercontact" name="Message" rows="10" cols="50"
           placeholder="Your message here"></textarea>
@@ -160,6 +150,7 @@
 
 
   </div>
+  <script defer src="../scripts/constant.js" type="module"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script defer src="../scripts/signup.js" type="module"></script>

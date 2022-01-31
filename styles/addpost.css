@@ -103,7 +103,7 @@ textarea{
     color: rgba(148, 187, 233, 1);
     text-align: center;
     font-size: 70px;
-padding-top: 3rem;
+    padding-top: 3rem;
   }
   .left{
       margin-left: -4.5rem;
@@ -125,3 +125,37 @@ padding-top: 3rem;
       font-weight: bolder;
       font-size: 20px;
   }
+
+  .post .post-actions{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width:100%;
+    padding: 12px;
+  }
+
+  .post-actions button{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    background-color:#243B55 ;
+    height: 30px;
+    border-radius: 12px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  .post-actions button:hover{
+    padding: 14px;
+    color: rgb(211, 203, 203);
+    background-color:#16365c ;
+  }
+
+  .post-actions button .fas {
+    font-size: 12px;
+    margin: 0px 12px 0px 12px;
+  }
+  

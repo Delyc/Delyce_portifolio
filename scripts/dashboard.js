@@ -14,7 +14,7 @@ const db = app.database();
 function selection() {
   var data = " ";
   var postselected = document.getElementById("allposts");
-  fetch("https://portifolio-website.herokuapp.com/api/articles", {
+  fetch(`${apiUrl}api/articles`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -30,8 +30,6 @@ function selection() {
     })
     .then(function (response) {
       let responseData = response;
-   
-      console.log(responseData)
       responseData.forEach((value) => {
         data += `<div class="post">
       <p class="title">${value.title}</p>
@@ -40,13 +38,17 @@ function selection() {
         <p class="hook">
           ${value.hook}
         </p>
-        <button onclick="readMore('${value._id}')" class="buttondelete"type="submit">more<i class="fas fa-angle-right"></i> </button>
+        <div class="post-actions">
+          <button onclick="readMore('${value._id}')" class="buttondelete" type="submit">More<i class="fas fa-angle-right"></i> </button>
+          <button onclick="updateThisBlog('${value._id}')" class="buttondelete" type="submit">Update </button>
+          <button onclick="deleteBlog('${value._id}')" class="buttondelete" type="submit">Delete </button>
+        </div>
       </div>`;
       });
       postselected.innerHTML = data;
     })
     .catch(function (err) {
-      console.warn("Something went wrong.", err);
+      console.warn("Error", err);
     });
 }
 selection();
@@ -56,3 +58,35 @@ const readMore = (blogId) => {
   localStorage.setItem("id", blogId);
   location.href = "./readmore.html";
 };
+
+
+const updateThisBlog = (blogId) => {
+  localStorage.setItem("id", blogId);
+  location.href = "./update.html";
+};
+
+const deleteBlog = (blogId) => {
+  fetch(`${apiUrl}api/articles/${blogId}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    referrer: "no-referrer",
+  })
+  .then(function (response) {
+    if (response.ok) {
+      return response.json();
+    }else {
+      return Promise.reject(response);
+    }
+  })
+  .then(function (response) {
+    let responseData = response;   
+    console.log(responseData);
+    selection()
+  })
+  .catch(function (err) {
+    console.warn("Error", err);
+    alert('Pease try again')
+  });
+}
