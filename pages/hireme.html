@@ -23,13 +23,13 @@
             </div>
             <ul class="nav-menu">
                 <div class="close"><i class="fas fa-close"></i></div>
-                <li class="nav-item active"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="../pages/project.html">Projects</a></li>
-                <li class="nav-item"><a href="index.html">Services</a></li>
-                <li class="nav-item"><a href="index.html">Blog</a></li>
-                <li class="nav-item"><a href="index.html">Login</a></li>
-                <li class="nav-item"><a href="index.html">Sign up</a></li>
-                <li class="nav-item hirenav"><a href="index.html">Hire me</a></li>
+                <li class="nav-item active"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="./projects.html">Projects</a></li>
+                <li class="nav-item"><a href="./services.html">Services</a></li>
+                <li class="nav-item"><a href="./dashboard.html">Blog</a></li>
+                <li class="nav-item"><a href="./login.html">Login</a></li>
+                <li class="nav-item"><a href="./signup.html">Sign up</a></li>
+                <li class="nav-item hirenav"><a href="./hireme.html">Hire me</a></li>
             </ul>
         </nav>
     </header>
@@ -47,22 +47,22 @@
 
     <div id="HireMe">
         <h1 >Hire Me</h1>
-        <form name="login" id="login" onsubmit="return ValidateLogin()">
+        <form name="login" id="hireme">
       
         
        
             <div class="left">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="username">
+                    <input type="text" class="form-control" id="namehire" placeholder="Enter name" name="username">
                 </div>
             <div class="form-group">
                 <label for="Email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="username">
+                <input type="email" class="form-control" id="emailhire" placeholder="Enter email" name="username">
             </div>
             <div class="form-group job">
                 <label for="job">Job</label>
-                <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Job description here ..."></textarea>
+                <textarea name="" class="form-control" id="jobhire" cols="30" rows="10" placeholder="Job description here ..."></textarea>
                
             </div>
         </div>
@@ -75,12 +75,43 @@
         </div>
 
 
-
-        <div>
-            <h1>About me</h1>
-            
+        <h1 class="experience">Experience</h1>
+     
+        <div class="employment">
+         
+        <div class="emp">
+          <h3>Employment</h3>
+          <p>Full stack trainee</p>
+          <p>Graphic designer</p>
+          <p>Conservation intern</p>
+          <p>Stock keeper</p>
+          <p>Assistant IT manager intern</p>
+          <p>Assistant student</p>
         </div>
 
+        <div class="company">
+          <h3>Company</h3>
+          <p>Andela</p>
+          <p>Digital Access</p>
+          <p>Biocoor</p>
+          <p>Shop Felecien</p>
+          <p>Kabuga Health center</p>
+          <p>Inyange girls school of science</p>
+        </div>
+
+        <div class="period">
+          <h3>Duration</h3>
+          <p>Nov 2021 - Present</p>
+
+        <p>Aug 2021 - Dec 2021</p>
+        <p>Aug 2021 - Sep 2021</p>
+        <p>Jul 2020 - Jan 2021</p>
+        <p>Nov 2018 - Jan 2019</p>
+        <p>June 2018 - Aug 2018</p>
+      </div>
+    </div>
+
+    <button class="resume">Resume</button>
 
 
 
@@ -118,7 +149,7 @@
   
           </form>
           <button class="hiring">
-            <a href="assets/Summative.pdf" download class="btnhireme">Hire me</a>
+            <a href="../pages/hireme.html" download class="btnhireme">Hire me</a>
           </button>
         </div>
         <div class="contact">
@@ -137,7 +168,7 @@
               <input class="btn send" name="submit" type="submit" value="Send " />
               </form>
               <button class="hiringphone">
-                <a href="assets/Summative.pdf" download class="btnhire">Hire me</a>
+                <a href="../pages/hireme.html" download class="btnhire">Hire me</a>
               </button>
       
             </div>
@@ -148,6 +179,7 @@
       
       
       </div>
+      <script defer src="../scripts/hireme.js"></script>
 </body>
 
 

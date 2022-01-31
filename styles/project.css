@@ -1,0 +1,179 @@
+.fhire{
+  
+    margin-top: 10rem;
+    height: 65vh;
+  
+  }
+  .intro{
+      background: linear-gradient(to right, #243B55, #141E30);
+      height: 77vh ;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  
+    
+      
+  }
+  .name{
+      margin-left: 10rem;
+      width: 50%;
+      padding: 2rem;
+      margin-top: 5rem;
+   
+  }
+  .name > h1{
+      color: rgba(148, 187, 233, 1);
+      font-family: var(--primaryfont);
+      font-size: 3.5rem;
+      margin-top: -1.5rem;
+  
+  
+  }
+  .occ{
+      color: white;
+      font-weight: bolder;
+      margin-top: -1.5rem;
+      font-family: var(--primaryfont);
+        font-size: 1.5rem;
+  
+  }
+  .descr{
+      color: rgba(255, 255, 255, 0.719);
+      font-weight: lighter;
+      margin-top: 1rem;
+     
+   
+      line-height: 26px;
+      font-family: var(--primaryfont);
+        font-size: 1.5rem;
+  }
+  .intro >img{
+      height: 100%;
+      width: 25%;
+      align-items: center;
+      margin-left: 10rem;
+   
+   
+      
+  }
+  
+  .allschooling{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 4rem;
+  }
+  .Alu{
+      display: flex;
+      flex-direction: column;
+  }  
+  
+  
+  
+  
+  .occname{
+      height: 0.3rem;
+      background-color: rgba(148, 187, 233, 1);
+      border: 0;
+      border-radius: 10px;
+      margin-top: 3rem;
+
+      width: 5vw;
+  }
+  
+  .Alu >h1{
+    color: #141E30;
+    margin-left: 20rem;
+    
+    
+    
+  }
+  .train >h1{
+      color: #141E30;
+      margin-left: 15rem;
+  }
+  .education{
+    margin-top: 3rem;
+    font-family: var(--primaryfont);
+    font-size: 30px;
+  }
+  .institution{
+    margin-left: 15rem;
+   
+    font-family: var(--primaryfont);
+    
+  
+  }
+  .institution > p{
+    color: #141E30;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .education > h3{
+    color: #141E30;
+    margin-left: 20rem;
+    margin-top: 2rem;
+  }
+  .education > h4{
+    color: #141E30;
+    margin-left:38rem;
+  }
+  
+  .courses{
+    margin-left: 35rem;
+  
+  }
+  
+  .projects{
+    height: 2rem;
+      background-color: rgba(148, 187, 233, 1);
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  
+      width: 5vw;
+      border: 3px solid rgba(148, 187, 233, 1);
+      font-family: var(--primaryfont);
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      color: white;
+      font-weight: bolder;
+      margin-bottom: 0.5rem;
+  }
+  .course{
+    color: #141E30;
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 28px;
+  }
+  .image{
+    height: 20vh;
+  }
+  
+  .overview{
+    padding: 1rem;
+    font-size: 25px;
+    line-height: 20px;
+  
+  }
+  .CI{
+    width: 21%;
+    display: flex;
+      flex-direction: column;
+     
+      max-width: 24%;
+      min-height: 40vh;
+      
+      background-color: white;   
+      margin-left: 2%;  
+      margin-top: 1%;
+      
+    
+      border-radius: 12px;       
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.404);
+      margin-bottom: 2rem;
+  }
+  .year1{
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: row;
+  }
