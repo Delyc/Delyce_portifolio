@@ -1,5 +1,20 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
+  authDomain: "delyceportifolio.firebaseapp.com",
+  projectId: "delyceportifolio",
+  storageBucket: "delyceportifolio.appspot.com",
+  messagingSenderId: "532561569646",
+  appId: "1:532561569646:web:f16d1994049c3a4841c37f",
+};
+
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+
+const db = app.database();
+
 
   window.addEventListener('load',() => {
+    
     const email = localStorage.getItem("email");
     if(email !== "d.twizeyima@alustudent.com"){
       location.href = '../index.html';
@@ -7,7 +22,7 @@
     }
 
   const logout = document.getElementById("loggingout");
-  window.addEventListener('click', () =>{
+  logout.addEventListener('click', () =>{
     localStorage.clear();
     location.href = './login.html';
   })
@@ -55,40 +70,6 @@
   }
   selection();
   
-  const readMore = (blogId) => {
-    // console.log(blogId);
-    localStorage.setItem("id", blogId);
-    location.href = "./readmore.html";
-  };
   
   
-  const updateThisBlog = (blogId) => {
-    localStorage.setItem("id", blogId);
-    location.href = "./update.html";
-  };
-  
-  const deleteBlog = (blogId) => {
-    fetch(`${apiUrl}api/articles/${blogId}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      referrer: "no-referrer",
-    })
-    .then(function (response) {
-      if (response.ok) {
-        return response.json();
-      }else {
-        return Promise.reject(response);
-      }
-    })
-    .then(function (response) {
-      let responseData = response;   
-      console.log(responseData);
-      selection()
-    })
-    .catch(function (err) {
-      console.warn("Error", err);
-      alert('Pease try again')
-    });
-  }})
+})
