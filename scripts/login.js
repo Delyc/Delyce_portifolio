@@ -7,6 +7,10 @@ window.addEventListener('load',() => {
         let password = document.getElementById('password').value;
         fetch(`${apiUrl}api/users/login`,{
            method: 'POST',
+           headers: {
+            'Content-Type': 'application/json',
+           
+        },
            body: JSON.stringify({
              email : email,
              password: password 

@@ -136,18 +136,19 @@ textarea{
   }
 
   .post-actions button{
-    width: 70px;
+    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     border: none;
     background-color:#243B55 ;
-    height: 30px;
+    height: 2rem;
     border-radius: 12px;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
   }
+  
   .post-actions button:hover{
     padding: 14px;
     color: rgb(211, 203, 203);
