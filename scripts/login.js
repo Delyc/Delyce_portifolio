@@ -25,10 +25,18 @@ window.addEventListener('load',() => {
            }           
         })
         .then((res) => {
-           console.log(res);
+           
+           console.log("response",res);
            localStorage.setItem('token', res.token);
-           localStorage.setItem('user', JSON.stringify(res.data));           
-           location.href = './dashboard.html';
+           localStorage.setItem('email', res.data.email);      
+           if (res.data.email === "d.twizeyima@alustudent.com"){
+            location.href = './admin.html';
+
+           }
+           else{
+            location.href = './dashboard.html';
+           }     
+         
         })
         .catch((err) => {
            console.log(err);
