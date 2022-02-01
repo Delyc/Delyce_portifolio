@@ -1,16 +1,18 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
-    authDomain: "delyceportifolio.firebaseapp.com",
-    projectId: "delyceportifolio",
-    storageBucket: "delyceportifolio.appspot.com",
-    messagingSenderId: "532561569646",
-    appId: "1:532561569646:web:f16d1994049c3a4841c37f",
-  };
+
+  window.addEventListener('load',() => {
+    const email = localStorage.getItem("email");
+    if(email !== "d.twizeyima@alustudent.com"){
+      location.href = '../index.html';
+
+    }
+
+  const logout = document.getElementById("loggingout");
+  window.addEventListener('click', () =>{
+    localStorage.clear();
+    location.href = './login.html';
+  })
   
-  // Initialize Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  
-  const db = app.database();
+ 
   function selection() {
     var data = " ";
     var postselected = document.getElementById("allposts");
@@ -29,7 +31,7 @@ const firebaseConfig = {
         }
       })
       .then(function (response) {
-        let responseData = response;
+        let responseData = response.data.data;
         responseData.forEach((value) => {
           data += `<div class="post">
         <p class="title">${value.title}</p>
@@ -89,4 +91,4 @@ const firebaseConfig = {
       console.warn("Error", err);
       alert('Pease try again')
     });
-  }
+  }})

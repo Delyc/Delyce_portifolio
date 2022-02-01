@@ -21,11 +21,12 @@ const sedDivInfo = () => {
       }
     })
     .then(function (response) {
-      let responseData = response;
-      blogTitle.innerHTML =response.title;
-      blogDetail.innerHTML =response.content;
-      hook.innerHTML =response.hook;
-      img.src = response.banner;
+      let responseData = response.data.data;
+     
+      blogTitle.innerHTML =responseData.title;
+      blogDetail.innerHTML =responseData.content;
+      hook.innerHTML =responseData.hook;
+      img.src = responseData.banner;
     })
     .catch(function (err) {
       console.warn("Error", err);
