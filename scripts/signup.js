@@ -30,13 +30,13 @@ const saveUser = () => {
   })
   .then((res) => {
      return res.json();
-    return Promise.reject(res);
+    // return Promise.reject(res);
     
   })
     .then((response) => {
       
       console.log(response);
-      alert(response.message);
+      location.href = './login.html';
     })
     .catch((err) => {
       console.log(err);

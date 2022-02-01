@@ -53,40 +53,7 @@ function selection() {
 }
 selection();
 
-const readMore = (blogId) => {
-  // console.log(blogId);
-  localStorage.setItem("id", blogId);
-  location.href = "./readmore.html";
-};
 
 
-const updateThisBlog = (blogId) => {
-  localStorage.setItem("id", blogId);
-  location.href = "./update.html";
-};
 
-const deleteBlog = (blogId) => {
-  fetch(`${apiUrl}api/articles/${blogId}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    referrer: "no-referrer",
-  })
-  .then(function (response) {
-    if (response.ok) {
-      return response.json();
-    }else {
-      return Promise.reject(response);
-    }
-  })
-  .then(function (response) {
-    let responseData = response;   
-    console.log(responseData);
-    selection()
-  })
-  .catch(function (err) {
-    console.warn("Error", err);
-    alert('Pease try again')
-  });
-}
+ 

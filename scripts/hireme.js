@@ -29,7 +29,7 @@ const firebaseConfig = {
     const job = document.getElementById("jobhire").value;   
     
                                   
-        fetch(`localhost:5000/api/hireme`, {
+        fetch(`http://localhost:5000/api/hireme`, {
           method: 'POST',
           mode: 'cors',
          
