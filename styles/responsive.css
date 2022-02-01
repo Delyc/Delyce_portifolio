@@ -1,0 +1,164 @@
+@media screen and (max-width: 1028px) {
+    .afterheader {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .introname {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .occupation>p {
+        width: 60%;
+
+    }
+
+    .picandexp {
+        height: auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: unset;
+    }
+
+    .group2 {
+        margin-bottom: 0;
+    }
+
+    .btnr {
+        width: 200px;
+    }
+
+    .footer {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100vw;
+    }
+
+    .linksconnect {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub>form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub>form>.btn {
+        width: 200px;
+    }
+
+    .hiring {
+        width: 200px;
+    }
+
+    .send {
+        width: 200px;
+    }
+
+}
+
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .imageintro > img{
+        margin-top: 45rem;
+        margin-left: 0rem;
+    }
+    .afterheader{
+        display: none;
+
+    }
+
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30rem;
+    }
+    .exper{
+        display: none;
+    }
+    .imagediscover > img{
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .imagediscover{
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .mobile{
+        background: linear-gradient(to right, #243B55, #141E30);
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        color: rgba(148, 187, 233, 1);
+        font-weight: bolder;
+    }
+    .myarts{
+        margin-top: -2rem;
+        font-size: 40px;
+        font-family: var(--primaryfont);
+    }
+    .discover{
+        margin-top: 2rem;
+        font-size: 50px;
+        font-family: var(--primaryfont);
+
+    }
+    .Iam{
+        color: white;
+        font-family: var(--primaryfont);
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+    .hire{
+        width: 23vw;
+        height: 8vh;
+
+    }
+    .cv{
+        width: 30vw;
+        height: 8vh;
+
+    }
+    .buttons{
+        margin-left: 3rem;
+        margin-top: -1rem;
+    }
+
+}

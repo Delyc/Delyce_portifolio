@@ -29,16 +29,18 @@ const firebaseConfig = {
     const job = document.getElementById("jobhire").value;   
     
                                   
-        fetch(`https://portifolio-website.herokuapp.com/api/hireme`, {
+        fetch(`localhost:5000/api/hireme`, {
           method: 'POST',
           mode: 'cors',
+         
           headers: {
-              'Content-Type': 'application/json',
-          },
+            'Content-Type': 'application/json',
+           
+        },
           body: JSON.stringify({
             "name" : name,
             "email" : email,
-            "job" : job,
+            "message" : job,
            
         })
       })

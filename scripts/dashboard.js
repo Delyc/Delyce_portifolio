@@ -29,7 +29,8 @@ function selection() {
       }
     })
     .then(function (response) {
-      let responseData = response;
+      let responseData = response.data.data;
+      console.log(response);
       responseData.forEach((value) => {
         data += `<div class="post">
       <p class="title">${value.title}</p>
@@ -40,8 +41,7 @@ function selection() {
         </p>
         <div class="post-actions">
           <button onclick="readMore('${value._id}')" class="buttondelete" type="submit">More<i class="fas fa-angle-right"></i> </button>
-          <button onclick="updateThisBlog('${value._id}')" class="buttondelete" type="submit">Update </button>
-          <button onclick="deleteBlog('${value._id}')" class="buttondelete" type="submit">Delete </button>
+         
         </div>
       </div>`;
       });
