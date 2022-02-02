@@ -1,8 +1,5 @@
 
 
-
-
-const apiUrl = 'https://portifolio-website.herokuapp.com/';
   
   
   
