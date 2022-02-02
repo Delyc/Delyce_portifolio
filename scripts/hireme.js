@@ -1,5 +1,10 @@
 
-document.getElementById("hireme").addEventListener("submit", (e) => {
+
+
+
+
+  document.getElementById("hireme").addEventListener("submit", (e) => {
+
   
     e.preventDefault();
     
