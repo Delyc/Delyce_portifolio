@@ -10,7 +10,7 @@ const saveUser = () => {
         "email": email,
         "password": password
       });
-  fetch(`https://portifolio-website.herokuapp.com/api/users`, {
+  fetch(`http://localhost:5000/api/users`, {
     method: "POST",
 
     // Adding body or contents to send

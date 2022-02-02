@@ -34,8 +34,10 @@
         <li class="nav-item"><a href="./pages/projects.html">Projects</a></li>
         <li class="nav-item"><a href="./pages/services.html">Services</a></li>
         <li class="nav-item"><a href="./pages/dashboard.html">Blog</a></li>
-        <li class="nav-item"><a href="./pages/login.html">Login</a></li>
-        <li class="nav-item"><a href="./pages/signup.html">Sign up</a></li>
+        <li class="nav-item loggedout"><a href="./pages/login.html">Login</a></li>
+        <li class="nav-item userlogout loggedin" ><a href="#">Logout</a></li>
+        
+        <li class="nav-item loggedout"><a href="./pages/signup.html">Sign up</a></li>
         <li class="nav-item hirenav"><a href="./pages/hireme.html">Hire me</a></li>
       </ul>
     </nav>
@@ -297,19 +299,19 @@
         <h1>Contact Me</h1>
         <p>Have any question, I am glad to answer</p>
 
-        <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
+        <form class="contact" name="contact" action=""  method="post">
 
-          <input type="text" class="footercontact fname" placeholder="Full name" onchange="validateEmail(this.value)"
+          <input type="text" class="footercontact fname" placeholder="Full name" 
             id="name" name="name" />
 
 
-          <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)"
+          <input type="email" class="footercontact femail" placeholder="Email" 
             id="email" name="email" />
 
           <textarea id="message" class="footercontact" name="Message" rows="10" cols="50"
             placeholder="Your message here"></textarea>
 
-          <input class="btn send" name="submit" type="submit" value="Send " />
+          <input class="btn send" name="submit" type="submit" id = "sending" value="Send " />
         </form>
         <button class="hiringphone">
           <a href="./pages/hireme.html" download class="btnhire">Hire me</a>
@@ -325,7 +327,8 @@
   </div>
 
 
-
+  <script src="./scripts/constant.js"></script>
+  <script src="./scripts/contactme.js"></script>
 
 
 
@@ -363,5 +366,6 @@
 
   })
 </script>
+
 
 </html>

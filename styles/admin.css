@@ -218,3 +218,16 @@
     font-size: 25px;
     
   }
+
+  .addpost{
+    background-color: #141E30;
+    width: 6vw;
+    height: 6vh;
+
+  }
+  .addpost > a{
+    color: white;
+    font-family: var(--primaryfont);
+    font-size: 1.5rem;
+
+  }

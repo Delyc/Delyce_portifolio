@@ -95,9 +95,7 @@
   margin-top: -1rem;
   margin-left: 0.5rem;
 }
-.fa-comment-dots, .fa-share-square{
 
-}
 
 .engage{
   margin-top: 1rem;
@@ -114,4 +112,24 @@
 }
 .fa-comments{
   font-size: 20px;
+}
+.comment input, label{
+  display: block;
+  height: 4.5vh;
+ border: 0;
+}
+textarea{
+  border: 0;
+}
+.comment{
+  justify-content: center;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+#sending{
+  background-color: rgba(148, 187, 233, 1);
+  width: 5vw;
+  height: 4vh;
+  color: white;
+  border: 0;
 }

@@ -41,7 +41,7 @@ const app = firebase.initializeApp(firebaseConfig);
     
       uploading.snapshot.ref.getDownloadURL().then(function (imageUrl) {
                                   
-        fetch(`https://portifolio-website.herokuapp.com/api/articles`, {
+        fetch(`http://localhost:5000/api/articles`, {
           method: 'POST',
           mode: 'cors',
           headers: {
