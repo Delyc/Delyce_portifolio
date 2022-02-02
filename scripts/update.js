@@ -43,7 +43,7 @@ tinymce.init({
     
         uploading.snapshot.ref.getDownloadURL().then(function (imageUrl) {
                                     
-          fetch(`http://localhost:5000/api/articles/${Id}`, {
+          fetch(`${apiUrl}api/articles/${Id}`, {
             method: 'PUT',
             mode: 'cors',
             headers: {
@@ -80,7 +80,7 @@ tinymce.init({
   });
 
 const setInput = () => {
-  fetch(`http://localhost:5000/api/articles/${Id}`, {
+  fetch(`${apiUrl}api/articles/${Id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

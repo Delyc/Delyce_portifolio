@@ -1,17 +1,3 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
-  authDomain: "delyceportifolio.firebaseapp.com",
-  projectId: "delyceportifolio",
-  storageBucket: "delyceportifolio.appspot.com",
-  messagingSenderId: "532561569646",
-  appId: "1:532561569646:web:f16d1994049c3a4841c37f",
-};
-
-// Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-
-const db = app.database();
-
 
   window.addEventListener('load',() => {
     
@@ -31,7 +17,7 @@ const db = app.database();
   function selection() {
     var data = " ";
     var postselected = document.getElementById("allposts");
-    fetch(`http://localhost:5000/api/articles`, {
+    fetch(`${apiUrl}api/articles`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -2,16 +2,7 @@
 
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
-    authDomain: "delyceportifolio.firebaseapp.com",
-    projectId: "delyceportifolio",
-    storageBucket: "delyceportifolio.appspot.com",
-    messagingSenderId: "532561569646",
-    appId: "1:532561569646:web:f16d1994049c3a4841c37f"
-  };
-  
-  
+const apiUrl = 'https://portifolio-website.herokuapp.com/';
   
   
   
@@ -29,7 +20,7 @@ const firebaseConfig = {
       const message = document.getElementById("message").value;   
       
                                     
-          fetch(`http://localhost:5000/api/queries`, {
+          fetch(`${apiUrl}api/queries`, {
             method: 'POST',
             mode: 'cors',
            

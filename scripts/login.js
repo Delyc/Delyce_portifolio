@@ -1,3 +1,4 @@
+
 window.addEventListener('load',() => {
    const form = document.getElementById('login');
 
@@ -5,7 +6,7 @@ window.addEventListener('load',() => {
         e.preventDefault();
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
-        fetch(`http://localhost:5000/api/users/login`,{
+        fetch(`${apiUrl}api/users/login`,{
            method: 'POST',
            headers: {
             'Content-Type': 'application/json',

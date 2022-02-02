@@ -1,3 +1,4 @@
+
 let id = localStorage.getItem("id");
 const blogTitle = document.getElementById("header");
 const blogDetail = document.getElementById("blodetail");
@@ -5,7 +6,7 @@ const hook = document.getElementById("hook");
 const img = document.getElementById("image");
 
 const sedDivInfo = () => {
-  fetch(`http://localhost:5000/api/articles/${id}`, {
+  fetch(`${apiUrl}api/articles/${id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -42,7 +43,7 @@ document.getElementById("sendcomment").addEventListener("submit", (e) => {
 
   const comment = document.getElementById("commentmessage").value;
 
-  fetch(`http://localhost:5000/api/articles/${id}`, {
+  fetch(`${apiUrl}api/articles/${id}`, {
     method: "POST",
     mode: "cors",
 
