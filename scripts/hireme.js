@@ -42,8 +42,4 @@
           console.log(response);      
       });
         
-              
-      
-                             
-  
   });
