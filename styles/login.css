@@ -82,6 +82,7 @@
 
   .fhire{
     margin-top: 0rem;
+    height: 75vh;
   }
 
   .body{
@@ -106,7 +107,7 @@
       font-size: 6rem;
   }
   .left{
-      margin-left: -4.5rem;
+      margin-left: -1.5rem;
       margin-top: 1rem;
   }
   .btn-primary{
