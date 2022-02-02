@@ -555,7 +555,9 @@
     margin-left: 16rem;
     margin-top: 3rem;
 }
-
+.fhire{
+    height: 65vh;
+}
 .projects {
     color: #243B55;
     font-size: 25px;

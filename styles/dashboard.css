@@ -27,7 +27,11 @@
       color: white;
       text-align: center;
       margin-top: -2.5rem;
+      font-size: 1.5rem;
 
+  }
+  .fhire{
+    height: 65vh;
   }
   
   .blogging>h1 {
