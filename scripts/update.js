@@ -43,7 +43,7 @@ tinymce.init({
     
         uploading.snapshot.ref.getDownloadURL().then(function (imageUrl) {
                                     
-          fetch(`https://portifolio-website.herokuapp.com/api/articles/${Id}`, {
+          fetch(`${apiUrl}api/articles/${Id}`, {
             method: 'PUT',
             mode: 'cors',
             headers: {

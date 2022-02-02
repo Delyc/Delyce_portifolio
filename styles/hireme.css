@@ -1,8 +1,19 @@
 .fhire{
   
-  margin-top: 10rem;
-  height: 65vh;
 
+  height: 70vh;
+
+}
+#jobhire{
+  width: 20vw;
+  height: 20vh;
+}
+input{
+  font-size: 1.3rem;
+}
+textarea{
+  font-size: 1.3rem;
+  height: 30vh;
 }
 .intro{
     background: linear-gradient(to right, #243B55, #141E30);
@@ -106,7 +117,7 @@
   justify-content: space-between;
   margin-bottom: 1rem;
   color: white;
-  
+    
  
   
   }
@@ -115,6 +126,7 @@
       
 }
   textarea{
+    color: white;
       margin-left: 0rem;
       outline: 2px solid rgba(148, 187, 233, 1);
      
@@ -247,6 +259,10 @@
   font-size: 30px;
   margin-left: 15rem;
 }
+.btn-primary{
+  font-size: 1.5rem;
+
+}
 
 .resume{
   background-color: #141E30;
@@ -257,6 +273,7 @@
   border-radius: 10px;
   margin-left: 35rem;
   margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
 .experience{

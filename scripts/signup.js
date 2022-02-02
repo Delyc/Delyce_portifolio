@@ -1,4 +1,4 @@
-
+const apiUrl = 'https://portifolio-website.herokuapp.com/';
 const saveUser = () => {
   const firstName = document.getElementById('fname').value;
   const secondname = document.getElementById('lname').value;
@@ -10,7 +10,7 @@ const saveUser = () => {
         "email": email,
         "password": password
       });
-  fetch(`https://portifolio-website.herokuapp.com/api/users`, {
+  fetch(`${apiUrl}api/users`, {
     method: "POST",
 
     // Adding body or contents to send

@@ -1,3 +1,4 @@
+
 tinymce.init({
   selector: '#editor1',
   plugins: 'a11ychecker advcode casechange export formatpainter image linkchecker autolink lists checklist pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
@@ -8,19 +9,7 @@ tinymce.init({
 
 
 
-const firebaseConfig = {
-  apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
-  authDomain: "delyceportifolio.firebaseapp.com",
-  projectId: "delyceportifolio",
-  storageBucket: "delyceportifolio.appspot.com",
-  messagingSenderId: "532561569646",
-  appId: "1:532561569646:web:f16d1994049c3a4841c37f"
-};
 
-
-
-
-const app = firebase.initializeApp(firebaseConfig);
 
 
 
@@ -41,7 +30,7 @@ const app = firebase.initializeApp(firebaseConfig);
     
       uploading.snapshot.ref.getDownloadURL().then(function (imageUrl) {
                                   
-        fetch(`https://portifolio-website.herokuapp.com/api/articles`, {
+        fetch(`${apiUrl}api/articles`, {
           method: 'POST',
           mode: 'cors',
           headers: {

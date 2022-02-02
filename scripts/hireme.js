@@ -1,24 +1,5 @@
 
-
-
-
-const firebaseConfig = {
-  apiKey: "AIzaSyB2sPsNJu53VvCvnevHmpnq7B9xTVbbZB0",
-  authDomain: "delyceportifolio.firebaseapp.com",
-  projectId: "delyceportifolio",
-  storageBucket: "delyceportifolio.appspot.com",
-  messagingSenderId: "532561569646",
-  appId: "1:532561569646:web:f16d1994049c3a4841c37f"
-};
-
-
-
-
-
-
-
-
-  document.getElementById("hireme").addEventListener("submit", (e) => {
+document.getElementById("hireme").addEventListener("submit", (e) => {
   
     e.preventDefault();
     
@@ -29,7 +10,7 @@ const firebaseConfig = {
     const job = document.getElementById("jobhire").value;   
     
                                   
-        fetch(`http://localhost:5000/api/hireme`, {
+        fetch(`${apiUrl}api/hireme`, {
           method: 'POST',
           mode: 'cors',
          
@@ -57,8 +38,4 @@ const firebaseConfig = {
           console.log(response);      
       });
         
-              
-      
-                             
-  
   });

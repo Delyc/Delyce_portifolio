@@ -28,8 +28,8 @@
                 <li class="nav-item"><a href="./projects.html">Projects</a></li>
                 <li class="nav-item"><a href="./services.html">Services</a></li>
                 <li class="nav-item"><a href="./dashboard.html">Blog</a></li>
-                <li class="nav-item"><a href="#">Log out</a></li>
-                <li class="nav-item"><a href="./signup.html">Sign up</a></li>
+                <li class="nav-item loggedin"><a href="#" class="userlogout">Log out</a></li>
+                <li class="nav-item loggedout"><a href="./signup.html">Sign up</a></li>
                 <li class="nav-item hirenav"><a href="./hireme.html">Hire me</a></li>
             </ul>
         </nav>
@@ -46,7 +46,7 @@
        
             <div id="loggingin">
                
-                <form name="login" id="login">
+                <form id="login" class="login-form" method="post" action="#none">
                     <div class="userauth">
                     
                     <div class="fa"><i class="fab fa-google"></i><i class="fab fa-linkedin lin"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div>
@@ -107,7 +107,7 @@
             <div class="emaillabel">
             <label for="email">Email:</label>
           </div>
-              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email" name="email" />
+              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" name="email" />
               <input class="btn" name="submit" type="submit" value="Subscribe" />
   
           </form>
@@ -124,7 +124,7 @@
               <input type="text" class="footercontact fname" placeholder="Full name" onchange="validateEmail(this.value)" id="name" name="name" />
       
            
-              <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)" id="email" name="email" />
+              <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)"  name="email" />
            
               <textarea id="message" class="footercontact" name="Message" rows="10" cols="50" placeholder="Your message here"></textarea>
       

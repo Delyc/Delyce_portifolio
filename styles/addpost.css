@@ -14,14 +14,20 @@ textarea{
 #hook{
     width: 70%;
     height: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #insert{
+  font-family: var(--primaryfont);
+  font-size: 1.5rem;
+  
   
     position: absolute;
     /* background gradient */
     background: linear-gradient(to right, #243B55, #141E30);
-    height: 65vh;
+    height: 88vh;
     width: 40vw;
     border-radius: 10px;
     /* box shadow */
@@ -87,7 +93,7 @@ textarea{
 
   .body{
     background: linear-gradient(to right, #243b5525, #141e300a);
-    height: 95vh;
+    height: 105vh;
     margin-top: 0rem;
 
   }
@@ -136,7 +142,7 @@ textarea{
   }
 
   .post-actions button{
-    width: 4rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,6 +153,8 @@ textarea{
     border-radius: 12px;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+    font-size: 1.5rem;
+    
   }
   
   .post-actions button:hover{

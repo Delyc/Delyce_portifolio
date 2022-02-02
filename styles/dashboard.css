@@ -27,7 +27,11 @@
       color: white;
       text-align: center;
       margin-top: -2.5rem;
+      font-size: 1.5rem;
 
+  }
+  .fhire{
+    height: 65vh;
   }
   
   .blogging>h1 {
@@ -124,14 +128,24 @@
       border: 0;
       border-radius: 10px;
     
-      text-align: center;
+     
       font-weight: 500;
-      color: #ffffff;
+      padding: 0rem 0.5rem;
+      color: #141E30;
+      font-weight: bolder;
+      font-family: var(--primaryfont);
+      font-size: 1.5rem;
       
       transition: all 0.3s linear;
       border-color: 5px solid #243B55;
       margin-top: 3rem;
     
+  }
+
+  .nopost{
+    padding: 2rem;
+    color: black !important;
+
   }
     
   
