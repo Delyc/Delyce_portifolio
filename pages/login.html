@@ -46,7 +46,7 @@
        
             <div id="loggingin">
                
-                <form name="login" id="login">
+                <form id="login" class="login-form" method="post" action="#none">
                     <div class="userauth">
                     
                     <div class="fa"><i class="fab fa-google"></i><i class="fab fa-linkedin lin"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div>
@@ -107,7 +107,7 @@
             <div class="emaillabel">
             <label for="email">Email:</label>
           </div>
-              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email" name="email" />
+              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" name="email" />
               <input class="btn" name="submit" type="submit" value="Subscribe" />
   
           </form>
@@ -124,7 +124,7 @@
               <input type="text" class="footercontact fname" placeholder="Full name" onchange="validateEmail(this.value)" id="name" name="name" />
       
            
-              <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)" id="email" name="email" />
+              <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)"  name="email" />
            
               <textarea id="message" class="footercontact" name="Message" rows="10" cols="50" placeholder="Your message here"></textarea>
       

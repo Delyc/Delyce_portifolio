@@ -69,6 +69,18 @@
       <i class="fas fa-comments"></i>
     </div>
 
+    <div class="comment">
+      <form action="" id="sendcomment">
+        <label for="">Name</label>
+        <input type="text" id="commentname" placeholder="Your full name">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Your email" id="commentemail">
+        <label for="">Comment</label>
+        <textarea name="commentmessage" id="commentmessage" cols="30" rows="10"></textarea>
+        <button id="sending" type="submit" >send</button>
+      </form>
+    </div>
+
 
   
     <div class="footer fhire">
@@ -110,7 +122,7 @@
           
           <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
            
-              <input type="text" class="footercontact fname" placeholder="Full name" onchange="validateEmail(this.value)" id="name" name="name" />
+              <input type="text" class="footercontact fname" placeholder="Full name"  id="name" name="name" />
       
            
               <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)" id="email" name="email" />

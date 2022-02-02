@@ -31,7 +31,7 @@ const db = app.database();
   function selection() {
     var data = " ";
     var postselected = document.getElementById("allposts");
-    fetch(`${apiUrl}api/articles`, {
+    fetch(`http://localhost:5000/api/articles`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

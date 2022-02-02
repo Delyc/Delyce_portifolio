@@ -67,17 +67,24 @@ nav ul li.active > a {
 
 .hirenav{
     background: linear-gradient(to right, #243B55, #141E30);
-    height: 8vh;
-    border-radius: 50px;
+    height:6.5vh;
+    width: 5.5vw;
+    border-radius: 15px;
 
 }
 .hirenav >a{
     color: white;
 }
+
+.hirenav:hover{
+    height: 6vh !important;
+    border-radius: 5px;
+    
+}
 .nav-item:hover{
     background: linear-gradient(to right, #243B55, #141E30);
     height: 10vh;
-}
+} 
 .nav-item:hover >a{
     color: white;
     text-decoration: underline;
@@ -181,6 +188,11 @@ nav ul li a {
 }
 
 
+
+.loggedin{
+    display: none;
+
+}
 
 
 
