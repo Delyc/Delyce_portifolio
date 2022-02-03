@@ -156,17 +156,20 @@
           <h1>Contact Me</h1>
           <p>Have any question, I am glad to answer</p>
           
-          <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
-           
-              <input type="text" class="footercontact fname" placeholder="Full name" onchange="validateEmail(this.value)" id="name" name="name" />
-      
-           
-              <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)" id="email" name="email" />
-           
-              <textarea id="message" class="footercontact" name="Message" rows="10" cols="50" placeholder="Your message here"></textarea>
-      
-              <input class="btn send" name="submit" type="submit" value="Send " />
-              </form>
+          <form id="sending" class="contact" name="contact" action=""  method="post">
+
+            <input type="text" class="footercontact fname" placeholder="Full name" 
+              id="fname" name="name" />
+  
+  
+            <input type="email" class="footercontact femail" placeholder="Email" 
+              id="femail" name="email" />
+  
+            <textarea id="fmessage" class="footercontact" name="Message" rows="10" cols="50"
+              placeholder="Your message here"></textarea>
+  
+            <input class="btn send" name="submit" type="submit" id = "sending" value="Send " />
+          </form>
               <button class="hiringphone">
                 <a href="../pages/hireme.html"  class="btnhire">Hire me</a>
               </button>
@@ -181,6 +184,7 @@
       </div>
       <script src="../scripts/constant.js"></script>
       <script defer src="../scripts/hireme.js"></script>
+      <script src="../scripts/contactme.js"></script>
       
 </body>
 

@@ -27,10 +27,14 @@ window.addEventListener("load", () => {
         localStorage.setItem("token", res.token);
         localStorage.setItem("email", res.data.email);
         localStorage.setItem("authenticated", 'true');
+      
+
         if (res.data.email === "d.twizeyima@alustudent.com") {
           location.href = "./admin.html";
+         
         } else {
           location.href = "./dashboard.html";
+   
         }
       })
       .catch((err) => {

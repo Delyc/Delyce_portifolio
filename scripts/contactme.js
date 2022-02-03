@@ -2,22 +2,23 @@
 
   
   
-  
+
   
   
   
     document.getElementById("sending").addEventListener("submit", (e) => {
+
     
       e.preventDefault();
       
-      const fullname = document.getElementById("name").value;
+      const fullname = document.getElementById("fname").value;
       
-      const email = document.getElementById("email").value;
+      const email = document.getElementById("femail").value;
   
-      const message = document.getElementById("message").value;   
+      const message = document.getElementById("fmessage").value;   
       
                                     
-          fetch(`${apiUrl}api/queries`, {
+          fetch(`http://localhost:5000/api/queries`, {
             method: 'POST',
             mode: 'cors',
            

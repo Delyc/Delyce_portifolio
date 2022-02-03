@@ -7,13 +7,14 @@
 
   
     e.preventDefault();
+
     
     const name = document.getElementById("namehire").value;
     
     const email = document.getElementById("emailhire").value;
 
     const job = document.getElementById("jobhire").value;   
-    
+           
                                   
         fetch(`${apiUrl}api/hireme`, {
           method: 'POST',
@@ -37,7 +38,9 @@
           
           let status = response.status;
           console.log(response);
-         
+          
+         document.getElementById("hireme").reset();
+         alert("message sent");
 
       }).catch(function (response) {
           console.log(response);      
