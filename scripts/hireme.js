@@ -32,11 +32,14 @@
       })
       .then(function (response) {
           return response.json();
+          
+  
       })
       .then(function (response) {
           
           let status = response.status;
           console.log(response);
+          document.getElementById("hireme").reset();
          
 
       }).catch(function (response) {

@@ -134,7 +134,7 @@ textarea{
   margin-top: 3rem;
   
 }
-#sending{
+.sending{
   background-color: rgba(148, 187, 233, 1);
   width: 5vw;
   height: 4vh;
@@ -143,7 +143,7 @@ textarea{
   border: 0;
   margin-left: 1rem;
   font-size: 1.5rem;
-}
+} 
 .likes{
   color: white !important;
 }
@@ -173,4 +173,24 @@ textarea{
 
 #sendcomment >h3{
   font-size: 2rem;
+}
+.fhire{
+  height: 65vh;
+}
+.contact{
+  margin-left: -6rem;
+  width: 30%;
+  
+}
+.contact input{
+  margin-left: 10rem;
+
+
+}
+.contact >textarea{
+  margin-left: 10rem;
+}
+.sub{
+  margin-left: -55rem;
+  width: 30%;
 }
