@@ -122,19 +122,21 @@
       <h1>Contact Me</h1>
       <p>Have any question, I am glad to answer</p>
 
-      <form id="sending" class="contact" name="contact" action=""  method="post">
+      <form class="contact" name="contact" action="" onsubmit="return ValidateContact()" method="post">
 
-        <input type="text" class="footercontact fname" placeholder="Full name" 
-          id="fname" name="name" />
+        <input type="text" class="footercontact fname" placeholder="first Name" 
+          id="cfname" name="firstName" />
+        <input type="text" class="footercontact fname" placeholder="Last Name" 
+          id="clname" name="lastName" />
 
 
-        <input type="email" class="footercontact femail" placeholder="Email" 
+        <input type="email" class="footercontact femail" placeholder="Email" onchange="validateEmail(this.value)"
           id="femail" name="email" />
 
-        <textarea id="fmessage" class="footercontact" name="Message" rows="10" cols="50"
+        <textarea id="message" class="footercontact" name="Message" rows="10" cols="50"
           placeholder="Your message here"></textarea>
 
-        <input class="btn send" name="submit" type="submit" id = "sending" value="Send " />
+        <input class="btn send" name="submit" type="submit" value="Send " />
       </form>
       <button class="hiringphone">
         <a href="../pages/hireme.html"  class="btnhire">Hire me</a>
@@ -148,8 +150,7 @@
 
 
   </div>
-  <script defer src="../scripts/constant.js" ></script>
-  <script src="../scripts/contactme.js"></script>
+  <script defer src="../scripts/constant.js" type="module"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script defer src="../scripts/signup.js" type="module"></script>
