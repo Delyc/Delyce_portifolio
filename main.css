@@ -161,6 +161,8 @@ nav .nav-ul li {
     border: 0;
     height: 5vh;
     width: 20vw;
+    color: white;
+    line-height: 0.5rem;
     border-radius: 25px;
     margin-top: 0.5rem;
     text-align: center;
@@ -204,6 +206,7 @@ nav .nav-ul li {
    margin-top: 1rem;
    /* margin-left: 4rem; */
    width: 25vw;
+   color: white;
    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
    background-color: rgba(0, 0, 0, 0);
    color: white;
