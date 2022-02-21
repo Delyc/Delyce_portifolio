@@ -37,7 +37,7 @@ function selection() {
       });
       postselected.innerHTML = data;
     })
-    .catch(function (err) {
+    .catch(function (err) {  
       console.warn("Error", err);
     });
 }

@@ -1,0 +1,94 @@
+html{
+    max-width: 100%;
+    overflow-x:100% ;
+}
+ @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    body{
+        overflow-x: hidden !important;
+        max-width: 100%;
+        
+    }
+
+
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        width: 100%;
+    }
+#HireMe{
+    margin-left: -8rem;
+    width: 90%;
+  
+    margin-top: 25rem;
+
+
+   
+}
+#HireMe input{
+    
+    width: 70%;
+}
+#HireMe textarea {
+    width: 70%;
+}
+
+
+    .name{
+        margin-left: -1rem;
+        width: 100%;
+        outline: thin solid blue;
+    }
+    .intro{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0rem;
+
+        
+        max-width: 100%;
+    }
+    .linksconnect{
+        margin-left: 0;
+    }
+    .intro > img{
+        display: none;
+        width: 0%;
+       
+       
+    }
+
+    /* #hireme{
+        
+        width: 50%;
+        outline: thin solid blue;
+    }
+    #HireMe{
+        margin-top: 100%;
+    } */
+    .allhire{
+        display: flex;
+        flex-direction: column !important;
+        max-width: 100%;
+        outline: thin solid red;
+    }
+    .footer{
+        max-width: 100%;
+        display: flex;
+        flex-direction:column ;
+        height: 300vh;
+    }
+    .employment{
+        max-width: 100%;
+        margin-left: 0px;
+        margin-top: 15rem;
+        font-size: 1rem;
+    }
+    header{
+        max-width: 100%;
+    }
+    .resume{
+        margin-left:0rem;
+    }
+}

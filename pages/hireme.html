@@ -10,31 +10,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="../styles/hireme.css">
+        <link rel="stylesheet" href="../styles/hiremeresp.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="brand">
-                <a href="">DELYCE</a>
+  <header>
+    <div class="container overlay-header">
 
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <div class="close"><i class="fas fa-close"></i></div>
-                <li class="nav-item active"><a href="../index.html">Home</a></li>
-                <li class="nav-item"><a href="./projects.html">Projects</a></li>
-                <li class="nav-item"><a href="./services.html">Services</a></li>
-                <li class="nav-item"><a href="./dashboard.html">Blog</a></li>
-                <li class="nav-item"><a href="./login.html">Login</a></li>
-                <li class="nav-item"><a href="./signup.html">Sign up</a></li>
-                <li class="nav-item hirenav"><a href="./hireme.html">Hire me</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="navigation-bar nav-hire">
+            <h1 class="logo">Delyce</h1>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="./index.html">Home</a></li>
+                  
+                   
+                    <li><a href="./pages/dashboard.html">Blog</a></li>
+
+                   
+                    <li><a href="./pages/signup.html">Sign up</a></li>
+                    <li><a  href="./pages/hireme.html"><button class="hirenav"> Hire me</button> </a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
  
-
+<div class="allhire">
     <div class="intro">
         <div class="name">
             <h1>Delyce</h1>
@@ -73,6 +76,7 @@
        
         </form>
         </div>
+      </div>
 
 
         <h1 class="experience">Experience</h1>
@@ -85,7 +89,7 @@
           <p>Graphic designer</p>
           <p>Conservation intern</p>
           <p>Stock keeper</p>
-          <p>Assistant IT manager intern</p>
+          <p>Asst IT manager intern</p>
           <p>Assistant student</p>
         </div>
 
@@ -119,69 +123,67 @@
 
 
     
-    <div class="footer fhire">
-        <div class="linksconnect">
-        <div class="usefullinks">  
-          <h1>Useful links</h1>
-          <p>Hire me</p>
-          <p>Projects</p>
-          <p>service</p>
-        </div>
-        <div class="connect">
-          <h1>Let's connect</h1>
-          <div class="icons">
-            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/mynetwork/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <i class="fas fa-envelope"></i>
-            <i class="fas fa-phone"></i>
+    
+    <footer class="footer fhire">
+      <div class="linksconnect">
+          <div class="usefullinks">
+              <h1>Useful links</h1>
+              <p>Hire me</p>
+              <p>Projects</p>
+              <p>service</p>
           </div>
-        </div>
+          <div class="connect">
+              <h1>Let's connect</h1>
+              <div class="icons">
+                  <a href="https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"><img class="connect_svg" src="./assets/icons/lin.svg" alt=""></a>
+                  <img class="connect_svg" src="./assets/icons/Vector.svg" alt="">
+                  <a href="https://github.com/" target="_blank"><img class="connect_svg" src="./assets/icons/Vector (1).svg" alt=""></a>
+                  <img class="connect_svg" src="./assets/icons/el_phone-alt.svg" alt="">
+              </div>
+          </div>
       </div>
-        <div class="sub">
+      <div class="sub">
           <h1>Let the post come to you</h1>
           <p>Be the first to receive posts and to know our promotions and new services</p>
           <form action="">
-            <div class="emaillabel">
-            <label for="email">Email:</label>
-          </div>
-              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email" name="email" />
+              <div class="emaillabel">
+                  <label for="email">Email:</label>
+              </div>
+              <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)"
+                  id="cemail" name="email" />
               <input class="btn" name="submit" type="submit" value="Subscribe" />
-  
+
           </form>
           <button class="hiring">
-            <a href="../pages/hireme.html" class="btnhireme">Hire me</a>
+              <a href="../pages/hireme.html" class="btnhireme">Hire me</a>
           </button>
-        </div>
-        <div class="contact">
+      </div>
+      <div class="contact">
           <h1>Contact Me</h1>
           <p>Have any question, I am glad to answer</p>
-          
-          <form id="sending" class="contact" name="contact" action=""  method="post">
 
-            <input type="text" class="footercontact fname" placeholder="Full name" 
-              id="fname" name="name" />
-  
-  
-            <input type="email" class="footercontact femail" placeholder="Email" 
-              id="femail" name="email" />
-  
-            <textarea id="fmessage" class="footercontact" name="Message" rows="10" cols="50"
-              placeholder="Your message here"></textarea>
-  
-            <input class="btn send" name="submit" type="submit" id = "sending" value="Send " />
+          <form id="sending" class="contacts" name="contact" action="" method="post">
+
+              <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
+
+
+              <input type="email" class="footer_contact femail" placeholder="Email" id="femail" name="email" />
+
+              <textarea id="fmessage" class="footer_contact" name="Message" rows="10" cols="50"
+                  placeholder="Your message here"></textarea>
+
+              <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
           </form>
-              <button class="hiringphone">
-                <a href="../pages/hireme.html"  class="btnhire">Hire me</a>
-              </button>
-      
-            </div>
-            
-          
-        </div>
-      
-      
-      
+       
       </div>
+
+
+      </div>
+
+
+
+  </footer>
+
       <script src="../scripts/constant.js"></script>
       <script defer src="../scripts/hireme.js"></script>
       <script src="../scripts/contactme.js"></script>

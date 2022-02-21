@@ -18,7 +18,7 @@
       const message = document.getElementById("fmessage").value;   
       
                                     
-          fetch(`http://localhost:5000/api/queries`, {
+          fetch(`${apiUrl}api/queries`, {
             method: 'POST',
             mode: 'cors',
            
@@ -40,6 +40,8 @@
             
             let status = response.status;
             console.log(response);
+            document.getElementById("sending").reset();
+
            
   
         }).catch(function (response) {

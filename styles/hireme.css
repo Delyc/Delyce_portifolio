@@ -1,7 +1,8 @@
 .fhire{
+  top: 2rem;
   
 
-  height: 70vh;
+ 
 
 }
 #jobhire{
@@ -21,13 +22,19 @@ textarea{
     display: flex;
     flex-direction: row;
     width: 100%;
+   
+
 
   
     
 }
+.allhire{
+  position: relative;
+  top: 3rem;
+}
 .name{
     margin-left: 10rem;
-    width: 15%;
+    width: 20%;
     padding: 2rem;
  
 }
@@ -51,8 +58,9 @@ textarea{
     color: rgba(255, 255, 255, 0.719);
     font-weight: lighter;
     margin-top: 1rem;
+ 
     
-    width: 110%;
+    width: 100%;
  
     line-height: 26px;
     font-family: var(--primaryfont);
@@ -68,6 +76,19 @@ textarea{
     
 }
 
+.nav-hire{
+
+  z-index: 100;
+  background-color: white !important;
+}
+.navigation-bar{
+  background: linear-gradient(to right, #243b5500, #141e3000);
+ 
+}
+.nav-ul{
+  color: #141E30;
+  font-weight: bolder;
+}
 
 #HireMe {
 
