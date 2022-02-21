@@ -39,3 +39,22 @@ window.addEventListener("load", () => {
       });
   });
 });
+
+
+
+
+
+let timeLeft = 10;
+
+let myCountdown = setInterval(() => {
+  if (timeLeft <= 0){
+    // say happy new year
+    clearInterval(myCountdown);
+    document.getElementById("countdown").innerHTML = "Happy New Year!!"
+  }
+  else {
+    // decrement the timer
+    document.getElementById("countdown").innerHTML = timeLeft
+  }
+  timeLeft -= 1;
+}, 1000)

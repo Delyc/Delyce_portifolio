@@ -49,13 +49,33 @@
   animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.blogging{
-  background: linear-gradient(to right, #243B55, #141E30);
-  margin-top: 0rem;
-  width: 100%;
-  height: 30vh;
+header{
+  background-image: url(../assets/image/back-imagejpg.jpg);
+  height:40vh;
+  background-size: cover;
+}
+.overlay-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 40vh;
+  background-color: #141e30c5;
+
+
 
 }
+  .blogging{
+    position: absolute;
+    top:2rem;
+
+   
+    
+  
+    width: 100%;
+    height: 60vh;
+
+  }
 .blogging >h1{
   color: rgba(148, 187, 233, 1);
   text-align: center;
@@ -134,8 +154,13 @@ textarea{
   margin-top: 3rem;
   
 }
-.sending{
+
+#sending{
+  
+
+
   background-color: rgba(148, 187, 233, 1);
+
   width: 5vw;
   height: 4vh;
   color: white;

@@ -40,7 +40,7 @@
             let status = response.status;
             console.log(response);
             document.getElementById("sending").reset();
-           
+
   
         }).catch(function (response) {
             console.log(response);      
