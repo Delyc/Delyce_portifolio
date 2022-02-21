@@ -251,3 +251,710 @@ and (max-device-width : 480px) {
 
 
 }
+
+
+
+
+
+
+/* from static */
+@media (max-width: 480px) {
+
+
+
+    summary{
+       
+        margin-left: 5rem;
+        width: 35vw;
+    }
+
+    summary{
+        margin-left: 0rem;
+    }
+
+    .detailed{
+        margin-left: 2rem;
+        width: 90%;
+        
+    }
+    .detailed p{
+        font-size: 1.5rem;
+    }
+    .detailed h1{
+        font-size: 1.8rem;
+    }
+    .download-cv{
+        width: 35vw;
+    }
+
+    .working-experience{
+        
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .experiences{
+        margin-top: 1rem;
+        width: 100%;
+        margin-right: 0.5rem;
+        height: 21vh;
+    }
+
+    .support_icon{
+        width: 25% !important;
+        margin-left: 2rem;
+    }
+
+    .experiences h1{
+        margin-top: -0.5rem !important;
+        font-size: 1.5rem;
+    }
+
+    .experiences p{
+        font-size: 1.3rem;
+        line-height: 20px !important;
+        margin-top: 0.2px !important;
+
+        
+       
+       
+    }
+
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .occupation{
+        display: flex;
+        width: 100%;
+    }
+
+    .pandbutton{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+       
+        margin-left: 2rem;
+    }
+    .about_p{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .about_hire{
+        width: 25vw;
+        font-size: 1.5rem;
+    }
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        height: 130vh !important;
+
+    }
+
+    
+    .buttons {
+        width: 100%;
+    }
+
+    .cv,
+    .hire {
+        height: 9vh;
+        font-size: 1.6rem;
+    }
+
+    .cv {
+        width: 35vw;
+    }
+
+    .hire {
+        width: 25vw;
+    }
+
+    
+    .skills-section {
+        margin-top: -6rem !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+
+    }
+
+    .pro {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        
+    }
+
+    .preview {
+        width: 20vw;
+        height: 6vh;
+        font-size: 1.3rem;
+    }
+
+    .project {
+        
+        width: 80%;
+        margin-top: 1rem;
+
+
+    }
+
+    .project>img {
+        height: 25vh;
+    }
+
+    .overlayy p {
+
+        line-height: 30px;
+    }
+
+    .passion{
+    
+        margin-top: -10rem !important;
+      
+    }
+
+    header{
+        width: 50% !important;
+    }
+
+
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .linksconnect {
+        width: 90%;
+        margin-left: 1rem;
+
+
+    }
+
+    .connect_svg {
+        font-size: 1px !important;
+        width: 6vw;
+        margin-left: 0.3rem;
+
+    }
+
+    .sub {
+        width: 90% !important;
+        margin-left: 1rem;
+
+
+
+    }
+
+    .sub p {
+        width: 100% !important;
+
+
+    }
+
+    sub h1 {
+        width: 100%;
+
+    }
+
+    .email {
+        width: 60vw;
+        height: 6vh;
+    }
+
+
+    .connect {
+        width: 100%;
+    }
+
+    .btn {
+        width: 30vw;
+        height: 8vh;
+    }
+
+    .contact {
+        width: 90%;
+        margin-left: 1rem !important;
+    }
+
+    .contacts {
+        width: 100% !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .contacts input {
+        width: 80%;
+        height: 7vh;
+    }
+
+    .contacts textarea {
+        width: 80%;
+    }
+
+    .send {
+        width: 25vw !important;
+        margin-top: 0 !important;
+    }
+
+    .hiring a {
+
+        font-size: 1.5rem;
+    }
+
+    .hiring {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        width: 25%;
+        height: 7vh;
+    }
+
+    .footer h1 {
+
+        font-size: 1.5rem !important;
+    }
+
+
+
+
+
+    .navigation-bar {
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+        line-height: 38px;
+        width: 90%;
+
+    }
+
+    .intro {
+        width: 100%;
+        left: 0;
+
+    }
+
+    .intro p {
+        width: 90%;
+        font-size: 1.5rem;
+
+        line-height: 25px;
+    }
+
+    header {
+        width: 100% !important;
+        background-size: cover;
+        height: 100vh;
+
+    }
+
+    .buttons {
+        width: 90%;
+    }
+
+    .hire {
+
+        width: 40vw;
+        font-size: 1.3rem;
+    }
+
+    .cv {
+        width: 50vw;
+        font-size: 1.3rem;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me img {
+        width: 90%;
+    }
+
+    .about-me p {
+        width: 90%;
+        margin-right: 2rem;
+        line-height: 28px;
+    }
+    .skilled{
+        width: 100% !important;
+    }
+
+    .skills-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tech_skills {
+        width: 95%;
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-top: 1rem;
+    }
+
+    .skills-section li {
+        width: 70%;
+    }
+
+    .pro_skills {
+
+        width: 90% !important;
+        margin-top: 1rem;
+        height: auto;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .svg {
+        width: 40%;
+        margin-left: 0 !important;
+        margin-bottom: 1rem;
+
+
+    }
+
+    .all {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .passion h3 {
+        font-size: 1.6rem;
+        width: 80%;
+        margin-left: 0.8rem;
+    }
+
+    .introd {
+
+        width: 95%;
+    }
+
+    .big_image {
+        width: 85%;
+        height: 60vh;
+    }
+
+    .overlayy {
+        width: 85%;
+        left: 1.6rem;
+        height: 60vh;
+        top: 9.9rem;
+    }
+
+    .overlayy p {
+        margin-top: -2rem !important;
+      
+        font-size: 1.5rem;
+
+    }
+
+    .view_more {
+        width: 30vw;
+        margin-left: 0rem;
+        height: 6vh;
+        font-size: 1.5rem;
+    }
+
+    .small_images {
+        width: 95%;
+        margin-left: -1rem;
+
+    }
+    .small_images p{
+      
+        font-size: 1.5rem;
+    }
+
+    .small_video {
+        margin-top: 2rem;
+    }
+
+
+
+
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+
+
+    /* =================================header====================================== */
+
+    .intro h1{
+      
+        width: 100%;
+    }
+
+    .intro p{
+        width: 100%;
+    }
+    .buttons{
+        width: 100%;
+        
+    }
+    .hire{
+        width: 23vw;
+        height: 8vh;
+    }
+    .cv{
+        width: 25vw;
+        height: 8vh;
+    }
+
+       /* =================================About me====================================== */
+
+    .experiences{
+        width: 100% !important;
+      
+    }
+    .support_icon{
+        width: 20% !important;
+    }
+    .experiences p{
+     
+        font-size: 1.3rem;
+    }
+    .experiences h1{
+     
+        font-size: 1.5rem;
+    }
+
+    .working-experience{
+        
+        width: 100%;
+    }
+
+    .about_p{
+      
+        font-size: 1.5rem;
+    }
+    .about_hire{
+        width: 13vw;
+    }
+
+    .occupation{
+        
+        width: 50%;
+    }
+    .about_img{
+        width: 40%;
+    }
+
+
+
+
+    /* ===================================== skills =========================================== */
+
+    .pro_skills{
+        width: 50%;
+        height: auto;
+   
+        margin-left: 0 !important;
+    }
+
+    .skilled{
+        margin-top: -5rem;
+    }
+
+    .pro_skills h1{
+        margin-left: -5rem !important;
+       
+    }
+
+    .skills-section{
+        height: auto;
+    }
+    .tech_skills{
+        
+        width: 45%;
+    }
+
+
+    /* ======================================== resume ========================================== */
+
+    summary, .download-cv{
+        width: 20vw;
+    }
+
+    .detailed{
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+
+    /* ====================================== Projects ===============================*/
+
+    .project{
+       
+        width: 70%;
+        
+    }
+    .project p{
+      
+        font-size: 1.5rem;
+        width: 100%;
+        line-height: 25px;
+    }
+
+    .preview{
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .pro{
+        
+        width: 90%;
+    }
+
+
+
+    /*==========================Passion ======================================*/
+
+    .passion{
+        margin-top: -8rem;
+    }
+
+    .passion h3{
+        font-size: 1.8rem;
+    }
+    .big_image{
+        width: 50%;
+    }
+
+    .overlayy{
+        width: 50%;
+        left: 1.5%;
+        top: 22%;
+    }
+
+    .overlayy p{
+        font-size: 1.6rem;
+    }
+
+    .view_more{
+        width: 13vw;
+        height: 6vh;
+    }
+
+    .small_images{
+        width: 40vw;
+    }
+    .small_images p{
+        font-size: 1.5rem;
+    }
+    .small_images img{
+        height: 100%;
+        width: 40%;
+    }
+
+
+
+
+
+    /* ============================== footer ===============================*/
+
+    .footer p{
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+
+    .footer h1{
+        
+        line-height: 25px;
+        font-size: 1.7rem !important;
+    }
+
+    .hiring a{
+        font-size: 1.8rem;
+        
+    }
+    .hiring{
+        width: 13vw;
+        height: auto;
+    }
+
+    
+
+    .btn{
+        width: 15vw;
+        font-size: 1.5rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 414px) and (max-width: 896px) {
+
+    header{
+        height: 50vh !important;
+        
+    }
+  
+    .about-me img{
+        display: none;
+    }
+    .intro{
+        margin-top:  -13rem !important;
+    }
+    .hire, .cv{
+        height: 5vh;
+    }
+    .experiences{
+        
+
+    }
+    .experiences h1{
+        margin-top: 10rem !important;
+    }
+
+    .support_icon{
+        margin-top: 10rem !important;
+      
+        z-index: 100;
+    }
+ 
+
+}
+
+
+
+
+
+
+
