@@ -1,4 +1,4 @@
-@media screen and (max-width: 1028px) {
+/* @media screen and (max-width: 1028px) {
     .afterheader {
         flex-direction: column;
         justify-content: center;
@@ -100,7 +100,7 @@ and (max-device-width : 480px) {
 
     } */
 
-
+/* 
     .intro{
         display: flex;
         flex-direction: column;
@@ -250,9 +250,9 @@ and (max-device-width : 480px) {
     }
 
 
-}
+} */
 
-
+ 
 
 
 
@@ -370,7 +370,8 @@ and (max-device-width : 480px) {
     .cv,
     .hire {
         height: 9vh;
-        font-size: 1.6rem;
+        font-size: 1.2rem !important;
+       
     }
 
     .cv {
@@ -378,7 +379,7 @@ and (max-device-width : 480px) {
     }
 
     .hire {
-        width: 25vw;
+        width: 28vw;
     }
 
     
@@ -537,7 +538,7 @@ and (max-device-width : 480px) {
 
 
     .navigation-bar {
-        padding: 1rem 2rem;
+        padding: 1rem 0rem;
         width: 100%;
     }
 
