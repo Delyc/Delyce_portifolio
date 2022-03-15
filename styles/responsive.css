@@ -259,7 +259,7 @@ and (max-device-width : 480px) {
 
 /* from static */
 @media (max-width: 480px) {
-
+    
 
 
     summary{
@@ -268,9 +268,7 @@ and (max-device-width : 480px) {
         width: 35vw;
     }
 
-    summary{
-        margin-left: 0rem;
-    }
+    
 
     .detailed{
         margin-left: 2rem;
@@ -297,12 +295,14 @@ and (max-device-width : 480px) {
         margin-top: 1rem;
         width: 100%;
         margin-right: 0.5rem;
-        height: 21vh;
+        height: auto;
+        display: flex;
+        word-break: break-all;
     }
 
     .support_icon{
         width: 25% !important;
-        margin-left: 2rem;
+        
     }
 
     .experiences h1{
@@ -311,6 +311,8 @@ and (max-device-width : 480px) {
     }
 
     .experiences p{
+     
+        text-align: center;
         font-size: 1.3rem;
         line-height: 20px !important;
         margin-top: 0.2px !important;
@@ -369,7 +371,7 @@ and (max-device-width : 480px) {
 
     .cv,
     .hire {
-        height: 9vh;
+        height: 7vh;
         font-size: 1.2rem !important;
        
     }
@@ -422,12 +424,15 @@ and (max-device-width : 480px) {
 
     .passion{
     
-        margin-top: -10rem !important;
+        margin-top: -2rem !important;
       
     }
+    
 
-    header{
-        width: 50% !important;
+    .nav-{
+       
+        padding: 0rem 0.5rem;
+       
     }
 
 
@@ -565,7 +570,8 @@ and (max-device-width : 480px) {
     header {
         width: 100% !important;
         background-size: cover;
-        height: 100vh;
+        height: 90vh !important;
+       
 
     }
 
@@ -595,7 +601,7 @@ and (max-device-width : 480px) {
 
     .about-me p {
         width: 90%;
-        margin-right: 2rem;
+        
         line-height: 28px;
     }
     .skilled{
@@ -697,7 +703,7 @@ and (max-device-width : 480px) {
         margin-top: 2rem;
     }
 
-
+  
 
 
 }
@@ -708,19 +714,22 @@ and (max-device-width : 480px) {
 @media (min-width: 481px) and (max-width: 768px) {
     
 
-
     /* =================================header====================================== */
-
-    .intro h1{
+ .intro h1{
       
-        width: 100%;
+        width: 70%;
+    }
+    header{
+        height: 90vh !important;
     }
 
+  
     .intro p{
-        width: 100%;
+        width: 70%;
+      
     }
     .buttons{
-        width: 100%;
+        width: 70%;
         
     }
     .hire{
@@ -735,7 +744,13 @@ and (max-device-width : 480px) {
        /* =================================About me====================================== */
 
     .experiences{
-        width: 100% !important;
+        width: 30% !important;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
       
     }
     .support_icon{
@@ -744,15 +759,13 @@ and (max-device-width : 480px) {
     .experiences p{
      
         font-size: 1.3rem;
+        margin-top: 0rem !important;
     }
-    .experiences h1{
-     
-        font-size: 1.5rem;
-    }
+    
 
     .working-experience{
-        
-        width: 100%;
+       
+        width: 100% !important;
     }
 
     .about_p{
@@ -763,12 +776,17 @@ and (max-device-width : 480px) {
         width: 13vw;
     }
 
+    .introd{
+        
+    }
+    
     .occupation{
+      
         
         width: 50%;
     }
     .about_img{
-        width: 40%;
+        width: 30%;
     }
 
 
@@ -922,33 +940,93 @@ and (max-device-width : 480px) {
 
 @media (min-width: 414px) and (max-width: 896px) {
 
+    .nav-{
+       
+        width: 100% !important;
+      
+    }
+
     header{
-        height: 50vh !important;
+      
+      
+        width: 105% !important;
+        height: 90vh !important;
+      
+   
         
     }
   
-    .about-me img{
-        display: none;
-    }
+  
     .intro{
-        margin-top:  -13rem !important;
+        left: 2rem !important;
+      
+     
+      
+       
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
     }
-    .hire, .cv{
-        height: 5vh;
-    }
+    
     .experiences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
 
     }
+    .experiences p{
+        
+        text-align: center;
+        
+        width: 100%;
+        margin-right: 0 !important;
+    }
     .experiences h1{
-        margin-top: 10rem !important;
+        /* margin-top: 2rem !important; */
     }
 
-    .support_icon{
+    /* .support_icon{
         margin-top: 10rem !important;
       
         z-index: 100;
+    } */
+    .passion{
+       
+        margin-top: 0rem;
     }
+
+    .footer, .skilled{
+        width: 105% !important;
+    }
+    .intro h1{
+        width: 80%;
+    }
+    .intro p{
+        width: 80%;
+    }
+    .buttons{
+        width: 80%;
+    }
+    .cv{
+        width: 40vw;
+    }
+    .pro_skills{
+        width: 55%;
+    }
+    
+    .bar{
+        width: 40vw;
+    }
+    .preview{
+        height: auto;
+    }
+
+    
  
 
 }
@@ -959,3 +1037,189 @@ and (max-device-width : 480px) {
 
 
 
+ @media screen and  (min-width: 1201px){
+   
+
+
+   
+  
+  
+    .intro{
+        
+      
+        height: auto;
+        top: 15rem;
+    }
+    header{
+        height: 100vh !important;
+    }
+    .intro h1{
+        width: 70%;
+    }
+    .intro p{
+        width: 70%;
+    }
+    .buttons{
+        width: 70%;
+    }
+    .cv{
+        width: 20vw;
+    }
+    .hire{
+        width: 15vw;
+    }
+
+    .experiences{
+        width: 25%;
+    
+    }
+    .occupation{
+        width: 40%;
+    }
+    .about_hire{
+        width: 6vw;
+        height: auto;
+
+    }
+   
+    .pandbutton p{
+      
+        line-height:40px
+    }
+    .pro_skills{
+        width: 20%;
+    }
+    
+
+    .view_more{
+        width: 10vw !important;
+        
+        margin-left: 0;
+       
+    }
+
+    .small_video p{
+        line-height: 40px !important;
+       
+        
+
+    }
+    .project{
+        width: 20%;
+       
+    }
+    .project h3{
+        margin-top: 0.5rem;
+     
+    }
+    .project p{
+        line-height: 30px;
+    }
+    .preview{
+        width: 6vw;
+    }
+summary{
+        width: 15vw;
+    }
+} 
+
+@media (min-width: 769px) and (max-width: 1028px) {
+    header{
+        
+       
+    }
+    .intro{
+      
+        height: auto;
+     
+    }
+    .intro h1{
+        width: 80%;
+    }
+    .intro p{
+        width: 80%;
+    }
+    .buttons{
+        width: 80%;
+        height: 8vh;
+    
+        
+    }
+    .cv{
+        width: 25vw;
+       
+    }
+    .hire{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22vw;
+    }
+
+
+    .experiences{
+        width: 20vw;
+        height: auto;
+        
+   
+      
+    }
+    .experiences p{
+        line-height: 30px;
+    }
+    .working-experience{
+      
+    }
+    .occupation{
+     
+        width: 40%;
+    }
+    .about-me p{
+      
+        font-size: 1.7rem;
+    }
+   .pandbutton p{
+       line-height: 40px;
+   }
+   .about_hire{
+       width: 10vw;
+   }
+   .skilled{
+       height: auto;
+   
+   }
+
+   .pro_skills{
+       width: 40%;
+       height: auto;
+   }
+   .skills-section{
+       height: 100%;
+   }
+   .tech_skills h3{
+       font-size: 1.2rem;
+
+   }
+   
+
+
+
+
+
+   summary{
+       width: 13vw;
+   }
+
+   .project{
+       width: 25%;
+   }
+   .preview{
+       width: 8vw;
+       height: 6vh;
+   }
+
+   .view_more{
+       width: 10vw;
+      margin-left: 0px;
+   }
+} 

@@ -2,93 +2,118 @@ html{
     max-width: 100%;
     overflow-x:100% ;
 }
- @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    body{
-        overflow-x: hidden !important;
-        max-width: 100%;
+@media screen and (max-width: 480px) {
+    .allhire{
+        
+        position: relative;
+        
+        
+        display: flex;
+        flex-direction: column;
+        height: auto;
         
     }
-
-
-    * {
-        padding: 0%;
-        margin: 0%;
-        box-sizing: border-box;
-        width: 100%;
-    }
-#HireMe{
-    margin-left: -8rem;
-    width: 90%;
   
-    margin-top: 25rem;
-
-
-   
-}
-#HireMe input{
-    
-    width: 70%;
-}
-#HireMe textarea {
-    width: 70%;
-}
-
 
     .name{
-        margin-left: -1rem;
         width: 100%;
-        outline: thin solid blue;
     }
-    .intro{
+    .image-hire{
         display: flex;
-        flex-direction: row;
-        margin-left: 0rem;
-
-        
-        max-width: 100%;
-    }
-    .linksconnect{
-        margin-left: 0;
-    }
-    .intro > img{
-        display: none;
-        width: 0%;
-       
-       
+        justify-content: center;
+        align-items: center;
+      
     }
 
-    /* #hireme{
-        
-        width: 50%;
-        outline: thin solid blue;
+    #hire-me{
+        width: 80%;
+       
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
     }
-    #HireMe{
-        margin-top: 100%;
-    } */
+    form{
+        width: 100%;
+       
+    }
+    textarea, input[type="email"],
+    input[type="text"] {
+        min-width: 70%;
+       
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1201px){
+    
+ 
+    .descr{
+     
+        
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    #hire-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+
+    }
+}
+
+@media  (min-width: 769px) and (max-width: 1024px){
+    .descr{
+        width: 100%;
+    }
+    .name{
+        width: 30%;
+    }
+
+
+}
+
+@media  (min-width: 481px) and (max-width: 768px){
     .allhire{
+      
         display: flex;
-        flex-direction: column !important;
-        max-width: 100%;
-        outline: thin solid red;
+        justify-content: space-evenly;
+
     }
-    .footer{
-        max-width: 100%;
-        display: flex;
-        flex-direction:column ;
-        height: 300vh;
+    .descr{
+        width: 100%;
+       
+        
     }
-    .employment{
-        max-width: 100%;
-        margin-left: 0px;
-        margin-top: 15rem;
-        font-size: 1rem;
+    .name{
+      
+        width: 37%;
+        margin-top: -3rem !important;
+        
     }
-    header{
-        max-width: 100%;
+    #hire-me{
+    
+        width: 30%;
+       
+       
     }
-    .resume{
-        margin-left:0rem;
+    #hire-me h1{
+        margin-top: 1rem !important;
+    }
+    .image-hire{
+        
+        width: 40%;
+    }
+    textarea, input[type="email"],
+    input[type="text"] {
+        min-width: 90%;
+       
     }
 }
