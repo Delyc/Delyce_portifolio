@@ -83,7 +83,7 @@
           <input type="email" placeholder="Your email" id="commentemail">
           <label for="">Comment</label>
           <textarea name="commentmessage" id="commentmessage" cols="30" rows="10"></textarea>
-          <button id="sending" type="submit" >send</button>
+          <button id="sending" class="sending" type="submit" >send</button>
         </form>
       </div>
       
@@ -136,6 +136,8 @@
           <h1>Contact Me</h1>
           <p>Have any question, I am glad to answer</p>
 
+          <form id="sending" class="contact" name="contact" action=""  method="post">
+
           <form id="sending" class="contacts" name="contact" action="" method="post">
 
               <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
@@ -160,9 +162,11 @@
 
 
     
+
+      <script src="../scripts/contactme.js"></script>
+
     
       <script defer src="../scripts/constant.js"></script>
-      <script src="../scripts/contactme.js"></script>
       <script
       defer
       src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"
