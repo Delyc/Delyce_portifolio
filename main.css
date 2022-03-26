@@ -508,3 +508,75 @@ header{
 }
 
 
+
+/* 
+hover effect */
+
+
+
+.hire:hover, .cv:hover{
+    background-color: white;
+    color: rgba(148, 187, 233, 1);
+    border: none;
+    font-weight: bold;
+}
+
+.about_hire:hover, .preview:hover{
+    background: rgba(148, 187, 233, 1);
+    font-weight: bold;
+
+    
+    
+}
+.pro article:hover{
+    transform: scale(1.05);
+}
+
+.pro article:hover h3{
+    color:  rgba(148, 187, 233, 1);
+    
+
+}
+
+.pro article:hover button{
+    background-color:  rgba(148, 187, 233, 1);
+   color: white;
+    font-weight: bold;
+    
+
+}
+.view_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view_more:hover{
+    background-color:  rgba(148, 187, 233, 1);
+    color: white;
+     font-weight: bold;
+}
+
+.send:hover{
+    background-color:  white;
+    color: rgba(148, 187, 233, 1);
+     font-weight: bold;
+    
+}
+.btn:hover{
+    background-color:  white;
+    color: rgba(148, 187, 233, 1);
+     font-weight: bold;
+
+}
+.hiring:hover{
+    transform: scale(1.05);
+    
+    
+
+
+}
+.connect_svg:hover{
+    transform: scale(1.3);
+  
+
+}
