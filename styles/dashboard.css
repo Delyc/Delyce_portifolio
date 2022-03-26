@@ -33,16 +33,16 @@
 
   .blogging>h1 {
     font-family: var(--primaryfont);
-    font-size: 7rem !important;
+    font-size: 7rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
    
-    margin-bottom: 100px;
+    
   
     overflow: hidden;
     border-right: 0.15em solid orange;
-    white-space: nowrap; 
+   white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.15em;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -54,7 +54,8 @@
   
     display: flex;
     flex-wrap: wrap;
-    margin-left: 17%;
+    justify-content: center;
+    
   
   
     
@@ -97,20 +98,25 @@
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 70vh;
+    height: 100%;
     background-color: #141e30c5;
 
 
 
 }
 header{
-  background-image: url(../assets/image/back-imagejpg.jpg);
+ 
+  background-image: url(../assets/image/img/back-imagejpg.jpg);
   height:70vh;
   background-size: cover;
 }
   .blogging{
     position: absolute;
     top:8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
    
     
@@ -122,6 +128,7 @@ header{
   .blogging >h1{
     color: rgba(148, 187, 233, 1);
     text-align: center;
+
    
  
    

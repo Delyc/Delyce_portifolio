@@ -1,0 +1,58 @@
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    
+
+    #allposts{
+      
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        justify-content: center;
+
+        padding: 2rem;
+        
+    }
+    .post{
+        
+        min-width: 90% !important;
+    }
+    .blogging{
+        word-break: break-all !important;
+        top: 4rem !important;
+    }
+    
+    .blogging h1{
+      
+        font-size: 5rem !important;
+        word-break: break-all !important;
+        max-width: 100%;
+     
+        
+        
+    }
+    .overlay-header{
+    
+        height: 90vh !important;
+    }
+    header{
+        
+        width: 100% !important;
+     
+    }
+    .nav-{
+        
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .footer{
+        width: 100% !important;
+    }
+}
