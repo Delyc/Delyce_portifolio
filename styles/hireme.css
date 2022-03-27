@@ -1,10 +1,11 @@
 .fhire{
-  top: 2rem;
+  top: 0rem;
   
 
  
 
 }
+
 #jobhire{
   width: 20vw;
   height: 20vh;
@@ -37,7 +38,7 @@ textarea{
  
   background: linear-gradient(to right, #243B55, #141E30);
   width: 100%;
-  position: relative;
+  position: absolute;
   height: 85vh;
 
   display: flex;
@@ -79,9 +80,10 @@ textarea{
       font-size: 1.5rem;
 }
 .image-hire img{
-    height: 100%;
+    height: 90%;
     width: 80%;
     margin-right: 2rem;
+    margin-top: 3.5rem;
     
     align-items: center;
     

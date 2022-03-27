@@ -1002,7 +1002,7 @@ and (max-device-width : 480px) {
     header{
       
       
-        width: 105% !important;
+        width: 100% !important;
         height: 90vh !important;
       
    
@@ -1055,7 +1055,7 @@ and (max-device-width : 480px) {
     }
 
     .footer, .skilled{
-        width: 105% !important;
+        width: 100% !important;
     }
     .intro h1{
         width: 80%;

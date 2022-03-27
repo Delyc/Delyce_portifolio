@@ -1,18 +1,26 @@
-html{
+/* html{
     max-width: 100%;
     overflow-x:100% ;
-}
+} */
 @media screen and (max-width: 480px) {
     .allhire{
         
-        position: relative;
+       
         
         
         display: flex;
         flex-direction: column;
-        height: auto;
+    
+        height: auto !important;
+        
+     
         
     }
+
+    .fhire{
+        top: 70rem;
+    }
+
   
 
     .name{
@@ -24,9 +32,23 @@ html{
         align-items: center;
       
     }
+    .image-hire img{
+        height: 90%;
+        width: 80%;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+        
+        align-items: center;
+        
+     
+     
+        
+    }
+    
 
     #hire-me{
         width: 80%;
+        margin-top:  0 !important;
        
         display: flex;
         flex-direction: column;
@@ -40,6 +62,9 @@ html{
     input[type="text"] {
         min-width: 70%;
        
+    }
+    .btn{
+        margin-bottom: 2rem;
     }
 
 
@@ -76,6 +101,9 @@ html{
     .name{
         width: 30%;
     }
+    .btn{
+        margin-bottom: 2rem;
+    }
 
 
 }
@@ -85,12 +113,24 @@ html{
       
         display: flex;
         justify-content: space-evenly;
+        height: auto !important;
+        
 
+    }
+    .fhire{
+        top: 10rem;
     }
     .descr{
         width: 100%;
+        margin-top: 2rem;
        
         
+    }
+    .btn{
+        margin-bottom: 2rem;
+    }
+    .name h1{
+        margin-top: 1rem;
     }
     .name{
       
@@ -101,6 +141,7 @@ html{
     #hire-me{
     
         width: 30%;
+        margin-top: 2rem;
        
        
     }
