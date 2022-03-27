@@ -259,7 +259,36 @@ and (max-device-width : 480px) {
 
 /* from static */
 @media (max-width: 480px) {
+    .container{
+     
+        margin-left: 0!important;
+    }
+    .mySlides{
+        width: 100% !important;
+       
+    }
+    .mySlides article{
+       
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .prev,
+  .next {
+   
+    width: 15% !important;
     
+  }
+  .preview{
+      margin-bottom: 0.5rem;
+  }
+  .mySlides article h3{
+     
+      font-size: 1.8rem;
+  }
+  .mySlides article p{
+   
+    font-size: 1.5rem;
+}
 
 
     summary{
@@ -712,9 +741,33 @@ and (max-device-width : 480px) {
 
 
 @media (min-width: 481px) and (max-width: 768px) {
+    .container{
+      
+     
+        margin-left: 0!important;
+    }
+    .mySlides{
+        width: 100% !important;
+       
+    }
+    .mySlides article{
+       
+        width: 70% !important;
+        margin-left: 6rem!important;
+    }
+    .prev,
+  .next {
+   
+    width: 15% !important;
+    
+  }
+  .preview{
+      margin-bottom: 0.5rem;
+  }
     
 
     /* =================================header====================================== */
+  
  .intro h1{
       
         width: 70%;
@@ -949,7 +1002,7 @@ and (max-device-width : 480px) {
     header{
       
       
-        width: 105% !important;
+        width: 100% !important;
         height: 90vh !important;
       
    
@@ -959,6 +1012,7 @@ and (max-device-width : 480px) {
   
     .intro{
         left: 2rem !important;
+     margin-top: 0 !important;
       
      
       
@@ -1001,7 +1055,7 @@ and (max-device-width : 480px) {
     }
 
     .footer, .skilled{
-        width: 105% !important;
+        width: 100% !important;
     }
     .intro h1{
         width: 80%;
