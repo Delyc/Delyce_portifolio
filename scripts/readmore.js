@@ -66,7 +66,7 @@ const sedDivInfo = () => {
       blogTitle.innerHTML = responseData.title;
       blogDetail.innerHTML = responseData.content;
       hook.innerHTML = responseData.hook;
-      img.src = responseData.banner;
+      img.src = responseData.url;
       let comment =  ''
       if(commentData){
         comment += '<h3 class="commentstitle">Comments</h3>'

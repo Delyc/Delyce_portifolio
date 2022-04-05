@@ -6,7 +6,7 @@ const user =
   localStorage.getItem("user") == "undefined"
     ? null
     : JSON.parse(localStorage.getItem("user"));
-const apiUrl = "https://portifolio-website.herokuapp.com/";
+const apiUrl = "http://localhost:5000/";
 const handleUserState = (state) => {
   if (state == "logout") {
     localStorage.clear();
@@ -36,15 +36,17 @@ window.addEventListener("load", () => {
 });
 
 try {
-  document.querySelectorAll(".userlogout").forEach(el=>{el.addEventListener("click", (e) => {
-    let proceed = confirm("Do you want to logout");
-    if (proceed) {
-      localStorage.clear();
-      location.pathname = "/";
-    }
-  });})
+  document.querySelectorAll(".userlogout").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      let proceed = confirm("Do you want to logout");
+      if (proceed) {
+        localStorage.clear();
+        location.pathname = "/";
+      }
+    });
+  });
 } catch (error) {
-  console.log(error)
+  console.log(error);
 }
 
 const readMore = (blogId) => {
