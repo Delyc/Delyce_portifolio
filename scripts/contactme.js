@@ -2,12 +2,11 @@
 
   
   
-
+  
   
   
   
     document.getElementById("sending").addEventListener("submit", (e) => {
-
     
       e.preventDefault();
       
@@ -42,7 +41,6 @@
             console.log(response);
             document.getElementById("sending").reset();
 
-           
   
         }).catch(function (response) {
             console.log(response);      
