@@ -1,4 +1,3 @@
-
 // tinymce.init({
 //   selector: '#editor1',
 //   plugins: 'a11ychecker advcode casechange export formatpainter image linkchecker autolink lists checklist pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
@@ -14,62 +13,31 @@ const firebaseConfig = {
   projectId: "delyceportifolio",
   storageBucket: "delyceportifolio.appspot.com",
   messagingSenderId: "532561569646",
-  appId: "1:532561569646:web:f16d1994049c3a4841c37f"
+  appId: "1:532561569646:web:f16d1994049c3a4841c37f",
 };
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 
-const apiUrl = "https://portifolio-website.herokuapp.com/";
+const apiUrl = "http://localhost:5000/";
 
+document.getElementById("insert").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target)
 
-
-
-  document.getElementById("insert").addEventListener("submit", (e) => {
-  
-    e.preventDefault();
-    
-    const blogTitle = document.getElementById("title").value;
-    
-    const blogDetail = document.getElementById("editor1").value;
-
-    const hook = document.getElementById("hook").value;   
-    const image = document.getElementById("Arimage").files[0];  
-    const name = image.name;
-    var storageRef = firebase.storage().ref("blogimages/"+ name);
-    const uploading = storageRef.put(image);  
-    uploading.on("state_changed", function (snapshot) {}, function(error){console.log(error)}, function(){
-    
-      uploading.snapshot.ref.getDownloadURL().then(function (imageUrl) {
-                                  
-        fetch(`${apiUrl}api/articles`, {
-          method: 'POST',
-          mode: 'cors',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            "title" : blogTitle,
-            "hook" : hook,
-            "content" : blogDetail,
-            "banner" : imageUrl
-        })
-      })
-      .then(function (response) {
-          return response.json();
-      })
-      .then(function (response) {
-          
-          let status = response.status;
-          console.log(response);
-         
-
-      }).catch(function (response) {
-          console.log(response);      
-      });
-        
-              
-      })
-    })                            
-  
-  });
+  fetch(`${apiUrl}api/articles`, {
+    method: "POST",
+    mode: "cors",
+   body: formData
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (response) {
+      let status = response.status;
+      console.log(response);
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+});
