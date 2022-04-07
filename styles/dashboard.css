@@ -55,6 +55,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
+  
+  
     
   
   
@@ -64,6 +67,7 @@
   .posts{
     display: flex;
     flex-direction: row;
+    outline: thin solid blue;
 
     
   }
@@ -74,10 +78,11 @@
     display: flex;
     flex-direction: column;
    
-    max-width: 24%;
+    width: 24%;
     min-height: 60vh;
     
     background-color: white;   
+  
     margin-left: 2%;  
     margin-top: 1%;
     
