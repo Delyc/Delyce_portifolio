@@ -6,7 +6,7 @@ const user =
   localStorage.getItem("user") == "undefined"
     ? null
     : JSON.parse(localStorage.getItem("user"));
-const apiUrl = "http://localhost:5000/";
+const apiUrl = "https://portifolio-website.herokuapp.com/";
 const handleUserState = (state) => {
   if (state == "logout") {
     localStorage.clear();
