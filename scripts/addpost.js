@@ -19,7 +19,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 
-const apiUrl = "http://localhost:5000/";
+const apiUrl = "https://portifolio-website.herokuapp.com/";
 
 document.getElementById("insert").addEventListener("submit", (e) => {
   e.preventDefault();
