@@ -48,28 +48,34 @@
         <h4>Loading post.....</h4>
     </div>
   </div>   
-  <div>
-      <a href="./addpost.html">Create a new post</a>
-  </div> 
-  <footer class="footer fhire">
+ 
+  <footer >
+      <div class="footer fhire" >
     <div class="linksconnect">
         <div class="usefullinks">
             <h1>Useful links</h1>
             <p>Hire me</p>
             <p>Projects</p>
-            <p>service</p>
+       
         </div>
         <div class="connect">
             <h1>Let's connect</h1>
-            <div class="icons">
+            <div class="media">
+               <a href="https://github.com/" target="_blank"><img class="social" src="../assets/icons/git.png" alt=""></a> 
+               <a href=" https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"> <img class="social link" src="../assets/icons/link.png" alt=""></a>
+               <a href=""><img class="social emai" src="../assets/icons/email.png" alt=""></a> 
+                <a href=""><img class="social" src="../assets/icons/phone.png" alt=""></a>
+
+            </div>
+            <!-- <div class="icons">
                 <a href="https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"><img class="connect_svg" src="./assets/icons/lin.svg" alt=""></a>
                 <img class="connect_svg" src="./assets/icons/Vector.svg" alt="">
                 <a href="https://github.com/" target="_blank"><img class="connect_svg" src="./assets/icons/Vector (1).svg" alt=""></a>
                 <img class="connect_svg" src="./assets/icons/el_phone-alt.svg" alt="">
-            </div>
+            </div> -->
         </div>
     </div>
-    <div class="sub">
+    <!-- <div class="sub">
         <h1>Let the post come to you</h1>
         <p>Be the first to receive posts and to know our promotions and new services</p>
         <form action="">
@@ -84,28 +90,30 @@
         <button class="hiring">
             <a href="../pages/hireme.html" class="btnhireme">Hire me</a>
         </button>
-    </div>
+    </div> -->
     <div class="contact">
         <h1>Contact Me</h1>
         <p>Have any question, I am glad to answer</p>
 
-        <form id="sending" class="contacts" name="contact" action="" method="post">
-
+        <form id="sending" class="contacts" name="contact" action="" method="post" onsubmit="ValidateContact()">
             <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
-
-
             <input type="email" class="footer_contact femail" placeholder="Email" id="femail" name="email" />
-
-            <textarea id="fmessage" class="footer_contact" name="Message" rows="10" cols="50"
+            <textarea id="fmessage" class="footer_contact" name="Message" rows="5" cols="50"
                 placeholder="Your message here"></textarea>
-
             <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
         </form>
      
     </div>
+   
 
 
     </div>
+</div>
+<div class="small">
+    <small>&copy; Copyright 2022, Delyce</small>
+</div>
+   
+   
 
 
 
@@ -113,9 +121,11 @@
 
 
 
+
 <script src="../main.js"></script>
   <script defer src="../scripts/constant.js"></script>
   <script src="../scripts/contactme.js"></script>
+  <script src="../scripts/valid.js"></script>
   
 
 

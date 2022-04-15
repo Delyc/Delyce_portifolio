@@ -12,10 +12,14 @@
 }
 input{
   font-size: 1.3rem;
+  width: 20vw;
 }
 textarea{
   font-size: 1.3rem;
-  height: 30vh;
+  height: 24vh;
+  background-color: white !important;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .intro{
     
@@ -121,17 +125,18 @@ textarea{
   input[type="email"],
   input[type="text"] {
   height: 30px;
+
   border: 0;
   outline: 0;
-  outline: 2px solid rgba(148, 187, 233, 1);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0);
+ 
+  border-radius: 5px;
+  height: 6vh;
   color: black;
   padding-left: 0.5rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  color: white;
+ 
     
  
   
@@ -143,7 +148,8 @@ textarea{
   textarea{
     color: white;
       margin-left: 0rem;
-      outline: 2px solid rgba(148, 187, 233, 1);
+      margin-top: 0 !important;
+    
      
   }
   .job{

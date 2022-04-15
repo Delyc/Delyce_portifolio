@@ -55,6 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
    
   
   
@@ -196,6 +197,7 @@ header{
     
     
   }
+  
   .post > button{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
     width: 25%;

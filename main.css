@@ -291,19 +291,49 @@ ul button:hover{
 
 
 
+.social:hover{
+    width: 2.5rem;
+  height: 2.5rem;
+}
 
 
+footer{
+    background: linear-gradient(to right, #243B55, #141E30);
+    height: 92vh;
 
+}
+.social{
+    width: 2.2vw;
+    height: 4.5vh;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.emai{
+    width: 2.5vw;
+    height: 6vh;
+}
+footer .small{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: 6rem;
+}
 
 .footer{
-    background: linear-gradient(to right, #243B55, #141E30);
+   
     display: flex;
+    justify-content: center;
+  
    
     flex-direction: row;
     /* justify-content: space-evenly; */
-    padding: 5rem;
+    
     position: relative;
-    top: 28rem;
+    
    
     
     font-family: var(--primaryfont);
@@ -386,10 +416,10 @@ ul button:hover{
   
 }
 .btn{
-    margin-top: 1rem;
+   
     height: 6vh;
     width: 8vw;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgba(148, 187, 233, 1);
     border: 0;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -412,7 +442,7 @@ ul button:hover{
    /* margin-left: 4rem; */
    width: 25vw;
    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-   background-color: rgba(0, 0, 0, 0);
+  
    color: white;
    text-align: center;
 }
@@ -472,25 +502,38 @@ ul button:hover{
 
 textarea{
     margin-left: 0rem;
-    outline: 2px solid rgba(148, 187, 233, 1);
+   background-color: white;
+   border-radius: 5px;
+   color: #141E30 !important;
+   height: 25vh;
+   font-size: 1.5rem;
+   
    
 }
+input:focus {
+    outline: none;
+  }
+  textarea:focus {
+    outline: none;
+  }
 input[type="email"],
   input[type="text"] {
+      background-color: white !important;
+      border: 0;
+      height: 6vh;
+      color: #141E30;
+      
 
-  outline: 2px solid rgba(148, 187, 233, 1);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0);
+  /* outline: 2px solid rgba(148, 187, 233, 1); */
+  border-radius: 5px;
+
 }
   
 input{
     font-size: 1.5rem;
     width: 15vw;
 }
-textarea{
-    font-size: 1.5rem;
-    height: 30vh;
-}
+
 
 .connect img{
     

@@ -1038,17 +1038,17 @@ figcaption button {
     font-size: 1.5rem;
     width: 60%;
     margin-left: 1rem;
-    line-height: 25px;
+    line-height: 2px;
 
 
 }
 
 .learn_with_me p{
 
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     
    
-    line-height: 30px !important;
+    line-height: 0px !important;
 }
 
 .small_video {

@@ -155,6 +155,7 @@
     textarea, input[type="email"],
     input[type="text"] {
         min-width: 90%;
+        background-color: white !important;
        
     }
 }
