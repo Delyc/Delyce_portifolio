@@ -11,10 +11,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="../styles/readmore.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
 </head>
 
 <body>
-  ody>
+
   <header>
     <div class="overlay-header">
       <nav class="nav- ">
@@ -23,7 +24,7 @@
           </a></div>
         <div class="openMenu"><img src="../assets/icons/humberger.png" alt=""></div>
         <ul class="mainMenu">
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="./dashboard.html">Blog</a></li>
           <li><a href="./signup.html">Sign up</a></li>
           <button><a href="./hireme.html">Hire me</a></button>
@@ -46,9 +47,7 @@
       <div>
         <img id="image" src="" alt="">
       </div>
-      <!-- <div class="banners">
-          <img id="banner"src="" alt="">
-        </div> -->
+      
       <div class="imagehook">
         <div class="imagehook"></div>
         <div class="hook">
@@ -58,55 +57,47 @@
       <div class="detail">
         <p id="blodetail"></p>
       </div>
+     
 
-      <div id="buttons">
+ 
+<!-- 
+        <div class="engage">
+          <span id="likes" style="color: white;">
+            <p>1</p>
+          </span>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-comments"></i>
+        </div> -->
 
-      <div class="engage">
-        <span id="likes" style="color: white;"><p>1</p></span> 
-       <i class="fas fa-heart" ></i>
-       <i class="fas fa-comments"></i>
-     </div>
+
+        <div class="comment">
+          <form action="" id="sendcomment">
+            <h3>Let us know what's on your mind!</h3>
+            <div class="test">
+              <input type="text" id="commentname" placeholder="Your full name">
+           
+              <input type="email" placeholder="Your email" id="commentemail">
+             
+              <textarea name="commentmessage" placeholder="your comment here" id="commentmessage" cols="30" rows="8"></textarea>
+              <button id="sending" class="sending" type="submit">send</button>
+
+            </div>
+            
+           
+          </form>
 
 
-      <div class="comment">
-        <form action="" id="sendcomment">
-          <h3>Let us know what's on your mind!</h3>
-          <label for="">Name</label>
-          <input type="text" id="commentname" placeholder="Your full name">
-          <label for="email">Email</label>
-          <input type="email" placeholder="Your email" id="commentemail">
-          <label for="">Comment</label>
-          <textarea name="commentmessage" id="commentmessage" cols="30" rows="10"></textarea>
-          <button id="sending" class="sending" type="submit" >send</button>
-        </form>
 
       </div>
+    
 
 
+      
+
+      <div id="user-comment">
+        
+      </div>
     </div>
-    <div class="engage">
-      <span id="likes" style="color: white;">
-        <p>1</p>
-      </span>
-      <i class="fas fa-heart"></i>
-      <i class="fas fa-comments"></i>
-    </div>
-
-
-    <div class="comment">
-      <form action="" id="sendcomment">
-        <h3>Let us know what's on your mind!</h3>
-        <label for="">Name</label>
-        <input type="text" id="commentname" placeholder="Your full name">
-        <label for="email">Email</label>
-        <input type="email" placeholder="Your email" id="commentemail">
-        <label for="">Comment</label>
-        <textarea name="commentmessage" id="commentmessage" cols="30" rows="10"></textarea>
-        <button id="sending" type="submit">send</button>
-      </form>
-    </div>
-
-    <div id="user-comment"></div>
     </div>
 
 
@@ -146,7 +137,20 @@
             </div> -->
           </div>
         </div>
+        <div class="sub">
+          <h1>Let the post come to you</h1>
 
+          <form action="">
+            <div class="emaillabel">
+              <label for="email">Email:</label>
+            </div>
+            <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="cemail"
+              name="email" required />
+            <input class="btn" name="submit" type="submit" value="Subscribe" />
+
+          </form>
+
+        </div>
         <div class="contact">
           <h1>Contact Me</h1>
           <p>Have any question, I am glad to answer</p>
@@ -159,20 +163,13 @@
             <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
           </form>
 
-          <form id="sending" class="contact" name="contact" action=""  method="post">
-
-          <form id="sending" class="contacts" name="contact" action="" method="post">
-
-              <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
-
-
         </div>
 
 
 
       </div>
-  </div>
-  <div class="small">
+  <!-- </div> -->
+  <div class="smallf">
     <small>&copy; Copyright 2022, Delyce</small>
   </div>
 
@@ -185,30 +182,22 @@
 
 
 
+
   <script defer src="../scripts/constant.js"></script>
   <script src="../scripts/contactme.js"></script>
 
   <script defer src="../scripts/readmore.js"></script>
 
-    
 
-      <script src="../scripts/contactme.js"></script>
 
-    
-      <script defer src="../scripts/constant.js"></script>
-      <script
-      defer
-      src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"
-    ></script>
-    <script defer src="../scripts/readmore.js"></script>
+  <script src="../scripts/contactme.js"></script>
+
+
+  <script defer src="../scripts/constant.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script defer src="../scripts/readmore.js"></script>
 
 
 </body>

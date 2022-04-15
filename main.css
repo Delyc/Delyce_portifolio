@@ -299,7 +299,7 @@ ul button:hover{
 
 footer{
     background: linear-gradient(to right, #243B55, #141E30);
-    height: 92vh;
+  
 
 }
 .social{
@@ -315,18 +315,23 @@ footer{
     width: 2.5vw;
     height: 6vh;
 }
-footer .small{
+footer .smallf{
     color: white;
     font-size: 1.5rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     position: relative;
-    top: 6rem;
+   
+   
+    
 }
 
 .footer{
    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    
   
    
     flex-direction: row;
@@ -347,33 +352,36 @@ footer .small{
 .contact{
    
     width: 30%;
-    margin-left: 5rem !important;
+    margin-bottom: 2rem;
     
   
    
 }
+
 .hiringphone{
     display: none;
 }
 .usefullinks >h1, .connect >h1, .sub >h1, .contact >h1{
     color: rgba(148, 187, 233, 1);
     font-weight: bolder;
-    font-size: 2.3rem !important;
+    font-size: 2rem !important;
+    margin-bottom: 0;
    
 }
 .sub{
     width: 30%;
     margin-top: 0 !important;
-    /* margin-right: 5rem; */
+    margin-left: 5rem;
     
 
 }
-.connect{
+.connect {
     
 }
-.usefullinks > p, .sub > p{
+.usefullinks > p, .sub > p, .contact >p{
     color: white;
-    margin-top: 1rem;
+
+  
     line-height: 17px;
 }
 
@@ -395,15 +403,9 @@ footer .small{
     color: white;
 }
 .email{
-    border: 0;
-    height: 5vh;
-    width: 20vw;
-    color: white;
-    line-height: 0.5rem;
-    border-radius: 25px;
-    margin-top: 0.5rem;
+   
     text-align: center;
-    color: white;
+  
    
 }
 .emaillabel{
@@ -434,7 +436,7 @@ footer .small{
 
 .linksconnect{
  
-     width: 30%; 
+      
     /* margin-left: 7rem; */
     
 

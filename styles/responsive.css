@@ -278,6 +278,9 @@ and (max-device-width : 480px) {
     width: 15% !important;
     
   }
+  .social{
+      width: 6vw;
+  }
   .preview{
       margin-bottom: 0.5rem;
   }
@@ -511,7 +514,7 @@ and (max-device-width : 480px) {
     }
 
     .email {
-        width: 60vw;
+        width: 70vw;
         height: 6vh;
     }
 
@@ -522,7 +525,10 @@ and (max-device-width : 480px) {
 
     .btn {
         width: 30vw;
-        height: 8vh;
+        height: 7vh;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
     }
 
     .contact {

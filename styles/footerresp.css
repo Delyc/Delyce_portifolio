@@ -92,8 +92,12 @@ and (max-device-width : 480px) {
         
     }
     .btn{
-        margin-left: -12rem;
+        /* margin-left: -12rem; */
         width: 30% !important;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
     }
     /* .btn.send{
         outline: thin solid red;

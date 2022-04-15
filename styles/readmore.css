@@ -1,250 +1,101 @@
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-  
- 
-  }
-}
-.blogging >p{
-    color: white;
-    text-align: center;
-    margin-top: -2.5rem;
-    font-size: 0.5rem !important;
-
-}
 *{
-  font-size: 1.3rem !important;
-}
-
-.blogging>h1 {
-  font-family: var(--primaryfont);
-  font-size: 7rem !important;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
- 
-  margin-bottom: 100px;
-
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap; 
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  
 }
 
 header{
-  background-image: url(../assets/image/back-imagejpg.jpg);
-  height:40vh;
-  background-size: cover;
-}
-.overlay-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 40vh;
-  background-color: #141e30c5;
-
-
-
-}
-  .blogging{
-    position: absolute;
-    top:2rem;
-
-   
-    
   
-    width: 100%;
-    height: 60vh;
-    
-
-  }
-.blogging >h1{
-  color: rgba(148, 187, 233, 1);
-  text-align: center;
- 
-  padding-top: 1rem;
-}
-
-.title{
-  color: #243B55;
-  font-size: 20px;
-  font-family: var(--primaryfont);
-  margin-left: 6rem;
-}
-.readingallarticle{
-  width: 50%;
- 
-  margin-top: 5rem;
   
- 
-}
-#image{
-  height: 60vh;
-  width: 100%;
-
-}
-
-.buttons{
-  margin-top: 1rem;
-  
-  border: 0;
-  background-color:#141E30;
- 
-
-}
-.fa-heart, .fa-comment-dots, .fa-share-square{
-  color: white;
-
-  font-size: 20px;
-  border: 0;
-  margin-top: -1rem;
-  margin-left: 0.5rem;
-}
-
-
-.engage{
-  margin-top: 1rem;
-  height: 5vh;
-  background-color:#141E30;
-  width: 50%;
-  
-}
-.fa-comments, .fa-heart{
-  color: white;
-  margin-top: 0.5rem;
-  margin-left: 0.3rem;
- 
-}
-.fa-comments{
-  font-size: 20px;
-}
-.comment input, label{
-  font-size: 1.5rem;
-  display: block;
-  height: 4.5vh;
- border: 0;
-
-}
-textarea{
-  border: 0;
-  font-size: 1.5rem;
-  height: 20vh;
-}
-.comment{
-  justify-content: center;
-  margin-top: 3rem;
-  
-}
-
-#sending{
-  
-
-
-  background-color: rgba(148, 187, 233, 1);
-
-  width: 5vw;
-  height: 4vh;
-  color: white;
-  text-align: center;
-  border: 0;
-  margin-left: 1rem;
-  font-size: 1.5rem;
-} 
-.likes{
-  color: white !important;
-}
-.addedcomments{
-  color: red;
-  width: 20%;
-  
-  word-break: break-all;
-  font-family: var(--primaryfont);
-  font-size: 1.5rem;
-  line-height: 20px;
-  color: #141E30;
-}
-.namecom{
-  font-weight: bolder;
-}
-
-.readingallarticle{
-  font-size: 1.5rem !important;
-}
-.commentstitle{
-  font-size: 2rem !important;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-#sendcomment >h3{
-  font-size: 2rem;
-}
-
-
-
-.readingallarticle{
- 
-  word-break: break-all;
-}
-
-header{
-  background-color: white !important;
-  height: 2rem !important;
+  height: 5vh !important;
 }
 .overlay-header{
-  height: 0 !important;
-  bottom: 0 !important;
+  outline: thin solid green !important;
 }
 .articleandcomment{
  
-  top:0rem !important;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -30rem;
+  margin-bottom: 5rem;
+
+  
+ 
+
+}
+.readingallarticle{
+  width: 50%;
+  font-size: 1rem;
+
+}
+#header{
+  color: #243B55;
+}
+#hook{
+  font-size: 1.5rem;
+}
+#blodetail{
+
+  font-size: 1.5rem !important;
+  margin-bottom:  0 !important;
+}
+#image{
+  width: 100%;
+}
+
+.test{
+  display: flex;
+  flex-direction: column !important;
+  width: 50%;
+  gap: 0.5rem;
+
+}
+.engage{
+  outline: thin solid red;
+}
+.comment{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-=======
-.fhire{
-  height: 65vh;
-}
-.contact{
-  margin-left: -6rem;
-  width: 30%;
+  align-items: center;
+  
+  position: relative;
+  top: 5rem;
+ 
   
 }
-.contact input{
-  margin-left: 10rem;
-
+#commentname{
+  text-align: center;
+  border:  2px solid rgba(148, 187, 233, 1);
+  width: 20vw;
+  
+}
+#commentemail{
+  text-align: center;
+  border:  2px solid rgba(148, 187, 233, 1);
+  width: 20vw;
 
 }
-.contact >textarea{
-  margin-left: 10rem;
+#commentmessage{
+  text-align: center;
+  width: 20vw;
+  border:  2px solid rgba(148, 187, 233, 1);
+
 }
-.sub{
-  margin-left: -55rem;
-  width: 30%;
+
+#user-comment{
+   word-break: break-all;
+  margin-top: 5rem;
+  width: 50%;
+}
+.sending{
+  background-color:  rgba(148, 187, 233, 1);
+  width: 20vw;
+  border: 0;
+  color: white;
+  height: 5vh;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 

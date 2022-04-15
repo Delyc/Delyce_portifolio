@@ -373,7 +373,7 @@ hr {
 
 .descriptionpro>p {
     font-size: 1.7rem;
-    line-height: 28px;
+
     padding: 0.6rem;
 }
 
@@ -387,6 +387,7 @@ hr {
     font-size: 1.5rem;
     border-radius: 5px;
     margin-left: 0.6rem;
+
 
     bottom: 0.4rem;
 }
@@ -942,11 +943,15 @@ figcaption button {
 
 
 /* ======================================passion ===================================*/
-
+footer{
+    position: relative;
+    top: 25rem;
+}
 
 .passion {
     position: relative;
-    top: 25rem;
+    /* top: 25rem; */
+    
    
 }
 
@@ -985,13 +990,13 @@ figcaption button {
 .small_img img {
     width: 150px;
     height: 100% !important;
-    outline: thin solid blue;
+ 
 }
 
 .small_img_row p {
     margin-left: 20px;
     font-size: 1.3rem;
-    line-height: 20px;
+   
 }
 
 
@@ -1009,7 +1014,7 @@ figcaption button {
 
 }
 
-.big_image img {}
+
 
 .all {
     display: flex;
@@ -1025,7 +1030,7 @@ figcaption button {
     overflow: hidden;
     width: 25vw;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    height: 22vh;
+    height: 25vh;
 
 
     margin-top: 0.4rem;
@@ -1033,12 +1038,19 @@ figcaption button {
 
 
 }
+.small_images img{
+   
+    height: 100%;
+    width: 40%;
+}
 
 .learn_with_me {
     font-size: 1.5rem;
     width: 60%;
     margin-left: 1rem;
-    line-height: 2px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+ 
 
 
 }
@@ -1046,19 +1058,16 @@ figcaption button {
 .learn_with_me p{
 
     font-size: 1.5rem;
+    padding-top: 1rem;
     
    
-    line-height: 0px !important;
+
 }
 
 .small_video {
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
-}
-
-.small_images img {
-    width: 30%;
 }
 
 .passion h3 {
@@ -1075,7 +1084,7 @@ figcaption button {
 
 .overlayy {
     position: absolute;
-    top: 19.5%;
+    top: 21%;
     left: 20.5%;
     width: 30%;
     height: 83vh;
