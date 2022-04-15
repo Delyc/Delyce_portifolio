@@ -1,15 +1,19 @@
 
-document.getElementById("hireme").addEventListener("submit", (e) => {
+
+
+
+
+  document.getElementById("hireme").addEventListener("submit", (e) => {
+
   
     e.preventDefault();
-
     
     const name = document.getElementById("namehire").value;
     
     const email = document.getElementById("emailhire").value;
 
     const job = document.getElementById("jobhire").value;   
-           
+    
                                   
         fetch(`${apiUrl}api/hireme`, {
           method: 'POST',
@@ -28,14 +32,15 @@ document.getElementById("hireme").addEventListener("submit", (e) => {
       })
       .then(function (response) {
           return response.json();
+          
+  
       })
       .then(function (response) {
           
           let status = response.status;
           console.log(response);
-          
-         document.getElementById("hireme").reset();
-         alert("message sent");
+          document.getElementById("hireme").reset();
+         
 
       }).catch(function (response) {
           console.log(response);      

@@ -58,7 +58,28 @@
       <div class="detail">
         <p id="blodetail"></p>
       </div>
+
       <div id="buttons">
+
+      <div class="engage">
+        <span id="likes" style="color: white;"><p>1</p></span> 
+       <i class="fas fa-heart" ></i>
+       <i class="fas fa-comments"></i>
+     </div>
+
+
+      <div class="comment">
+        <form action="" id="sendcomment">
+          <h3>Let us know what's on your mind!</h3>
+          <label for="">Name</label>
+          <input type="text" id="commentname" placeholder="Your full name">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Your email" id="commentemail">
+          <label for="">Comment</label>
+          <textarea name="commentmessage" id="commentmessage" cols="30" rows="10"></textarea>
+          <button id="sending" class="sending" type="submit" >send</button>
+        </form>
+
       </div>
 
 
@@ -138,6 +159,13 @@
             <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
           </form>
 
+          <form id="sending" class="contact" name="contact" action=""  method="post">
+
+          <form id="sending" class="contacts" name="contact" action="" method="post">
+
+              <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
+
+
         </div>
 
 
@@ -157,13 +185,30 @@
 
 
 
-
   <script defer src="../scripts/constant.js"></script>
   <script src="../scripts/contactme.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
   <script defer src="../scripts/readmore.js"></script>
+
+    
+
+      <script src="../scripts/contactme.js"></script>
+
+    
+      <script defer src="../scripts/constant.js"></script>
+      <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"
+    ></script>
+    <script defer src="../scripts/readmore.js"></script>
 
 
 </body>
