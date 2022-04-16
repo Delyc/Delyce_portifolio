@@ -75,12 +75,12 @@ const sedDivInfo = () => {
             <div class="addedcomments"> 
               <div> 
                
-                <span>${element.message} <br> by <span  class="namecom"> ${element.name}</span></span>
+                <span>${element.message} <br> by <span style="font-weight:bolder" class="namecom"> ${element.name}</span></span>
               </div> 
               
                        
             </div>
-  
+     
             `;
         });
       }

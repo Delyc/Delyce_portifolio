@@ -1,119 +1,76 @@
-#signup {
-  
-    position: absolute;
-    
-    /* background gradient */
-    background: linear-gradient(to right, #243B55, #141E30);
-    height: 95vh;
-    width: 23vw;
-    border-radius: 10px;
-    /* box shadow */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    padding: 1rem;
-    left: 50%;
-    top:70%;
-    margin-bottom: 0% !important;
-    transform: translate(-50%, -50%);
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+#signup{
+  background: linear-gradient(to right, #243B55, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
+  position: absolute;
+  top: 10rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 1rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#loggingin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .fa-google, .lin, .fa-instagram, .fa-twitter{
-    color: white;
-    padding: 0.2rem;
-    font-size: 25px;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-    margin-top: 0.3rem;
-    
-  }
-.fa{
-    margin-left: 1rem;
+  align-items: center;
 }
 
-  .userauth{
-      width: 18vw;
-      outline: 1px solid rgba(148, 187, 233, 1) ;
-      margin-top: 2rem;
-    
-  }
-  .or{
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-left: 0;
+.form-control{
+  width: 65% ;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+
 }
+.form-control:focus{
+  border: 0 !important;
+  outline: none;
+
+}
+.btn-primary{
+  width: 65% ;
+}
+.donthaveanaccount{
+  color: white;
+  font-size: 1.5rem;
+}
+.signinhere{
+  color: rgba(148, 187, 233, 1);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#signup h1{
+  color: white;
+}
+
+@media (max-width: 480px){
+  #signup{
+    width: 90%;
+    top: 7rem;
   
-  #login > h1{
-    position: absolute;
-    top: -2%;
-    left: 40%;
-    color: white;
   }
-
-
-  .form-group > label{
-      color: white ;
-      font-family: var(--primaryfont);
-      font-size: 1.5rem;
-      margin-top: -3rem;
-  }
-
-  .form-control{
-    height: 30px;
-    border: 0;
-    outline: 2px solid rgba(148, 187, 233, 1);
-    border-radius: 10px;
-
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    padding-left: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
- 
-
-    
-
-  }
-
-  form h1{
-    color: white;
-  }
-
-
-  .fhire{
-    top:0rem;
-  }
-
-  .body{
-    background: linear-gradient(to right, #243b5525, #141e300a);
-    height: 125vh;
-    margin-top: 0rem;
-
-  }
-
   .btn-primary{
-      margin-top: 0;
-      width: 6vw;
-      margin-left: -1rem;
+    width: 65% !important ;
+  }
+  footer{
+    top: 1rem !important;
+  }
+  .donthaveanaccount{
+    margin-top: -3rem !important;
+  }
+  #loggingin{
+    margin-bottom: 5rem !important;
+  }
+  .form-control{
+    height: 6vh;
   }
 
-  .donthaveanaccount{
-      color: white;
-      margin-top: 1rem;
-      margin-left: -1rem;
-      font-family: var(--primaryfont);
-      font-size: 1.5rem;
-  }
-  .signinhere{
-      color: rgba(148, 187, 233, 1);
-      font-weight: bolder;
-      
-      font-family: var(--primaryfont);
-      font-size: 1.5rem;
-  }
+
+}

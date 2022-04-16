@@ -28,7 +28,7 @@ function selection() {
           ${value.hook}
         </p>
         <div class="post-actions">
-          <button onclick="readMore('${value._id}')" class="buttondelete" type="submit">More<i class="fas fa-angle-right"></i> </button>
+          <button onclick="readMore('${value._id}')" class="buttondelete" type="submit">More </button>
          
         </div>
       </div>`;

@@ -259,6 +259,14 @@ and (max-device-width : 480px) {
 
 /* from static */
 @media (max-width: 480px) {
+    .proDesc{
+        width: 100%;
+        
+    }
+    .proDesc h1{
+        width: 90% !important;
+       
+    }
     .container{
      
         margin-left: 0!important;
@@ -456,7 +464,7 @@ and (max-device-width : 480px) {
 
     .passion{
     
-        margin-top: -2rem !important;
+        margin-top: 2rem !important;
       
     }
     
@@ -737,7 +745,7 @@ and (max-device-width : 480px) {
     .small_video {
         margin-top: 2rem;
     }
-
+   
   
 
 

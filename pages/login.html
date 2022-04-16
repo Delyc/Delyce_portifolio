@@ -10,149 +10,108 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
 </head>
 <body>
 
-  <header>
-    <div class="container overlay-header">
-
-        <div class="navigation-bar">
-            <h1 class="logo">Delyce</h1>
-            <nav>
-                <ul class="nav-ul">
-                    <li><a href="./index.html">Home</a></li>
-                  
-                   
-                    <li><a href="./pages/dashboard.html">Blog</a></li>
-
-                   
-                    <li><a href="./pages/signup.html">Sign up</a></li>
-                    <li><a  href="./pages/hireme.html"><button class="hirenav"> Hire me</button> </a></li>
-
+    <header>
+        <div class="overlay-header">
+            <nav class="nav- ">
+                <div class="logo-del"><h1>Delyce</h1></div>
+                <div class="openMenu"><img src="../assets/icons/humberger.png" alt=""></div>
+                <ul class="mainMenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./dashboard.html">Blog</a></li>
+                    <li><a href="./signup.html">Sign up</a></li>
+                    <button><a href="./pages/hireme.html">Hire me</a></button>
+                    <div class="closeMenu"><img src="../assets/icons/close.png" alt=""></div>
                 </ul>
             </nav>
-        </div>
     </div>
+    </header>
 
-</header>
-
-
-    
-
-      
-        <!-- <div class="login">
-            
-            </div> -->
-            <div class="body">
-       
             <div id="loggingin">
               
                
                 <form id="login" class="login-form" method="post" action="#none">
-                  <h1 >Login</h1>
-                    <div class="userauth">
-                    
-                    <div class="fa"><i class="fab fa-google"></i><i class="fab fa-linkedin lin"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div>
-                </div>
-                <p class="or">or</p>
-               
-                    <div class="left">
-                    <div class="form-group">
-                        <label for="Email">Email</label>
+                    <h1>Login</h1>
                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
-                    </div>
-                </div>
-                    <div class="donthaveanaccount">
+ 
                     <button type="submit" class="btn btn-primary">Login</button>
                     <p class="donthaveanaccount">don't have an account? <a href="../pages/signup.html"><span class="signinhere">sign up </span></a></p>
-                </div>
+
                
                 </form>
                 </div>
-            </div>
-          
-        
-
-
-
-
-
-
-
-
+      
    
-            <footer class="footer fhire">
-              <div class="linksconnect">
-                  <div class="usefullinks">
-                      <h1>Useful links</h1>
-                      <p>Hire me</p>
-                      <p>Projects</p>
-                      <p>service</p>
-                  </div>
-                  <div class="connect">
-                      <h1>Let's connect</h1>
-                      <div class="icons">
-                          <a href="https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"><img class="connect_svg" src="./assets/icons/lin.svg" alt=""></a>
-                          <img class="connect_svg" src="./assets/icons/Vector.svg" alt="">
-                          <a href="https://github.com/" target="_blank"><img class="connect_svg" src="./assets/icons/Vector (1).svg" alt=""></a>
-                          <img class="connect_svg" src="./assets/icons/el_phone-alt.svg" alt="">
-                      </div>
-                  </div>
-              </div>
-              <div class="sub">
-                  <h1>Let the post come to you</h1>
-                  <p>Be the first to receive posts and to know our promotions and new services</p>
-                  <form action="">
-                      <div class="emaillabel">
-                          <label for="email">Email:</label>
-                      </div>
-                      <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)"
-                          id="cemail" name="email" />
-                      <input class="btn" name="submit" type="submit" value="Subscribe" />
+  <footer >
+    <div class="footer fhire" >
+  <div class="linksconnect">
+      <div class="usefullinks">
+          <h1>Useful links</h1>
+          <p>Hire me</p>
+          <p>Projects</p>
+     
+      </div>
+      <div class="connect">
+          <h1>Let's connect</h1>
+          <div class="media">
+             <a href="https://github.com/" target="_blank"><img class="social" src="../assets/icons/git.png" alt=""></a> 
+             <a href=" https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"> <img class="social link" src="../assets/icons/link.png" alt=""></a>
+             <a href=""><img class="social emai" src="../assets/icons/email.png" alt=""></a> 
+              <a href=""><img class="social" src="../assets/icons/phone.png" alt=""></a>
+
+          </div>
+        
+      </div>
+  </div>
+  <div class="sub">
+      <h1>Let the post come to you</h1>
       
-                  </form>
-                  <button class="hiring">
-                      <a href="../pages/hireme.html" class="btnhireme">Hire me</a>
-                  </button>
-              </div>
-              <div class="contact">
-                  <h1>Contact Me</h1>
-                  <p>Have any question, I am glad to answer</p>
-      
-                  <form id="sending" class="contacts" name="contact" action="" method="post">
-      
-                      <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
-      
-      
-                      <input type="email" class="footer_contact femail" placeholder="Email" id="femail" name="email" />
-      
-                      <textarea id="fmessage" class="footer_contact" name="Message" rows="10" cols="50"
-                          placeholder="Your message here"></textarea>
-      
-                      <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
-                  </form>
-               
-              </div>
-      
-      
-              </div>
-      
-      
-      
-          </footer>
+      <form action="">
+          <div class="emaillabel">
+              <label for="email">Email:</label>
+          </div>
+          <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)"
+              id="cemail" name="email" required/>
+          <input class="btn" name="submit" type="submit" value="Subscribe" />
+
+      </form>
+     
+  </div>
+  <div class="contact">
+      <h1>Contact Me</h1>
+      <p>Have any question, I am glad to answer</p>
+
+      <form id="sending" class="contacts" name="contact" action="" method="post" onsubmit="ValidateContact()">
+          <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
+          <input type="email" class="footer_contact femail" placeholder="Email" id="femail" name="email" />
+          <textarea id="fmessage" class="footer_contact" name="Message" rows="5" cols="50"
+              placeholder="Your message here"></textarea>
+          <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
+      </form>
+   
+  </div>
+ 
+
+
+  </div>
+</div>
+<div class="smallf">
+  <small>&copy; Copyright 2022, Delyce</small>
+</div>
+ 
+ 
+
+
+
+</footer>
+
 
       <script defer src="../scripts/constant.js"></script>
-
-            </div>
-            
-          
-        </div>
-      </div>
-
+       <script src="../main.js"></script>
       <script src="../scripts/contactme.js"></script>
       <script defer src="../scripts/constant.js"></script>
       <script defer src="../scripts/login.js"></script>

@@ -1,119 +1,75 @@
-#login {
-  
-    position: absolute;
-    /* background gradient */
-    background: linear-gradient(to right, #243B55, #141E30);
-    height: 63vh;
-    width: 20vw;
-    border-radius: 10px;
-    /* box shadow */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    padding: 1rem;
-    left: 50%;
-    top:55%;
-    margin-bottom: 0% !important;
-    transform: translate(-50%, -50%);
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .fhire{
-    top: 0;
-  }
+#login{
+  background: linear-gradient(to right, #243B55, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
+  position: absolute;
+  top: 10rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 1rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#loggingin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .fa-google, .lin, .fa-instagram, .fa-twitter{
-    color: white;
-    padding: 0.2rem;
-    font-size: 25px;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-    margin-top: 0.3rem;
-    
-  }
-.fa{
-    margin-left: 1rem;
+  align-items: center;
 }
 
-  .userauth{
-      width: 17vw;
-      outline: 1px solid rgba(148, 187, 233, 1) ;
-      margin-top: 1rem;
-      height: 6vh;
-  }
-  .or{
-    font-family: var(--primaryfont);
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 0.5rem;
-    margin-left: 0;
+.form-control{
+  width: 65% ;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+
+
 }
-  
-  #login > h1{
-    position: absolute;
-    top: -2%;
-    left: 40%;
-    color: white;
-  }
+.form-control:focus{
+  border: 0 !important;
+  outline: none;
 
-.form-group{
-  margin-top: -1rem;
 }
-  .form-group > label{
-      color: white ;
-      font-family: var(--primaryfont);
-      font-size: 1.5rem;
-  }
-  .form-control{
-    height: 30px;
-    border: 0;
-    outline: 2px solid rgba(148, 187, 233, 1);
-    border-radius: 10px;
+.btn-primary{
+  width: 65% ;
+}
+.donthaveanaccount{
+  color: white;
+  font-size: 1.5rem;
+}
+.signinhere{
+  color: rgba(148, 187, 233, 1);
+  font-size: 2rem;
+  font-weight: bolder;
+}
 
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    padding-left: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+#login h1{
+  color: white;
+}
 
-    
-
-  }
-
+@media (max-width: 480px){
+  #login{
+    width: 90%;
+    top: 7rem;
   
-
-  .body{
-    background: linear-gradient(to right, #243b5525, #141e300a);
-    height: 95vh;
-    margin-top: 0rem;
-
-  }
- 
-  
- .left{
-      margin-left: -1.5rem;
-      margin-top: 1rem;
   }
   .btn-primary{
-      margin-top: 0;
-      width: 6vw;
-      margin-left: -1rem;
+    width: 65% !important ;
+  } 
+   footer{
+    top: 1rem !important;
+  }
+ 
+  #loggingin{
+    margin-bottom: 5rem !important;
+  }
+  .form-control{
+    height: 6vh;
   }
 
-  .donthaveanaccount{
-      color: white;
-      margin-top: 1rem;
-      margin-left: -1rem;
-      font-family: var(--primaryfont);
-      font-size: 1.5rem;
-  }
-  .signinhere{
-      color: rgba(148, 187, 233, 1);
-      font-weight: bolder;
-      
-      font-family: var(--primaryfont);
-      font-size: 1.5rem;
-  }
+
+}

@@ -8,16 +8,17 @@ header{
   height: 5vh !important;
 }
 
-
+.overlay-header{
+  outline: thin solid green !important;
+}
 .articleandcomment{
  
-  position: relative;
   
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -30rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 5rem;
 
   
  
@@ -38,7 +39,6 @@ header{
 
   font-size: 1.5rem !important;
   margin-bottom:  0 !important;
-  overflow: scroll;
 }
 #image{
   width: 100%;
@@ -51,7 +51,9 @@ header{
   gap: 0.5rem;
 
 }
-
+.engage{
+  outline: thin solid red;
+}
 .comment{
   display: flex;
   flex-direction: column;
@@ -62,6 +64,10 @@ header{
   top: 5rem;
  
   
+}
+#blodetail{
+  overflow: scroll;
+
 }
 #commentname{
   text-align: center;
@@ -79,6 +85,7 @@ header{
   text-align: center;
   width: 20vw;
   border:  2px solid rgba(148, 187, 233, 1);
+ 
 
 }
 
@@ -102,38 +109,28 @@ header{
   margin-bottom: 1rem;
 }
 
-
 @media (max-width: 480px){
+  .articleandcomment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -23rem;
+    
+    
+
+  }
+  
   .readingallarticle{
-   
     width: 90%;
   }
-  .comment{
-    width: 100%;
-   
-  }
-  #sendcomment{
+  .comment, #sendcomment{
     width: 100%;
   }
-  .test{
+  .test, #user-comment{
+    width: 80%;
+  }
+  #commentname,#commentemail, #commentmessage{
     width: 100%;
   }
-  #commentname, #sending, #commentmessage, #commentemail{
-    width: 80% !important;
-      }
-  #user-comment{
-    width:80%;
-  }
-  .articleandcomment{
-    top: 7rem;
-    bottom: 3rem !important;
-  }
-  #user-comment{
-
-    margin-bottom: 5rem;
-  }
-  .namecom{
-    font-weight: bolder;
-  }
-
 }
