@@ -7,6 +7,9 @@ header{
   
   height: 5vh !important;
 }
+#blodetail{
+  color: red;
+}
 .overlay-header{
   outline: thin solid green !important;
 }
