@@ -7,9 +7,7 @@ header{
   
   height: 5vh !important;
 }
-#blodetail{
-  color: red;
-}
+
 .overlay-header{
   outline: thin solid green !important;
 }
@@ -90,6 +88,10 @@ header{
    word-break: break-all;
   margin-top: 5rem;
   width: 50%;
+  font-size: 1.2rem;
+}
+ h3{
+  font-size: 1.7rem;
 }
 .sending{
   background-color:  rgba(148, 187, 233, 1);
