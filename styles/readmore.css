@@ -8,11 +8,10 @@ header{
   height: 5vh !important;
 }
 
-.overlay-header{
-  outline: thin solid green !important;
-}
+
 .articleandcomment{
  
+  position: relative;
   
   display: flex;
   flex-direction: column;
@@ -39,6 +38,7 @@ header{
 
   font-size: 1.5rem !important;
   margin-bottom:  0 !important;
+  overflow: scroll;
 }
 #image{
   width: 100%;
@@ -51,9 +51,7 @@ header{
   gap: 0.5rem;
 
 }
-.engage{
-  outline: thin solid red;
-}
+
 .comment{
   display: flex;
   flex-direction: column;
@@ -104,3 +102,38 @@ header{
   margin-bottom: 1rem;
 }
 
+
+@media (max-width: 480px){
+  .readingallarticle{
+   
+    width: 90%;
+  }
+  .comment{
+    width: 100%;
+   
+  }
+  #sendcomment{
+    width: 100%;
+  }
+  .test{
+    width: 100%;
+  }
+  #commentname, #sending, #commentmessage, #commentemail{
+    width: 80% !important;
+      }
+  #user-comment{
+    width:80%;
+  }
+  .articleandcomment{
+    top: 7rem;
+    bottom: 3rem !important;
+  }
+  #user-comment{
+
+    margin-bottom: 5rem;
+  }
+  .namecom{
+    font-weight: bolder;
+  }
+
+}
