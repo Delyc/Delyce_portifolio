@@ -63,65 +63,73 @@
 
 
     
-  <div class="footer fhire">
-    <div class="linksconnect">
-    <div class="usefullinks">  
-      <h1>Useful links</h1>
-      <p>Hire me</p>
-      <p>Projects</p>
-      <p>service</p>
-    </div>
-    <div class="connect">
-      <h1>Let's connect</h1>
-      <div class="icons">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fas fa-envelope"></i>
-        <i class="fas fa-phone"></i>
+  <footer >
+    <div class="footer fhire" >
+  <div class="linksconnect">
+      <div class="usefullinks">
+          <h1>Useful links</h1>
+          <p>Hire me</p>
+          <p>Projects</p>
+     
       </div>
-    </div>
+      <div class="connect">
+          <h1>Let's connect</h1>
+          <div class="media">
+             <a href="https://github.com/" target="_blank"><img class="social" src="../assets/icons/git.png" alt=""></a> 
+             <a href=" https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"> <img class="social link" src="../assets/icons/link.png" alt=""></a>
+             <a href=""><img class="social emai" src="../assets/icons/email.png" alt=""></a> 
+              <a href=""><img class="social" src="../assets/icons/phone.png" alt=""></a>
+
+          </div>
+          <!-- <div class="icons">
+              <a href="https://www.linkedin.com/in/delyce-twizeyimana-475977217/" target="_blank"><img class="connect_svg" src="./assets/icons/lin.svg" alt=""></a>
+              <img class="connect_svg" src="./assets/icons/Vector.svg" alt="">
+              <a href="https://github.com/" target="_blank"><img class="connect_svg" src="./assets/icons/Vector (1).svg" alt=""></a>
+              <img class="connect_svg" src="./assets/icons/el_phone-alt.svg" alt="">
+          </div> -->
+      </div>
   </div>
-    <div class="sub">
+  <div class="sub">
       <h1>Let the post come to you</h1>
-      <p>Be the first to receive posts and to know our promotions and new services</p>
+      
       <form action="">
-        <div class="emaillabel">
-        <label for="email">Email:</label>
-      </div>
-          <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)" id="email" name="email" />
+          <div class="emaillabel">
+              <label for="email">Email:</label>
+          </div>
+          <input type="email" class="email" placeholder="Your email" onchange="validateEmail(this.value)"
+              id="cemail" name="email" required/>
           <input class="btn" name="submit" type="submit" value="Subscribe" />
 
       </form>
-      <button class="hiring">
-        <a href="../pages/hireme.html"  class="btnhireme">Hire me</a>
-      </button>
-    </div>
-    <div class="contact">
+     
+  </div>
+  <div class="contact">
       <h1>Contact Me</h1>
       <p>Have any question, I am glad to answer</p>
-      
-      <form id="sending" class="contact" name="contact" action=""  method="post">
 
-        <input type="text" class="footercontact fname" placeholder="Full name" 
-          id="fname" name="name" />
-
-
-        <input type="email" class="footercontact femail" placeholder="Email" 
-          id="femail" name="email" />
-
-        <textarea id="fmessage" class="footercontact" name="Message" rows="10" cols="50"
-          placeholder="Your message here"></textarea>
-
-        <input class="btn send" name="submit" type="submit" id = "sending" value="Send " />
+      <form id="sending" class="contacts" name="contact" action="" method="post" onsubmit="ValidateContact()">
+          <input type="text" class="footer_contact fname" placeholder="Full name" id="fname" name="name" />
+          <input type="email" class="footer_contact femail" placeholder="Email" id="femail" name="email" />
+          <textarea id="fmessage" class="footer_contact" name="Message" rows="5" cols="50"
+              placeholder="Your message here"></textarea>
+          <input class="btn send" name="submit" type="submit" id="sending" value="Send " />
       </form>
-          <button class="hiringphone">
-            <a href="../pages/hireme.html" class="btnhire">Hire me</a>
-          </button>
-  
-        </div>
-        
-      
-    </div>
+   
+  </div>
+ 
+
+
+  </div>
+</div>
+<div class="smallf">
+  <small>&copy; Copyright 2022, Delyce</small>
+</div>
+ 
+ 
+
+
+
+</footer>
   
   
   

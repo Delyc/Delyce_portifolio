@@ -18,6 +18,7 @@ function selection() {
     .then(function (response) {
       let responseData = response.data.data;
       console.log(response);
+      responseData.reverse()
       responseData.forEach((value) => {
         data += `<div class="post">
       <p class="title">${value.title}</p>
