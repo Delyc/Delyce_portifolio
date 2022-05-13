@@ -292,6 +292,7 @@ hr {
 
 
 .projects {
+   
     position: relative;
     top: 20rem;
     
@@ -307,8 +308,9 @@ hr {
 
 .pro1 {
     display: flex;
-    width: 100% !important;
+    width: 80% !important;
     flex-direction: row;
+
     justify-content: center !important;
     align-items: center !important;
 
@@ -1237,4 +1239,40 @@ summary{
     border: 0;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   
+}
+
+.more-projects button{
+    background-color: #141E30;
+    color: white;
+    margin-left: 0;
+    border: 0;
+    width: 8vw;
+    font-size: 1.5rem;
+    height: 6vh;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro1{
+    display: flex;
+    gap: 7rem !important;
+}
+
+.container{
+    
+    width: 100%;
+}
+.slider{
+    width: 100% !important;
+}
+.mySlides{
+    width: 100% !important;
+ 
+}
+.project{
+    width: 80% !important;
+
+    margin-left: 5rem !important;
+
 }
