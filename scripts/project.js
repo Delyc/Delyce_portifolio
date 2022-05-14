@@ -25,9 +25,10 @@ function selection() {
           </a>
           <img src="${value.url}" alt="">
           
-          <p class="hook2">
+          <div class="project-div">
             ${value.proexpl}
-          </p>
+            </div>
+          
           <div class="links">
          <button> <a href="${value.live}" target="_blank">View</a> </button>
           <button> <a href="${value.github}" target="_blank">Github</a> </button>

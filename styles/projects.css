@@ -5,12 +5,14 @@
     justify-content: center;
     
 }
+.project-div{
 
+  height: 18vh;
+}
 .project{
     border-radius: 5px;
-    width: 25%;
-    height: 50vh;
-    word-break: break-all;
+    width: 28%;
+  word-break: break-all;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 .project:hover{
@@ -19,7 +21,7 @@
 }
 .project img{
     width: 100%;
-    height: 50%;
+    height: 30vh;
     border-radius: 5px;
 }
 #allprojects{
@@ -41,7 +43,13 @@
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     font-size: 1.5rem;
-    max-height: 20vh;
+
+    
+}
+.hook2{
+  outline: thin solid red;
+  color: red !important;
+  height: 8vh;
 }
 header{
     height: 10vh !important;
@@ -102,6 +110,7 @@ header{
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 1rem;
 
   }
   .links button:hover{
