@@ -73,3 +73,25 @@
 
 
 }
+@media (min-width: 481px) and (max-width: 768px){
+  #login{
+    width: 70%;
+    
+  }
+  footer{
+    margin-top: 1rem !important;
+  }
+ 
+
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  #login{
+    width: 70%;
+    
+  }
+  footer{
+    margin-top: 7rem !important;
+  }
+ 
+
+}

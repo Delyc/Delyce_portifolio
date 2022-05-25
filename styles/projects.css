@@ -150,3 +150,34 @@ header{
           margin-top: 3rem !important;
       }
   }
+
+  @media (min-width: 481px) and (max-width: 768px){
+    .links button{
+      width: 20vw;
+    }
+    .project-div{
+      height: 15vh;
+    }
+ 
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px){
+    .links button{
+      width: 15vw;
+      height: 4vh !important;
+    }
+    .project-div{
+      height: 15vh;
+    }
+    .allprojects{
+      display: flex;
+
+    }
+    .project{
+      width: 46% !important;
+    }
+    .project img{
+      height: 20vh !important;
+    }
+ 
+  }

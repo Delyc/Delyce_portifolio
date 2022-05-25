@@ -76,53 +76,21 @@
 
 
 
-@media screen and (min-width: 1201px){
-    
- 
-    .descr{
-     
-        
-    }
-    .name{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-    }
-    #hire-me{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
 
-    }
-}
-
-@media  (min-width: 769px) and (max-width: 1024px){
-    .descr{
-        width: 100%;
-    }
-    .name{
-        width: 30%;
-    }
-    .btn{
-        margin-bottom: 2rem;
-    }
-
-
-}
 
 @media  (min-width: 481px) and (max-width: 768px){
     .allhire{
       
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         height: auto !important;
         
 
     }
-    .fhire{
-        top: 10rem;
+    .footer{
+        top: 70rem;
+        background: linear-gradient(to right, #243B55, #141E30);
     }
     .descr{
         width: 100%;
@@ -138,28 +106,45 @@
     }
     .name{
       
-        width: 37%;
-        margin-top: -3rem !important;
+        width: 80%;
+        
         
     }
     #hire-me{
     
-        width: 30%;
+        width: 100%;
         margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
        
        
     }
+    #hire-me textarea{
+        width: 90%;
+    }
+    #hire-me button{
+        width: 90%;
+    }
+    #hire-me input{
+        width: 90%;
+    }
+
     #hire-me h1{
         margin-top: 1rem !important;
     }
     .image-hire{
         
-        width: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
-    textarea, input[type="email"],
+    /* textarea, input[type="email"],
     input[type="text"] {
-        min-width: 90%;
+        width: 90%;
         background-color: white !important;
        
-    }
+    } */
 }

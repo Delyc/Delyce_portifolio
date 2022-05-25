@@ -319,12 +319,16 @@ and (max-device-width : 480px) {
 
 
     summary{
+      
        
-        margin-left: 5rem;
         width: 35vw;
     }
-
-    
+    .details-skills li{
+        width: 100% !important;
+    }
+    .details-skills{
+        width: 90%;
+    }
 
     .detailed{
         margin-left: 2rem;
@@ -798,42 +802,49 @@ and (max-device-width : 480px) {
     
 
     /* =================================header====================================== */
-  
+  .intro{
+      width: 100% !important;
+      padding: 0 !important;
+      left: 1rem;
+  }
  .intro h1{
       
-        width: 70%;
+        width: 90%;
+        font-size:3.5rem;
+      
     }
     header{
-        height: 90vh !important;
+        height: 70vh !important;
     }
 
   
     .intro p{
-        width: 70%;
+        width: 90%;
       
     }
     .buttons{
-        width: 70%;
+        width: 90%;
         
     }
     .hire{
-        width: 23vw;
-        height: 8vh;
+        width: 35vw;
+        height: 7vh;
     }
     .cv{
-        width: 25vw;
-        height: 8vh;
+        width: 40vw;
+        height: 7vh;
     }
 
        /* =================================About me====================================== */
 
     .experiences{
-        width: 30% !important;
+        width: 32% !important;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+     
        
       
     }
@@ -849,6 +860,7 @@ and (max-device-width : 480px) {
 
     .working-experience{
        
+       
         width: 100% !important;
     }
 
@@ -857,17 +869,30 @@ and (max-device-width : 480px) {
         font-size: 1.5rem;
     }
     .about_hire{
-        width: 13vw;
+        width: 20vw;
+        height: 6vh;
     }
 
     .introd{
+       
+     
         
     }
+    .about-me{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about-me img{
+        width: 75%;
+        height: 60vh;
+    }
+    
     
     .occupation{
       
-        
-        width: 50%;
+        width: 75%;
     }
     .about_img{
         width: 30%;
@@ -879,7 +904,7 @@ and (max-device-width : 480px) {
     /* ===================================== skills =========================================== */
 
     .pro_skills{
-        width: 50%;
+        width: 70%;
         height: auto;
    
         margin-left: 0 !important;
@@ -888,18 +913,36 @@ and (max-device-width : 480px) {
     .skilled{
         margin-top: -5rem;
     }
+    .pro-skills-{
+        width: 100%;
+      
+    }
+    .svg{
+      
+        width: 30%;
+    }
 
     .pro_skills h1{
-        margin-left: -5rem !important;
+       
        
     }
 
     .skills-section{
         height: auto;
+        display: flex;
+        flex-direction: column;
     }
     .tech_skills{
         
-        width: 45%;
+        width: 70%;
+      
+    }
+    .summary-skills{
+        width: 100%;
+       
+    }
+    .details-skills{
+        width: 100%;
     }
 
 
@@ -979,6 +1022,113 @@ and (max-device-width : 480px) {
         height: 100%;
         width: 40%;
     }
+    .footer{
+      
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .linksconnect img{
+        width: 4vw;
+    }
+    .sub{
+        margin-left: 0;
+        width: 100%;
+    }
+    .sub form{
+       
+        gap: 1rem;
+    }
+    .email{
+        width: 70%;
+        margin-bottom: 0.5rem;
+    }
+    .btn{
+        width: 70%;
+    }
+    .contact{
+        width: 100%;
+    }
+    .connect form{
+        width: 100%;
+    }
+    .fname, .femail, .footer_contact{
+        width: 70%;
+    }
+    .send{
+        margin-top: 1rem;
+    }
+    .pro1{
+        width: 100%;
+       
+        display: flex;
+        flex-direction: column;
+        gap: 3rem !important;
+        
+    }
+    .preview{
+        width: 20vw;
+    }
+    .more-projects button{
+        width: 30vw;
+    }
+    .project, .container, .mySlides{
+        width: 100% !important;
+    }
+    .projects{
+        width: 100%;
+        height: 120vh;
+      
+        padding: 0;
+        margin: 0;
+    }
+
+    .all{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .big_image{
+        width: 80%;
+        height: 80%;
+    }
+    .gold{
+     
+       
+        height: 100%;
+        width: 100%;
+    }
+    .overlayy{
+        top: 13.5%;
+        height: 33% !important;
+        width: 80%;
+        left: 3rem;
+    }
+    .view_more{
+        width: 20vw;
+    }
+    .small_video{
+        width: 90%;
+        margin-top: 2rem;
+       
+    }
+    .small_video article{
+        width: 90%;
+    }
+    .small_images{
+        width: 100%;
+    }
+    .passion h3{
+        text-align: center !important;
+    margin-left: 1rem;}
+    .passion{
+      
+      
+
+    }
+   
+
+
 
 
 
@@ -986,325 +1136,402 @@ and (max-device-width : 480px) {
 
     /* ============================== footer ===============================*/
 
-    .footer p{
-        font-size: 1.3rem;
-        line-height: 25px;
-    }
-
-    .footer h1{
-        
-        line-height: 25px;
-        font-size: 1.7rem !important;
-    }
-
-    .hiring a{
-        font-size: 1.8rem;
-        
-    }
-    .hiring{
-        width: 13vw;
-        height: auto;
-    }
-
     
-
-    .btn{
-        width: 15vw;
-        font-size: 1.5rem !important;
-    }
 }
 
 
 
-
-
-
-
-
-
-@media (min-width: 414px) and (max-width: 896px) {
-
-    .nav-{
-       
-        width: 100% !important;
-      
-    }
-
-    header{
-      
-      
-        width: 100% !important;
-        height: 90vh !important;
-      
-   
-        
-    }
-  
-  
-    .intro{
-        left: 2rem !important;
-     margin-top: 0 !important;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container{
       
      
-      
-       
-        height: auto;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        /* align-items: center;
-        justify-content: center; */
+        margin-left: 0!important;
     }
+    .mySlides{
+        width: 100% !important;
+       
+    }
+    .mySlides article{
+       
+        width: 70% !important;
+        margin-left: 6rem!important;
+    }
+    .prev,
+  .next {
+   
+    width: 15% !important;
     
+  }
+  .preview{
+      margin-bottom: 0.5rem;
+  }
+    
+
+    /* =================================header====================================== */
+  .intro{
+      width: 100% !important;
+      padding: 0 !important;
+      left: 1rem;
+  }
+ .intro h1{
+      
+        width: 90%;
+        font-size:3.5rem;
+      
+    }
+    header{
+        height: 70vh !important;
+    }
+
+  
+    .intro p{
+        width: 90%;
+      
+    }
+    .buttons{
+        width: 90%;
+        
+    }
+    .hire{
+        width: 35vw;
+        height: 7vh;
+    }
+    .cv{
+        width: 40vw;
+        height: 7vh;
+    }
+
+       /* =================================About me====================================== */
+
     .experiences{
+        width: 32% !important;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-
+     
+       
+      
+    }
+    .support_icon{
+        width: 20% !important;
     }
     .experiences p{
-        
-        text-align: center;
-        
-        width: 100%;
-        margin-right: 0 !important;
+     
+        font-size: 1.3rem;
+        margin-top: 0rem !important;
     }
-    .experiences h1{
-        /* margin-top: 2rem !important; */
-    }
+    
 
-    /* .support_icon{
-        margin-top: 10rem !important;
-      
-        z-index: 100;
-    } */
-    .passion{
+    .working-experience{
        
-        margin-top: 0rem;
-    }
-
-    .footer, .skilled{
+       
         width: 100% !important;
     }
-    .intro h1{
-        width: 80%;
-    }
-    .intro p{
-        width: 80%;
-    }
-    .buttons{
-        width: 80%;
-    }
-    .cv{
-        width: 40vw;
-    }
-    .pro_skills{
-        width: 55%;
-    }
-    
-    .bar{
-        width: 40vw;
-    }
-    .preview{
-        height: auto;
-    }
 
-    
- 
-
-}
-
-
-
-
-
-
-
- @media screen and  (min-width: 1201px){
-   
-
-
-   
-  
-  
-    .intro{
-        
+    .about_p{
       
-        height: auto;
-        top: 15rem;
-    }
-    header{
-        height: 100vh !important;
-    }
-    .intro h1{
-        width: 70%;
-    }
-    .intro p{
-        width: 70%;
-    }
-    .buttons{
-        width: 70%;
-    }
-    .cv{
-        width: 20vw;
-    }
-    .hire{
-        width: 15vw;
-    }
-
-    .experiences{
-        width: 25%;
-    
-    }
-    .occupation{
-        width: 40%;
+        font-size: 1.5rem;
     }
     .about_hire{
-        width: 6vw;
-        height: auto;
+        width: 20vw;
+        height: 6vh;
+    }
 
+    .introd{
+       
+     
+        
     }
-   
-    .pandbutton p{
+    .about-me{
+       
+        display: flex;
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+    .about-me img{
+        width: 70%;
+        height: 40vh;
+    }
+    
+    
+    .occupation{
       
-        line-height:40px
+        width: 75%;
     }
-    .pro_skills{
+    .about_img{
         width: 30%;
     }
-    
 
-    .view_more{
-        width: 10vw !important;
-        
-        margin-left: 0;
+
+
+
+    /* ===================================== skills =========================================== */
+
+    .pro_skills{
+        width: 70%;
+        height: auto;
+   
+        margin-left: 0 !important;
+    }
+
+    .skilled{
+        margin-top: -5rem;
+    }
+    .pro-skills-{
+        width: 100%;
+      
+    }
+    .svg{
+      
+        width: 30%;
+    }
+
+    .pro_skills h1{
+       
        
     }
 
-    .small_video p{
-        line-height: 40px !important;
-       
-        
-
+    .skills-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
+    .tech_skills{
+        
+        width: 70%;
+      
+    }
+    .summary-skills{
+        width: 100%;
+       
+    }
+    .details-skills{
+        width: 100%;
+    }
+
+
+    /* ======================================== resume ========================================== */
+
+    summary, .download-cv{
+        width: 20vw;
+    }
+
+    .detailed{
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+
+    /* ====================================== Projects ===============================*/
+
     .project{
-        width: 20%;
        
-    }
-    .project h3{
-        margin-top: 0.5rem;
-     
+        width: 70%;
+        
     }
     .project p{
-        line-height: 30px;
+      
+        font-size: 1.5rem;
+        width: 100%;
+        line-height: 25px;
     }
+
     .preview{
-        width: 6vw;
+        width: 10vw;
+        height: 5vh;
     }
-summary{
-        width: 15vw;
-    }
-} 
 
-@media (min-width: 769px) and (max-width: 1028px) {
-    header{
+    .pro{
         
-       
-    }
-    .intro{
-      
-        height: auto;
-     
-    }
-    .intro h1{
-        width: 80%;
-    }
-    .intro p{
-        width: 80%;
-    }
-    .buttons{
-        width: 80%;
-        height: 8vh;
-    
-        
-    }
-    .cv{
-        width: 25vw;
-       
-    }
-    .hire{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 22vw;
+        width: 90%;
     }
 
 
-    .experiences{
-        width: 20vw;
-        height: auto;
-        
-   
-      
+
+    /*==========================Passion ======================================*/
+
+    .passion{
+        margin-top: -8rem;
     }
-    .experiences p{
-        line-height: 30px;
+
+    .passion h3{
+        font-size: 1.8rem;
     }
-    .working-experience{
-      
+    .big_image{
+        width: 50%;
     }
-    .occupation{
-     
+
+    .overlayy{
+        width: 50%;
+        left: 1.5%;
+        top: 22%;
+    }
+
+    .overlayy p{
+        font-size: 1.6rem;
+    }
+
+    .view_more{
+        width: 13vw;
+        height: 6vh;
+    }
+
+    .small_images{
+        width: 40vw;
+    }
+    .small_images p{
+        font-size: 1.5rem;
+    }
+    .small_images img{
+        height: 100%;
         width: 40%;
     }
-    .about-me p{
+    .footer{
       
-        font-size: 1.7rem;
+        display: flex;
+        /* flex-direction: column; */
     }
-   .pandbutton p{
-       line-height: 40px;
-   }
-   .about_hire{
-       width: 10vw;
-   }
-   .skilled{
-       height: auto;
+    
+    .linksconnect img{
+        width: 3vw;
+        height: 3vh;
+    }
+    .sub{
+        margin-left: 0;
+        width: 100%;
+       
+        margin-left: 3rem;
+    }
+    .sub form{
+       
+        gap: 1rem;
+    }
+    .email{
+        width: 70%;
+        height: 5vh !important;
+        margin-bottom: 0.5rem;
+    }
+    .btn{
+        width: 70%;
+        height: 5vh !important;
+    }
+    .contact{
+        width: 100%;
+       
+    }
+    .contact form textarea{
+        height: 15vh !important;
+    }
+    .fname, .femail, .footer_contact{
+        width: 100%;
+    }
+    .fname, .femail{
+        height: 5vh !important;
+    }
+    
+    .send{
+        margin-top: 1rem;
+        width: 100%;
+        height: 5vh;
+    }
+    .pro1{
+        width: 100%;
+       
+        display: flex;
+        flex-direction: column;
+        gap: 3rem !important;
+        
+    }
+    .preview{
+        width: 10vw;
+        height: 4vh !important;
+    }
+    .more-projects button{
+        width: 30vw;
+    }
+    .project, .container, .mySlides{
+        width: 100% !important;
+    }
+    .projects{
+        width: 100%;
+        height: 80vh;
+      
+        padding: 0;
+        margin: 0;
+    }
+
+    .all{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .big_image{
+        width: 50%;
+        height: 80%;
+    }
+    .gold{
+     
+       
+        height: 100%;
+        width: 100%;
+    }
+    .overlayy{
+        top: 12.5%;
+        height: 33% !important;
+        width: 50%;
+        left: 12rem;
+    }
+    .view_more{
+        width: 10vw;
+    }
+    .small_video{
+        width: 90%;
+        margin-top: 2rem;
+        align-items: center;
+       
+    }
+    .small_video article{
+        width:52%;
+        
+    }
+    .small_images{
+        width: 100%;
+        height: 18vh !important;
+    }
+    .small_images img{
+        height: 20vh;
+    }
+    .passion h3{
+        text-align: center !important;
+    margin-left: 1rem;}
+    .passion{
+      
+      
+
+    }
    
-   }
-
-   .pro_skills{
-       width: 40%;
-       height: auto;
-   }
-   .skills-section{
-       height: 100%;
-   }
-   .tech_skills h3{
-       font-size: 1.2rem;
-
-   }
-   
 
 
 
 
 
-   summary{
-       width: 13vw;
-   }
 
-   .project{
-       width: 25%;
-   }
-   .preview{
-       width: 8vw;
-       height: 6vh;
-   }
 
-   .view_more{
-       width: 10vw;
-      margin-left: 0px;
-   }
-} 
+    /* ============================== footer ===============================*/
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

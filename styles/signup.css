@@ -1,5 +1,5 @@
 #signup{
-  background: linear-gradient(to right, #243B55, #141E30);
+
   background: linear-gradient(to right, #243B55, #141E30);
   position: absolute;
   top: 10rem;
@@ -72,5 +72,28 @@
     height: 6vh;
   }
 
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  #signup{
+    width: 70%;
+    
+  }
+  footer{
+    margin-top: 7rem !important;
+  }
+ 
+
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  #signup{
+    width: 70%;
+    
+  }
+  footer{
+    margin-top: 7rem !important;
+  }
+ 
 
 }

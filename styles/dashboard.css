@@ -80,7 +80,7 @@
     flex-direction: column;
    
     width: 24%;
-    min-height: 60vh;
+    height: 60vh;
     
     background-color: white;   
   
@@ -313,4 +313,69 @@ header{
     100% {
       transform: rotate(360deg);
     }
+  }
+
+
+  @media (min-width: 481px) and (max-width: 768px){
+    .links button{
+      width: 20vw;
+    }
+    .project-div{
+      height: 15vh;
+    }
+    #allposts{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .post{
+      width: 70%;
+      height: auto;
+    }
+    .overlay-header, header{
+      height: 60vh !important;
+      
+    }.blogging{
+      top: 0;
+    }
+   
+ 
+  }
+
+  
+  @media (min-width: 769px) and (max-width: 1024px){
+    .links button{
+      width: 20vw;
+    }
+    .project-div{
+      height: 15vh;
+    }
+    #allposts{
+      
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      width: 100%;
+      gap: 1rem;
+    }
+    .post{
+      width: 40%;
+      height: 42vh !important;
+    
+    }
+    .post img{
+      height: 20vh;
+    }
+    .hook{
+      height: 5vh;
+    }
+    .overlay-header, header{
+      height: 60vh !important;
+ 
+    }.blogging{
+      top: 0;
+    }
+   
+ 
   }

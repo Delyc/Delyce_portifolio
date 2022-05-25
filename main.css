@@ -308,9 +308,16 @@ footer{
 }
 .media{
     display: flex;
-    align-items: center;
+   align-items: center;
+    
     gap: 0.3rem;
 }
+/* .media a{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+} */
 .emai{
     width: 2.5vw;
     height: 6vh;
