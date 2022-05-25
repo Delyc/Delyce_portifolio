@@ -148,3 +148,77 @@
        
     } */
 }
+
+@media  (min-width: 769px) and (max-width: 1024px){
+    .allhire{
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto !important;
+        
+
+    }
+    .footer{
+        top: 70rem;
+        background: linear-gradient(to right, #243B55, #141E30);
+    }
+    .descr{
+        width: 100%;
+        margin-top: 2rem;
+       
+        
+    }
+    .btn{
+        margin-bottom: 2rem;
+    }
+    .name h1{
+        margin-top: 1rem;
+    }
+    .name{
+      
+        width: 80%;
+        
+        
+    }
+    #hire-me{
+    
+        width: 100%;
+        margin-top: 2rem;
+        /* justify-content: center;
+        align-items: center; */
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+       
+       
+    }
+    #hire-me textarea{
+        width: 50%;
+    }
+    #hire-me button{
+        width: 50%;
+        height: 5vh !important;
+    }
+    #hire-me input{
+        width: 50%;
+        height: 5vh !important;
+    }
+
+    #hire-me h1{
+        margin-top: 1rem !important;
+    }
+    .image-hire{
+        
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    /* textarea, input[type="email"],
+    input[type="text"] {
+        width: 90%;
+        background-color: white !important;
+       
+    } */
+}
