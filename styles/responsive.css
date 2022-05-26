@@ -271,6 +271,52 @@ and (max-device-width : 480px) {
         width: 40vw !important;
     }
 
+    .all-skills-tech{
+        margin-bottom: 2rem;
+    }
+    .preference{
+
+        display: flex;
+        flex-direction: column !important;
+      
+        width: 100%;
+        height: auto;
+     
+    }
+    .preference p{
+        width: 90%;
+    }
+    .skil-preference{
+        width: 90%;
+     
+
+    }
+    .front-details{
+        width: 90%;}
+    .pre-front img{
+        width: 30vw !important;
+
+
+    }
+    .tech-new{
+        width: 90%;
+        height: auto;
+       
+    }
+    .technical{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-skills{
+        width: 90%;
+       
+    }
+    .container-skills img{
+        width: 30vw !important;
+    }
+
   
     .container{
        
@@ -911,7 +957,7 @@ and (max-device-width : 480px) {
     }
 
     .skilled{
-        margin-top: -5rem;
+        margin-top: 0rem;
     }
     .pro-skills-{
         width: 100%;
@@ -1126,6 +1172,53 @@ and (max-device-width : 480px) {
       
 
     }
+
+    .all-skills-tech{
+        margin-bottom: 2rem;
+    }
+    .preference{
+
+        display: flex;
+        flex-direction: column !important;
+      
+        width: 80%;
+        height: auto;
+        
+     
+    }
+    .preference p{
+        width: 100%;
+    }
+    .skil-preference{
+        width: 100%;
+     
+
+    }
+    .front-details{
+        width: 100%;}
+    .pre-front img{
+        width: 30vw !important;
+
+
+    }
+    .tech-new{
+        width: 80%;
+        height: auto;
+       
+    }
+    .technical{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-skills{
+        width: 80%;
+       
+    }
+    .container-skills img{
+        width: 20vw !important;
+    }
    
 
 
@@ -1277,7 +1370,7 @@ and (max-device-width : 480px) {
     }
 
     .skilled{
-        margin-top: -5rem;
+        margin-top: 0rem;
     }
     .pro-skills-{
         width: 100%;
@@ -1511,6 +1604,60 @@ and (max-device-width : 480px) {
       
 
     }
+
+
+    
+    .all-skills-tech{
+        margin-bottom: 2rem;
+    }
+    .preference{
+
+        display: flex;
+        flex-direction: column !important;
+      
+        width: 80%;
+        height: auto;
+        
+     
+    }
+    .preference p{
+        width: 100%;
+    }
+    .skil-preference{
+        width: 80%;
+     
+
+    }
+    .front-details{
+        width: 80%;}
+    .pre-front img{
+        width: 10vw !important;
+        height: 12vh !important;
+
+
+    }
+    .tech-new{
+        width: 80%;
+        height: auto;
+       
+    }
+    .technical{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-skills{
+        width: 80%;
+       
+    }
+    .container-skills img{
+        width: 15vw !important;
+    }
+   
+
+
+    
    
 
 

@@ -460,8 +460,8 @@ hr {
 .pro_skills {
     display: flex;
     flex-direction: row !important;
-    width: 20%;
-    width: 26%;
+    /* width: 20%; */
+    width: 36%;
     height: 65vh;
     flex-wrap: wrap;
     align-items: center;
@@ -561,6 +561,7 @@ hr {
 
 
     width: 60%;
+    
 
 }
 
@@ -1221,7 +1222,7 @@ footer{
       
   }
 
- summary{
+ /* summary{
     background: linear-gradient(to right, #243B55, #141E30);
     width: 9vw;
     color: white;
@@ -1231,7 +1232,7 @@ footer{
     
 
     
-}
+} */
 .details-skills{
    
     /* outline: 2px solid rgba(148, 188, 233, 0.473); */
@@ -1240,6 +1241,7 @@ footer{
     align-items: center;
     padding: 0.5rem;
     width: 60%;
+    
   
 }
 .summary-skills{
@@ -1249,8 +1251,12 @@ footer{
     background: linear-gradient(to right, #243B55, #141E30);
     color: white;
     width: 100%;
-    text-align: center;
+   
     border-radius: 5px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .details-skills li{
@@ -1341,4 +1347,147 @@ footer{
 
     margin-left: 5rem !important;
 
+}
+
+
+
+
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.front img{
+    width: 5vw;
+    height: 10vh;
+}
+.js-front{
+    width: 8vw !important;
+}
+.react-front{
+    width: 8vw !important;
+ 
+    margin-left: -2rem;
+}
+.redux-front, vue-front, .nuxt-front{
+    width: 7vw !important;
+    height: 12vh !important;
+}
+.node-front{
+    width: 7vw !important;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.php-back{
+    width: 7vw;
+}
+
+.technical{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.container-skills{
+    width: 40%;
+    
+
+}
+.front-details{
+    background-color: white !important;
+    
+    border-radius: 10px;
+    width: 70%;
+    
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid rgba(148, 188, 233, 0.342);
+
+}
+.front-summary{
+    background-color: white !important;
+    height: 10vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.preference{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 60%;
+
+}
+.preference h1{
+    font-size: 2rem;
+    color: rgba(148, 187, 233, 1);
+}
+.preference strong{
+    color: rgba(148, 187, 233, 1);
+
+}
+.preference p{
+    width: 30%;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+.pre-front{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.ex-front{
+    height: 20vh !important;
+    width: 15vw !important;
+
+}
+.mongo-front{
+    width: 8vw !important;
+    height: 18vh !important;
+}
+.skil-preference{
+    width: 60%;
+}
+.react-pref{
+    height: 18vh !important;
+    width: 10vw !important;
+}
+
+
+.all-skills-tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-new{
+    margin-top: 5rem;
+}
+.tech-new h1{
+    font-size: 2.5rem;
+    color:#243B55;
+}
+.tech-new p{
+    font-size: 1.8rem;
 }
