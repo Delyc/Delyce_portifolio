@@ -1671,7 +1671,442 @@ and (max-device-width : 480px) {
     
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container{
+      
+     
+        margin-left: 0!important;
+    }
+    .mySlides{
+        width: 100% !important;
+       
+    }
+    .mySlides article{
+       
+        width: 70% !important;
+        margin-left: 6rem!important;
+    }
+    .prev,
+  .next {
+   
+    width: 15% !important;
+    
+  }
+  .preview{
+      margin-bottom: 0.5rem;
+  }
+    
 
+    /* =================================header====================================== */
+  .intro{
+      width: 100% !important;
+      padding: 0 !important;
+      left: 1rem;
+  }
+ .intro h1{
+      
+        width: 90%;
+        font-size:3.5rem;
+      
+    }
+    header{
+        height: 70vh !important;
+    }
+
+  
+    .intro p{
+        width: 90%;
+      
+    }
+    .buttons{
+        width: 90%;
+        
+    }
+    .hire{
+        width: 35vw;
+        height: 7vh;
+    }
+    .cv{
+        width: 40vw;
+        height: 7vh;
+    }
+
+       /* =================================About me====================================== */
+
+    .experiences{
+        width: 32% !important;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+       
+      
+    }
+    .support_icon{
+        width: 20% !important;
+    }
+    .experiences p{
+     
+        font-size: 1.3rem;
+        margin-top: 0rem !important;
+    }
+    
+
+    .working-experience{
+       
+       
+        width: 100% !important;
+    }
+
+    .about_p{
+      
+        font-size: 1.5rem;
+    }
+    .about_hire{
+        width: 20vw;
+        height: 6vh;
+    }
+
+    .introd{
+       
+     
+        
+    }
+    .about-me{
+       
+        display: flex;
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+    .about-me img{
+        width: 70%;
+        height: 40vh;
+    }
+    
+    
+    .occupation{
+      
+        width: 75%;
+    }
+    .about_img{
+        width: 30%;
+    }
+
+
+
+
+    /* ===================================== skills =========================================== */
+
+    .pro_skills{
+        width: 70%;
+        height: auto;
+   
+        margin-left: 0 !important;
+    }
+
+    .skilled{
+        margin-top: 0rem;
+    }
+    .pro-skills-{
+        width: 100%;
+      
+    }
+    .svg{
+      
+        width: 30%;
+    }
+
+    .pro_skills h1{
+       
+       
+    }
+
+    .skills-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .tech_skills{
+        
+        width: 70%;
+      
+    }
+    .summary-skills{
+        width: 100%;
+       
+    }
+    .details-skills{
+        width: 100%;
+    }
+
+
+    /* ======================================== resume ========================================== */
+
+    summary, .download-cv{
+        width: 20vw;
+    }
+
+    .detailed{
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+
+    /* ====================================== Projects ===============================*/
+
+    .project{
+       
+        width: 70%;
+        
+    }
+    .project p{
+      
+        font-size: 1.5rem;
+        width: 100%;
+        line-height: 25px;
+    }
+
+    .preview{
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .pro{
+        
+        width: 90%;
+    }
+
+
+
+    /*==========================Passion ======================================*/
+
+    .passion{
+        margin-top: -8rem;
+    }
+
+    .passion h3{
+        font-size: 1.8rem;
+    }
+    .big_image{
+        width: 50%;
+    }
+
+    .overlayy{
+        width: 50%;
+        left: 1.5%;
+        top: 22%;
+    }
+
+    .overlayy p{
+        font-size: 1.6rem;
+    }
+
+    .view_more{
+        width: 13vw;
+        height: 6vh;
+    }
+
+    .small_images{
+        width: 40vw;
+    }
+    .small_images p{
+        font-size: 1.5rem;
+    }
+    .small_images img{
+        height: 100%;
+        width: 40%;
+    }
+    .footer{
+      
+        display: flex;
+        /* flex-direction: column; */
+    }
+    
+    .linksconnect img{
+        width: 3vw;
+        height: 3vh;
+    }
+    .sub{
+        margin-left: 0;
+        width: 100%;
+       
+        margin-left: 3rem;
+    }
+    .sub form{
+       
+        gap: 1rem;
+    }
+    .email{
+        width: 70%;
+        height: 5vh !important;
+        margin-bottom: 0.5rem;
+    }
+    .btn{
+        width: 70%;
+        height: 5vh !important;
+    }
+    .contact{
+        width: 100%;
+       
+    }
+    .contact form textarea{
+        height: 15vh !important;
+    }
+    .fname, .femail, .footer_contact{
+        width: 100%;
+    }
+    .fname, .femail{
+        height: 5vh !important;
+    }
+    
+    .send{
+        margin-top: 1rem;
+        width: 100%;
+        height: 5vh;
+    }
+    .pro1{
+        width: 100%;
+       
+        display: flex;
+        flex-direction: column;
+        gap: 3rem !important;
+        
+    }
+    .preview{
+        width: 10vw;
+        height: 4vh !important;
+    }
+    .more-projects button{
+        width: 30vw;
+    }
+    .project, .container, .mySlides{
+        width: 100% !important;
+    }
+    .projects{
+        width: 100%;
+        height: 80vh;
+      
+        padding: 0;
+        margin: 0;
+    }
+
+    .all{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .big_image{
+        width: 50%;
+        height: 80%;
+    }
+    .gold{
+     
+       
+        height: 100%;
+        width: 100%;
+    }
+    .overlayy{
+        top: 12.5%;
+        height: 33% !important;
+        width: 50%;
+        left: 12rem;
+    }
+    .view_more{
+        width: 10vw;
+    }
+    .small_video{
+        width: 90%;
+        margin-top: 2rem;
+        align-items: center;
+       
+    }
+    .small_video article{
+        width:52%;
+        
+    }
+    .small_images{
+        width: 100%;
+        height: 18vh !important;
+    }
+    .small_images img{
+        height: 20vh;
+    }
+    .passion h3{
+        text-align: center !important;
+    margin-left: 1rem;}
+    .passion{
+      
+      
+
+    }
+
+
+    
+    .all-skills-tech{
+        margin-bottom: 2rem;
+    }
+    .preference{
+
+        display: flex;
+        flex-direction: column !important;
+      
+        width: 80%;
+        height: auto;
+        
+     
+    }
+    .preference p{
+        width: 100%;
+    }
+    .skil-preference{
+        width: 80%;
+     
+
+    }
+    .front-details{
+        width: 80%;}
+    .pre-front img{
+        width: 10vw !important;
+        height: 12vh !important;
+
+
+    }
+    .tech-new{
+        width: 80%;
+        height: auto;
+       
+    }
+    .technical{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-skills{
+        width: 80%;
+       
+    }
+    .container-skills img{
+        width: 15vw !important;
+    }
+   
+
+
+    
+   
+
+
+
+
+
+
+
+    /* ============================== footer ===============================*/
+
+    
+}
 
 
 

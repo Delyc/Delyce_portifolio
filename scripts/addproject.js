@@ -1,5 +1,5 @@
 
-const apiUrl = "http://localhost:5000/";
+const apiUrl = "https://portifolio-website.herokuapp.com/";
 
 document.getElementById("insertpro").addEventListener("submit", (e) => {
   e.preventDefault();
